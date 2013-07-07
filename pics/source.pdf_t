@@ -1,0 +1,27 @@
+\begin{picture}(0,0)%
+\includegraphics{pics/source.pdf}%
+\end{picture}%
+\setlength{\unitlength}{4144sp}%
+%
+\begingroup\makeatletter\ifx\SetFigFont\undefined%
+\gdef\SetFigFont#1#2#3#4#5{%
+  \reset@font\fontsize{#1}{#2pt}%
+  \fontfamily{#3}\fontseries{#4}\fontshape{#5}%
+  \selectfont}%
+\fi\endgroup%
+\begin{picture}(7063,4662)(-3386,-2098)
+\put(-2474,839){\makebox(0,0)[b]{\smash{{\SetFigFont{14}{16.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}$\Dual{S}$}%
+}}}}
+\put(1351,2414){\makebox(0,0)[b]{\smash{{\SetFigFont{14}{16.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}x}%
+}}}}
+\put(3601,-61){\makebox(0,0)[b]{\smash{{\SetFigFont{14}{16.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}z}%
+}}}}
+\put(901,614){\makebox(0,0)[b]{\smash{{\SetFigFont{14}{16.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}$\Dual{S}$}%
+}}}}
+\put(2026,389){\makebox(0,0)[lb]{\smash{{\SetFigFont{14}{16.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}$\deltax$}%
+}}}}
+\put(1126,-1186){\makebox(0,0)[b]{\smash{{\SetFigFont{14}{16.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}$\delta z$}%
+}}}}
+\put(-674,1289){\makebox(0,0)[lb]{\smash{{\SetFigFont{14}{16.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}$\deltax$}%
+}}}}
+\end{picture}%

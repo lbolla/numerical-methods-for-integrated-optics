@@ -1,0 +1,10 @@
+headings_flag		1
+headings_prefix		"\n  \\item \\textbf{"
+headings_suffix		"}"
+symhead_positive	"Symbols"
+symhead_negative	"symbols"
+numhead_positive	"Numbers"
+numhead_negative	"numbers"
+delim_0			" \\dotfill\\ "
+delim_1			" \\dotfill\\ "
+delim_2			" \\dotfill\\ "

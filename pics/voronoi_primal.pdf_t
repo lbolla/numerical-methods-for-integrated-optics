@@ -1,0 +1,17 @@
+\begin{picture}(0,0)%
+\includegraphics{pics/voronoi_primal.pdf}%
+\end{picture}%
+\setlength{\unitlength}{4144sp}%
+%
+\begingroup\makeatletter\ifx\SetFigFont\undefined%
+\gdef\SetFigFont#1#2#3#4#5{%
+  \reset@font\fontsize{#1}{#2pt}%
+  \fontfamily{#3}\fontseries{#4}\fontshape{#5}%
+  \selectfont}%
+\fi\endgroup%
+\begin{picture}(4566,6549)(1318,-5923)
+\put(3826,-2761){\makebox(0,0)[rb]{\smash{{\SetFigFont{29}{34.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}$\DualLine{e}_i$}%
+}}}}
+\put(4951,-2086){\makebox(0,0)[b]{\smash{{\SetFigFont{29}{34.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,1}$\Surface{f}_i$}%
+}}}}
+\end{picture}%

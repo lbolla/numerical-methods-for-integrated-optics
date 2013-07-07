@@ -1,0 +1,87 @@
+PROGRAMMA DOTTORATO
+
+FETD
+----
+
+- descrizione algoritmo
+- programmazione 2d e 3d (layered structures)
+- pml: 
+	- adattamento degli algoritmi su griglia ortogonale per i triangoli
+	- analisi stabilita'. comportamento all'interfaccia con una griglia piu' larga (cambiamenti bruschi nella griglia peggiorano il comportamento delle pml -> griglia graduale)
+- paragone con FDTD (Yee algorithm e Andrej)
+	- analisi precisione/stabilita'
+	- divergenza nulla vs eq. materiali esatte (trovare degli esempi nei quali la divergenza nulla e' fondamentale per ottenere risultati "fisici")
+
+FEFD
+----
+
+- descrizione algoritmo
+- costruzione 2d e 3d (edge elements)
+- discretizzazione/riduzione vs riduzione/discretizzazione (confronto con FEMLAB e altri FEFD solver)
+- pml:
+	- stima analitica (o empirica) dei parametri ottimali
+- soluzione del sistema discreto:
+	- solver diretti (UMFPACK)
+		- come funzionano (occupazione di memoria e prestazioni)
+		- riordinamento (certi matricioni sono risolti piu' velocemente di altri: confronto griglia a triangoli e a quadrati)
+		- altre strategie di ordinamento
+	- domain decomposition methods (Nottingham)
+		- per risolvere le equazioni
+		- per creare dei buoni precondizionatori
+	- iterative solvers
+		- riordinamento
+		- buon preconditioning
+
+varie
+-----
+
+- poisson solver
+- plane wave expansion
+- hybrid method: triangoli e quadrati
+- design di varie strutture
+
+=======================================================================
+
+DESCRIZIONE ALGORITMO
+---------------------
+- vedere Numerical Recipies per commenti su stabilita' e vari algoritmi.
+- residuo: tra la soluzione nel time-domain e la soluzione steady-state. come si propaga? lungo quali direzioni? figure.
+
+=======================================================================
+
+PML
+---
+io uso la formulazione in frequenza del Taflove (quella con il tensore s, in frequenza, pag.302). e' la stessa usata anche da FEMLAB (www.euro.femlab.com/support/knowledgebase) e la stessa descritta da Jianming Jin in "The finite element method in Electromagnetics". confronto con la coordinate stretched formulation e con la split field formulation (vedi Taflove).
+
+=======================================================================
+
+Solvers
+-------
+struttura dei matricioni (originale, complesso, ridotto e ridottissimo per il 2d e poi quelli 3d. sia con griglie strutturate che non strutturate): vedere figure in d:\work\pics\matricioni
+diretti: UMFPACK, SuperLU, ... (vedere UMFPACK User Guide per una lista completa)
+preordering: 
+	COLAMD: (usato da UMFPACK e SuperLU) non usa i valori degli elementi non zero, ma solo la loro posizione
+	METIS: e' possibile "pesare" ciascuna entry
+	
+	se la matrice e' tridiagonale UMFPACK con COLAMD fa una sola iterazione per risolvere il sistema, mentre con METIS ne fa molte di piu' (circa 8000) (ma occupa leggermente meno memoria 5% in meno). probabilmente l'ordinameto di COLAMD e' ottimale per matrici tridiagonali.
+	l'ordinamento di METIS non funziona per il matricione ridottissimo :-(
+	UMFPACK usa come strategia la "2by2" e come preordering "COLAMD" di solito.
+
+IDEA: usare come precondizionatore di un metodo iterativo per risolvere il problema 3d la matriciona senza i termini che riguardano i lati verticali (cioe' trattando i piani che compongono il dominio come se fossero indipendenti l'uno dall'altro). essa e' diagonale a blocchi e piu' sparsa dell'originale, quindi piu' semplice da risolvere (UMFPACK usa il solito "2by2" e "COLAMD").
+- it_solver.cpp: interfaccia tra UMFPACK e IML++. studio della convergenza dei vari metodi in funzione delle varie griglie (non strutturata 2d e 3d, strutturata 2d e 3d).
+
+(oppure si calcola con UMFPACK una soluzione della matrice indipendente e la si usa come initial guess di un metodo iterativo normale --> questo non converge :-( ne' con Jsolver ne' con ILUsolver).
+
+=======================================================================
+
+Discretizzazione
+----------------
+io uso la formulazione Bossavit (edge-elements). FEMLAB usa i node elements.
+discretizzazione+riduzione vs. riduzione+discretizzazione:
+- si puo' osservare la dinamica degli autovalori e autovettori del sistemone.
+
+=======================================================================
+
+Design
+------
+Ring Resonator: scan di frequenze per vedere la differenza con FIMMWAVE. con griglia 400x400 l'accordo con FW e' ottimo. con griglia 300x300 ottengo lo stesso risultato ma ad una frequenza diversa: 1.579 invece di 1.57. come sono correlate griglia e frequenza di risonanza??

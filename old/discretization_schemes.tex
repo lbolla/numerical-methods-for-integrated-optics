@@ -1,0 +1,83 @@
+\chapter{Discretization Schemes}
+from the Maxwell's equations to a matricial formulation
+\begin{itemize}
+\item
+  mapping of geometrical entities with physical quantities
+  \cite[pag. 40]{bossavit_computational}: constituive laws are
+  mappings between p-forms and (3-p)-forms.
+\item
+  Primary and dual grid: Maxwell's paper on the geometrical
+  association of physical quantities \cite{maxwell_mathematical}: all
+  on the primary grid leads to numerical losses (non physical)
+\item
+  Maxwell's equations are topological relations about geometrical
+  quantities: what makes different schemes different are the
+  ``Constitutive relations'' --> Tonti
+\item
+  Stability problem: Maxwell's equation as a ``control problem'': all
+  the eigvals must lie in precise positions --> Taflove
+\end{itemize}
+
+for each scheme: constitutive laws, pros, cons.
+
+\section{Structured}
+\begin{itemize}
+\item
+  easy to build
+\item
+  easy to manage
+\item
+  staircase approximation \cite{cangellaris_analysis}
+\item
+  anisotropy of the medium ``grid'' \cite{liu_fourier}
+\end{itemize}
+
+\subsection{Orthogonal}
+diagonal constitutive matrices: local relations, stable
+
+\subsection{Non-Orthogonal}
+non diagonal constitutive matrices: non local constitutive relations,
+more unstable (depending on the minimum angle). Mainly used in
+association with periodic boundary conditions to simulate non
+orthogonal primitive cells in periodic structures.
+
+
+
+
+\section{Unstructured}
+Numerical Errors of the Stair-Cased approximation
+\cite{cangellaris_analysis}
+
+\begin{itemize}
+\item
+  better discretization of the domain (tangential fields always
+  continuous)
+\item
+  less memory: coarser grid where I don't need it
+\item
+  more difficult to generate and manage (meshing software survey)
+\end{itemize}
+
+Unstructured grids in 3D are difficult: 2.5D! unstructured in 2D,
+structured in the third dimension: layered structured
+\cite{gedney_parallel}.
+
+Triangles as simplicials is the most general choice. How do I choose
+the dual grid?
+
+\subsection{Delaunay-Vorono\"{i}} \label{sec:delaunay_voronoi}
+properties and difficulty in generating it (direct analogous to the
+orthogonal structured grid, but unstructured): local constitutive
+relations
+
+\subsection{Poincar\'e}
+easier to build, but non local relations (non diagonal stiffness matrix)
+
+\subsection{Barycentric}
+the more general and stable scheme, but much more complex to implement
+(ref. marrone, tonti, bossavit)
+
+
+
+
+\section{Structured vs. Unstructured aka Refractive Index Smoothing}

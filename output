@@ -1,0 +1,654 @@
+pdflatex main.tex
+This is pdfeTeX, Version 3.14159-1.10b-2.1 (Web2C 7.4.5)
+entering extended mode
+(./main.tex{/usr/share/texmf/pdftex/config/pdftex.cfg}
+LaTeX2e <2001/06/01>
+Babel <v3.7h> and hyphenation patterns for american, french, german, ngerman, b
+ahasa, basque, catalan, croatian, czech, danish, dutch, finnish, greek, iceland
+ic, irish, italian, latin, magyar, norsk, norsk, portuges, romanian, russian, s
+lovak, slovene, spanish, swedish, turkish, ukrainian, nohyphenation, loaded.
+(/usr/share/texmf/tex/latex/base/book.cls
+Document Class: book 2001/04/21 v1.4e Standard LaTeX document class
+(/usr/share/texmf/tex/latex/base/bk10.clo))
+(/usr/share/texmf/tex/latex/base/fontenc.sty
+(/usr/share/texmf/tex/latex/base/t1enc.def))
+(/usr/share/texmf/tex/latex/misc/avantgar.sty)
+(/usr/share/texmf/tex/latex/misc/euler.sty
+Package: `euler' v2.5 <1995/03/05> (FJ and FMi)
+
+LaTeX Font Warning: Encoding `OML' has changed to `U' for symbol font
+(Font)              `letters' in the math version `normal' on input line 35.
+
+
+LaTeX Font Warning: Encoding `OML' has changed to `U' for symbol font
+(Font)              `letters' in the math version `bold' on input line 35.
+
+) (/usr/share/texmf/tex/latex/graphics/graphicx.sty
+(/usr/share/texmf/tex/latex/graphics/keyval.sty)
+(/usr/share/texmf/tex/latex/graphics/graphics.sty
+(/usr/share/texmf/tex/latex/graphics/trig.sty)
+(/usr/share/texmf/tex/latex/config/graphics.cfg)
+(/usr/share/texmf/tex/latex/graphics/pdftex.def)))
+(/usr/share/texmf/tex/latex/base/makeidx.sty)
+(/usr/share/texmf/tex/latex/CJK/CJK.sty
+(/usr/share/texmf/tex/latex/CJK/mule/MULEenc.sty)
+(/usr/share/texmf/tex/latex/CJK/CJK.enc))
+Writing index file main.idx
+(/usr/share/texmf/tex/latex/caption/caption2.sty)
+(/usr/share/texmf/tex/latex/hyperref/hyperref.sty
+(/usr/share/texmf/tex/latex/hyperref/pd1enc.def)
+(/usr/share/texmf/tex/latex/config/hyperref.cfg)
+Implicit mode ON; LaTeX internals redefined
+(/usr/share/texmf/tex/latex/misc/url.sty))
+*hyperref using default driver hpdftex*
+(/usr/share/texmf/tex/latex/hyperref/hpdftex.def
+(/usr/share/texmf/tex/latex/psnfss/pifont.sty
+(/usr/share/texmf/tex/latex/psnfss/upzd.fd)
+(/usr/share/texmf/tex/latex/psnfss/upsy.fd))) (./definitions.tex
+(/usr/share/texmf/tex/latex/bbm/bbm.sty)
+(/usr/share/texmf/tex/latex/base/latexsym.sty)
+(/usr/share/texmf/tex/latex/tools/afterpage.sty)
+(/usr/share/texmf/tex/latex/amsfonts/amsfonts.sty)
+(/usr/share/texmf/tex/latex/amsfonts/euscript.sty)) (./main.aux
+(./titlepage.aux) (./acknoledgments.aux) (./intro.aux) (./propagators.aux)
+(./mode_finders.aux) (./experiments.aux))
+(/usr/share/texmf/tex/latex/psnfss/t1pag.fd)
+
+LaTeX Font Warning: Encoding `OT1' has changed to `T1' for symbol font
+(Font)              `operators' in the math version `normal' on input line 23.
+
+
+LaTeX Font Warning: Encoding `OT1' has changed to `T1' for symbol font
+(Font)              `operators' in the math version `bold' on input line 23.
+
+(/usr/share/texmf/tex/context/base/supp-pdf.tex
+(/usr/share/texmf/tex/context/base/supp-mis.tex
+loading : Context Support Macros / Missing
+)
+loading : Context Support Macros / PDF
+) (/usr/share/texmf/tex/latex/hyperref/nameref.sty) (./main.out) (./main.out)
+(./titlepage.tex [1{/var/lib/texmf/dvips/config/pdftex.map}]) (./main.toc
+(/usr/share/texmf/tex/latex/amsfonts/ueur.fd)
+(/usr/share/texmf/tex/latex/amsfonts/ueuf.fd)
+(/usr/share/texmf/tex/latex/amsfonts/ueus.fd)
+(/usr/share/texmf/tex/latex/amsfonts/ueuex.fd)
+(/usr/share/texmf/tex/latex/base/ulasy.fd)
+(/usr/share/texmf/tex/latex/amsfonts/umsa.fd)
+(/usr/share/texmf/tex/latex/amsfonts/umsb.fd)
+! pdfTeX warning (ext4): destination with the same identifier (name{page.1}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \penalty 
+l.32 ...illeneuve_photonic}}{19}{subsection.6.2.1}
+                                                   [1]) [2]
+(./acknoledgments.tex (/usr/share/texmf/tex/latex/CJK/standard.bdg)
+(/usr/share/texmf/tex/latex/CJK/standard.enc)
+(/usr/share/texmf/tex/latex/CJK/standard.chr)
+(/usr/share/texmf/tex/latex/CJK/GB/c10kai.fd)) [3] (./intro.tex
+Chapter 1.
+)
+! pdfTeX warning (ext4): destination with the same identifier (name{page.1}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \penalty 
+l.34   \include{intro}
+                       [1] (./propagators.tex
+! pdfTeX warning (ext4): destination with the same identifier (name{page.2}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \penalty 
+l.1 \part
+         {Propagators} [2]
+! pdfTeX warning (ext4): destination with the same identifier (name{page.3}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \penalty 
+l.1 \part{Propagators}
+                       [3] [4] (/usr/share/texmf/tex/latex/psnfss/ot1pzc.fd)
+[5] [6]
+Chapter 2.
+
+LaTeX Warning: Citation `maxwell_treatise' on page 7 undefined on input line 38
+.
+
+
+LaTeX Warning: Citation `maxwell_mathematical' on page 7 undefined on input lin
+e 38.
+
+[7] [8]
+Chapter 3.
+</home/lollo/pics/sephiroth.jpg, id=302, 969.6225pt x 1447.4075pt>
+<use /home/lollo/pics/sephiroth.jpg> [9 </home/lollo/pics/sephiroth.jpg>]
+[10]
+Chapter 4.
+) [11] (./mode_finders.tex [12] [13] [14]
+Overfull \hbox (14.83669pt too wide) in paragraph at lines 4--9
+/pagk8t/eigen-mode de-com-po-si-tion: the elec-tro-mag-netic prop-a-ga-tion is 
+ex-pressed
+[15] [16]
+Chapter 5.
+[17] [18]
+Chapter 6.
+(./pwe.tex
+Overfull \hbox (0.10867pt too wide) in paragraph at lines 10--12
+[]/pagk8t/johnson block it-er-a-tive, john-son per-tur-ba-tion -> faster con-ve
+r-gence 
+
+Overfull \hbox (4.89151pt too wide) in paragraph at lines 14--16
+[]/pagk8t/meade ac-cu-rate, lalanne ef-fec-tive, vil-leneuve pho-tonic -> im-pr
+ove-
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `\@ifnextchar' on input line 21.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `subscript' on input line 21.
+
+[19] [20]
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `\@ifnextchar' on input line 110.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `subscript' on input line 110.
+
+(/usr/share/texmf/tex/latex/psnfss/omspag.fd)
+(/usr/share/texmf/tex/latex/base/t1cmtt.fd) [21]
+Overfull \hbox (1.09488pt too wide) in paragraph at lines 169--171
+[]/pagk8t/We'll de-scribe here the Plane Wave Ex-pan-sion (/ectt1000/PWE/pagk8t
+/) tech-nique, which
+
+Overfull \hbox (8.20349pt too wide) in paragraph at lines 172--176
+[]/ectt1000/PWE /pagk8t/is a fully vec-to-rial, 3D al-go-rithm to de-ter-mine t
+he definite-frequency
+[22] [23] [24] [25])) [26] (./experiments.tex [27] [28] [29] [30]
+Chapter 7.
+[31] [32]
+Chapter 8.
+[33] [34]
+Chapter 9.
+) [35] (./main.bbl [36]
+Underfull \hbox (badness 2846) in paragraph at lines 9--13
+[]/pagk8t/S. G. John-son and J. D. Joannopou-los.  Block-iterative
+
+Underfull \hbox (badness 2744) in paragraph at lines 9--13
+/pagk8t/frequency-domain meth-ods for Max-well's equa-tions in a
+) [37] [38] (./main.lof) [39] [40] (./main.lot) (./main.ind [41] [42])
+(./main.aux (./titlepage.aux) (./acknoledgments.aux) (./intro.aux)
+(./propagators.aux) (./mode_finders.aux) (./experiments.aux))
+
+LaTeX Warning: There were undefined references.
+
+ )
+(see the transcript file for additional information)
+! pdfTeX warning (dest): name{UNDEFINED} has been referenced but does not exist
+, replaced by a fixed one
+
+</usr/share/texmf/fonts/type1/bluesky/euler/euex10.pfb></usr/share/texmf/fonts/
+type1/bluesky/euler/eusm7.pfb>{/usr/share/texmf/dvips/tetex/aae443f0.enc}</usr/
+share/texmf/fonts/type1/bluesky/cm/cmmi8.pfb></usr/share/texmf/fonts/type1/blue
+sky/euler/eufm7.pfb></usr/share/texmf/fonts/type1/bluesky/euler/eurm7.pfb></usr
+/share/texmf/fonts/type1/bluesky/cm/cmmi7.pfb> </var/cache/fonts/pk/ljfour/jkna
+ppen/ec/ectt1000.600pk></usr/share/texmf/fonts/type1/bluesky/euler/eurm5.pfb>{/
+usr/share/texmf/dvips/tetex/bbad153f.enc}</usr/share/texmf/fonts/type1/bluesky/
+cm/cmsy7.pfb></usr/share/texmf/fonts/type1/bluesky/euler/eufm7.pfb></usr/share/
+texmf/fonts/type1/bluesky/cm/cmsy5.pfb>{/usr/share/texmf/dvips/psnfss/8r.enc}</
+usr/share/texmf/fonts/type1/urw/zapfchan/uzcmi8a.pfb></usr/share/texmf/fonts/ty
+pe1/bluesky/euler/eusm10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmex10.pf
+b></usr/share/texmf/fonts/type1/bluesky/symbols/msbm10.pfb></usr/share/texmf/fo
+nts/type1/bluesky/euler/eurm7.pfb></usr/share/texmf/fonts/type1/bluesky/euler/e
+ufm10.pfb></usr/share/texmf/fonts/type1/bluesky/euler/eurm10.pfb></usr/share/te
+xmf/fonts/type1/bluesky/cm/cmmi10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/
+cmsy10.pfb></usr/share/texmf/fonts/type1/bluesky/euler/euex10.pfb> </var/cache/
+fonts/pk/modeless/arphic/gkai00mp/gkai13.600pk> </var/cache/fonts/pk/modeless/a
+rphic/gkai00mp/gkai01.600pk> </var/cache/fonts/pk/modeless/arphic/gkai00mp/gkai
+07.600pk> </var/cache/fonts/pk/modeless/arphic/gkai00mp/gkai09.600pk> </var/cac
+he/fonts/pk/modeless/arphic/gkai00mp/gkai12.600pk> </var/cache/fonts/pk/modeles
+s/arphic/gkai00mp/gkai08.600pk></usr/share/texmf/fonts/type1/urw/avantgar/uagko
+8a.pfb></usr/share/texmf/fonts/type1/urw/avantgar/uagd8a.pfb></usr/share/texmf/
+fonts/type1/urw/avantgar/uagk8a.pfb>
+Output written on main.pdf (46 pages, 503180 bytes).
+Transcript written on main.log.
+makeindex -s index.ist main.idx
+bibtex main
+This is BibTeX, Version 0.99c (Web2C 7.4.5)
+The top-level auxiliary file: main.aux
+A level-1 auxiliary file: titlepage.aux
+A level-1 auxiliary file: acknoledgments.aux
+A level-1 auxiliary file: intro.aux
+A level-1 auxiliary file: propagators.aux
+A level-1 auxiliary file: mode_finders.aux
+A level-1 auxiliary file: experiments.aux
+The style file: alpha.bst
+Database file #1: biblio.bib.bib
+Warning--I didn't find a database entry for "maxwell_treatise"
+Warning--I didn't find a database entry for "maxwell_mathematical"
+(There were 2 warnings)
+pdflatex main.tex
+This is pdfeTeX, Version 3.14159-1.10b-2.1 (Web2C 7.4.5)
+entering extended mode
+(./main.tex{/usr/share/texmf/pdftex/config/pdftex.cfg}
+LaTeX2e <2001/06/01>
+Babel <v3.7h> and hyphenation patterns for american, french, german, ngerman, b
+ahasa, basque, catalan, croatian, czech, danish, dutch, finnish, greek, iceland
+ic, irish, italian, latin, magyar, norsk, norsk, portuges, romanian, russian, s
+lovak, slovene, spanish, swedish, turkish, ukrainian, nohyphenation, loaded.
+(/usr/share/texmf/tex/latex/base/book.cls
+Document Class: book 2001/04/21 v1.4e Standard LaTeX document class
+(/usr/share/texmf/tex/latex/base/bk10.clo))
+(/usr/share/texmf/tex/latex/base/fontenc.sty
+(/usr/share/texmf/tex/latex/base/t1enc.def))
+(/usr/share/texmf/tex/latex/misc/avantgar.sty)
+(/usr/share/texmf/tex/latex/misc/euler.sty
+Package: `euler' v2.5 <1995/03/05> (FJ and FMi)
+
+LaTeX Font Warning: Encoding `OML' has changed to `U' for symbol font
+(Font)              `letters' in the math version `normal' on input line 35.
+
+
+LaTeX Font Warning: Encoding `OML' has changed to `U' for symbol font
+(Font)              `letters' in the math version `bold' on input line 35.
+
+) (/usr/share/texmf/tex/latex/graphics/graphicx.sty
+(/usr/share/texmf/tex/latex/graphics/keyval.sty)
+(/usr/share/texmf/tex/latex/graphics/graphics.sty
+(/usr/share/texmf/tex/latex/graphics/trig.sty)
+(/usr/share/texmf/tex/latex/config/graphics.cfg)
+(/usr/share/texmf/tex/latex/graphics/pdftex.def)))
+(/usr/share/texmf/tex/latex/base/makeidx.sty)
+(/usr/share/texmf/tex/latex/CJK/CJK.sty
+(/usr/share/texmf/tex/latex/CJK/mule/MULEenc.sty)
+(/usr/share/texmf/tex/latex/CJK/CJK.enc))
+Writing index file main.idx
+(/usr/share/texmf/tex/latex/caption/caption2.sty)
+(/usr/share/texmf/tex/latex/hyperref/hyperref.sty
+(/usr/share/texmf/tex/latex/hyperref/pd1enc.def)
+(/usr/share/texmf/tex/latex/config/hyperref.cfg)
+Implicit mode ON; LaTeX internals redefined
+(/usr/share/texmf/tex/latex/misc/url.sty))
+*hyperref using default driver hpdftex*
+(/usr/share/texmf/tex/latex/hyperref/hpdftex.def
+(/usr/share/texmf/tex/latex/psnfss/pifont.sty
+(/usr/share/texmf/tex/latex/psnfss/upzd.fd)
+(/usr/share/texmf/tex/latex/psnfss/upsy.fd))) (./definitions.tex
+(/usr/share/texmf/tex/latex/bbm/bbm.sty)
+(/usr/share/texmf/tex/latex/base/latexsym.sty)
+(/usr/share/texmf/tex/latex/tools/afterpage.sty)
+(/usr/share/texmf/tex/latex/amsfonts/amsfonts.sty)
+(/usr/share/texmf/tex/latex/amsfonts/euscript.sty)) (./main.aux
+(./titlepage.aux) (./acknoledgments.aux) (./intro.aux) (./propagators.aux)
+(./mode_finders.aux) (./experiments.aux))
+(/usr/share/texmf/tex/latex/psnfss/t1pag.fd)
+
+LaTeX Font Warning: Encoding `OT1' has changed to `T1' for symbol font
+(Font)              `operators' in the math version `normal' on input line 23.
+
+
+LaTeX Font Warning: Encoding `OT1' has changed to `T1' for symbol font
+(Font)              `operators' in the math version `bold' on input line 23.
+
+(/usr/share/texmf/tex/context/base/supp-pdf.tex
+(/usr/share/texmf/tex/context/base/supp-mis.tex
+loading : Context Support Macros / Missing
+)
+loading : Context Support Macros / PDF
+) (/usr/share/texmf/tex/latex/hyperref/nameref.sty) (./main.out) (./main.out)
+(./titlepage.tex [1{/var/lib/texmf/dvips/config/pdftex.map}]) (./main.toc
+(/usr/share/texmf/tex/latex/amsfonts/ueur.fd)
+(/usr/share/texmf/tex/latex/amsfonts/ueuf.fd)
+(/usr/share/texmf/tex/latex/amsfonts/ueus.fd)
+(/usr/share/texmf/tex/latex/amsfonts/ueuex.fd)
+(/usr/share/texmf/tex/latex/base/ulasy.fd)
+(/usr/share/texmf/tex/latex/amsfonts/umsa.fd)
+(/usr/share/texmf/tex/latex/amsfonts/umsb.fd)
+! pdfTeX warning (ext4): destination with the same identifier (name{page.1}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \penalty 
+l.32 ...illeneuve_photonic}}{19}{subsection.6.2.1}
+                                                   [1]) [2]
+(./acknoledgments.tex (/usr/share/texmf/tex/latex/CJK/standard.bdg)
+(/usr/share/texmf/tex/latex/CJK/standard.enc)
+(/usr/share/texmf/tex/latex/CJK/standard.chr)
+(/usr/share/texmf/tex/latex/CJK/GB/c10kai.fd)) [3] (./intro.tex
+Chapter 1.
+)
+! pdfTeX warning (ext4): destination with the same identifier (name{page.1}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \penalty 
+l.34   \include{intro}
+                       [1] (./propagators.tex
+! pdfTeX warning (ext4): destination with the same identifier (name{page.2}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \penalty 
+l.1 \part
+         {Propagators} [2]
+! pdfTeX warning (ext4): destination with the same identifier (name{page.3}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \penalty 
+l.1 \part{Propagators}
+                       [3] [4] (/usr/share/texmf/tex/latex/psnfss/ot1pzc.fd)
+[5] [6]
+Chapter 2.
+
+LaTeX Warning: Citation `maxwell_treatise' on page 7 undefined on input line 38
+.
+
+
+LaTeX Warning: Citation `maxwell_mathematical' on page 7 undefined on input lin
+e 38.
+
+[7] [8]
+Chapter 3.
+</home/lollo/pics/sephiroth.jpg, id=302, 969.6225pt x 1447.4075pt>
+<use /home/lollo/pics/sephiroth.jpg> [9 </home/lollo/pics/sephiroth.jpg>]
+[10]
+Chapter 4.
+) [11] (./mode_finders.tex [12] [13] [14]
+Overfull \hbox (14.83669pt too wide) in paragraph at lines 4--9
+/pagk8t/eigen-mode de-com-po-si-tion: the elec-tro-mag-netic prop-a-ga-tion is 
+ex-pressed
+[15] [16]
+Chapter 5.
+[17] [18]
+Chapter 6.
+(./pwe.tex
+Overfull \hbox (0.10867pt too wide) in paragraph at lines 10--12
+[]/pagk8t/johnson block it-er-a-tive, john-son per-tur-ba-tion -> faster con-ve
+r-gence 
+
+Overfull \hbox (4.89151pt too wide) in paragraph at lines 14--16
+[]/pagk8t/meade ac-cu-rate, lalanne ef-fec-tive, vil-leneuve pho-tonic -> im-pr
+ove-
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `\@ifnextchar' on input line 21.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `subscript' on input line 21.
+
+[19] [20]
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `\@ifnextchar' on input line 110.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `subscript' on input line 110.
+
+(/usr/share/texmf/tex/latex/psnfss/omspag.fd)
+(/usr/share/texmf/tex/latex/base/t1cmtt.fd) [21]
+Overfull \hbox (1.09488pt too wide) in paragraph at lines 169--171
+[]/pagk8t/We'll de-scribe here the Plane Wave Ex-pan-sion (/ectt1000/PWE/pagk8t
+/) tech-nique, which
+
+Overfull \hbox (8.20349pt too wide) in paragraph at lines 172--176
+[]/ectt1000/PWE /pagk8t/is a fully vec-to-rial, 3D al-go-rithm to de-ter-mine t
+he definite-frequency
+[22] [23] [24] [25])) [26] (./experiments.tex [27] [28] [29] [30]
+Chapter 7.
+[31] [32]
+Chapter 8.
+[33] [34]
+Chapter 9.
+) [35] (./main.bbl [36]
+Underfull \hbox (badness 2846) in paragraph at lines 9--13
+[]/pagk8t/S. G. John-son and J. D. Joannopou-los.  Block-iterative
+
+Underfull \hbox (badness 2744) in paragraph at lines 9--13
+/pagk8t/frequency-domain meth-ods for Max-well's equa-tions in a
+) [37] [38] (./main.lof) [39] [40] (./main.lot) (./main.ind [41] [42])
+(./main.aux (./titlepage.aux) (./acknoledgments.aux) (./intro.aux)
+(./propagators.aux) (./mode_finders.aux) (./experiments.aux))
+
+LaTeX Warning: There were undefined references.
+
+ )
+(see the transcript file for additional information)
+! pdfTeX warning (dest): name{UNDEFINED} has been referenced but does not exist
+, replaced by a fixed one
+
+</usr/share/texmf/fonts/type1/bluesky/euler/euex10.pfb></usr/share/texmf/fonts/
+type1/bluesky/euler/eusm7.pfb>{/usr/share/texmf/dvips/tetex/aae443f0.enc}</usr/
+share/texmf/fonts/type1/bluesky/cm/cmmi8.pfb></usr/share/texmf/fonts/type1/blue
+sky/euler/eufm7.pfb></usr/share/texmf/fonts/type1/bluesky/euler/eurm7.pfb></usr
+/share/texmf/fonts/type1/bluesky/cm/cmmi7.pfb> </var/cache/fonts/pk/ljfour/jkna
+ppen/ec/ectt1000.600pk></usr/share/texmf/fonts/type1/bluesky/euler/eurm5.pfb>{/
+usr/share/texmf/dvips/tetex/bbad153f.enc}</usr/share/texmf/fonts/type1/bluesky/
+cm/cmsy7.pfb></usr/share/texmf/fonts/type1/bluesky/euler/eufm7.pfb></usr/share/
+texmf/fonts/type1/bluesky/cm/cmsy5.pfb>{/usr/share/texmf/dvips/psnfss/8r.enc}</
+usr/share/texmf/fonts/type1/urw/zapfchan/uzcmi8a.pfb></usr/share/texmf/fonts/ty
+pe1/bluesky/euler/eusm10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmex10.pf
+b></usr/share/texmf/fonts/type1/bluesky/symbols/msbm10.pfb></usr/share/texmf/fo
+nts/type1/bluesky/euler/eurm7.pfb></usr/share/texmf/fonts/type1/bluesky/euler/e
+ufm10.pfb></usr/share/texmf/fonts/type1/bluesky/euler/eurm10.pfb></usr/share/te
+xmf/fonts/type1/bluesky/cm/cmmi10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/
+cmsy10.pfb></usr/share/texmf/fonts/type1/bluesky/euler/euex10.pfb> </var/cache/
+fonts/pk/modeless/arphic/gkai00mp/gkai13.600pk> </var/cache/fonts/pk/modeless/a
+rphic/gkai00mp/gkai01.600pk> </var/cache/fonts/pk/modeless/arphic/gkai00mp/gkai
+07.600pk> </var/cache/fonts/pk/modeless/arphic/gkai00mp/gkai09.600pk> </var/cac
+he/fonts/pk/modeless/arphic/gkai00mp/gkai12.600pk> </var/cache/fonts/pk/modeles
+s/arphic/gkai00mp/gkai08.600pk></usr/share/texmf/fonts/type1/urw/avantgar/uagko
+8a.pfb></usr/share/texmf/fonts/type1/urw/avantgar/uagd8a.pfb></usr/share/texmf/
+fonts/type1/urw/avantgar/uagk8a.pfb>
+Output written on main.pdf (46 pages, 503180 bytes).
+Transcript written on main.log.
+pdflatex main.tex
+This is pdfeTeX, Version 3.14159-1.10b-2.1 (Web2C 7.4.5)
+entering extended mode
+(./main.tex{/usr/share/texmf/pdftex/config/pdftex.cfg}
+LaTeX2e <2001/06/01>
+Babel <v3.7h> and hyphenation patterns for american, french, german, ngerman, b
+ahasa, basque, catalan, croatian, czech, danish, dutch, finnish, greek, iceland
+ic, irish, italian, latin, magyar, norsk, norsk, portuges, romanian, russian, s
+lovak, slovene, spanish, swedish, turkish, ukrainian, nohyphenation, loaded.
+(/usr/share/texmf/tex/latex/base/book.cls
+Document Class: book 2001/04/21 v1.4e Standard LaTeX document class
+(/usr/share/texmf/tex/latex/base/bk10.clo))
+(/usr/share/texmf/tex/latex/base/fontenc.sty
+(/usr/share/texmf/tex/latex/base/t1enc.def))
+(/usr/share/texmf/tex/latex/misc/avantgar.sty)
+(/usr/share/texmf/tex/latex/misc/euler.sty
+Package: `euler' v2.5 <1995/03/05> (FJ and FMi)
+
+LaTeX Font Warning: Encoding `OML' has changed to `U' for symbol font
+(Font)              `letters' in the math version `normal' on input line 35.
+
+
+LaTeX Font Warning: Encoding `OML' has changed to `U' for symbol font
+(Font)              `letters' in the math version `bold' on input line 35.
+
+) (/usr/share/texmf/tex/latex/graphics/graphicx.sty
+(/usr/share/texmf/tex/latex/graphics/keyval.sty)
+(/usr/share/texmf/tex/latex/graphics/graphics.sty
+(/usr/share/texmf/tex/latex/graphics/trig.sty)
+(/usr/share/texmf/tex/latex/config/graphics.cfg)
+(/usr/share/texmf/tex/latex/graphics/pdftex.def)))
+(/usr/share/texmf/tex/latex/base/makeidx.sty)
+(/usr/share/texmf/tex/latex/CJK/CJK.sty
+(/usr/share/texmf/tex/latex/CJK/mule/MULEenc.sty)
+(/usr/share/texmf/tex/latex/CJK/CJK.enc))
+Writing index file main.idx
+(/usr/share/texmf/tex/latex/caption/caption2.sty)
+(/usr/share/texmf/tex/latex/hyperref/hyperref.sty
+(/usr/share/texmf/tex/latex/hyperref/pd1enc.def)
+(/usr/share/texmf/tex/latex/config/hyperref.cfg)
+Implicit mode ON; LaTeX internals redefined
+(/usr/share/texmf/tex/latex/misc/url.sty))
+*hyperref using default driver hpdftex*
+(/usr/share/texmf/tex/latex/hyperref/hpdftex.def
+(/usr/share/texmf/tex/latex/psnfss/pifont.sty
+(/usr/share/texmf/tex/latex/psnfss/upzd.fd)
+(/usr/share/texmf/tex/latex/psnfss/upsy.fd))) (./definitions.tex
+(/usr/share/texmf/tex/latex/bbm/bbm.sty)
+(/usr/share/texmf/tex/latex/base/latexsym.sty)
+(/usr/share/texmf/tex/latex/tools/afterpage.sty)
+(/usr/share/texmf/tex/latex/amsfonts/amsfonts.sty)
+(/usr/share/texmf/tex/latex/amsfonts/euscript.sty)) (./main.aux
+(./titlepage.aux) (./acknoledgments.aux) (./intro.aux) (./propagators.aux)
+(./mode_finders.aux) (./experiments.aux))
+(/usr/share/texmf/tex/latex/psnfss/t1pag.fd)
+
+LaTeX Font Warning: Encoding `OT1' has changed to `T1' for symbol font
+(Font)              `operators' in the math version `normal' on input line 23.
+
+
+LaTeX Font Warning: Encoding `OT1' has changed to `T1' for symbol font
+(Font)              `operators' in the math version `bold' on input line 23.
+
+(/usr/share/texmf/tex/context/base/supp-pdf.tex
+(/usr/share/texmf/tex/context/base/supp-mis.tex
+loading : Context Support Macros / Missing
+)
+loading : Context Support Macros / PDF
+) (/usr/share/texmf/tex/latex/hyperref/nameref.sty) (./main.out) (./main.out)
+(./titlepage.tex [1{/var/lib/texmf/dvips/config/pdftex.map}]) (./main.toc
+(/usr/share/texmf/tex/latex/amsfonts/ueur.fd)
+(/usr/share/texmf/tex/latex/amsfonts/ueuf.fd)
+(/usr/share/texmf/tex/latex/amsfonts/ueus.fd)
+(/usr/share/texmf/tex/latex/amsfonts/ueuex.fd)
+(/usr/share/texmf/tex/latex/base/ulasy.fd)
+(/usr/share/texmf/tex/latex/amsfonts/umsa.fd)
+(/usr/share/texmf/tex/latex/amsfonts/umsb.fd)
+! pdfTeX warning (ext4): destination with the same identifier (name{page.1}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \penalty 
+l.32 ...illeneuve_photonic}}{19}{subsection.6.2.1}
+                                                   [1]) [2]
+(./acknoledgments.tex (/usr/share/texmf/tex/latex/CJK/standard.bdg)
+(/usr/share/texmf/tex/latex/CJK/standard.enc)
+(/usr/share/texmf/tex/latex/CJK/standard.chr)
+(/usr/share/texmf/tex/latex/CJK/GB/c10kai.fd)) [3] (./intro.tex
+Chapter 1.
+)
+! pdfTeX warning (ext4): destination with the same identifier (name{page.1}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \penalty 
+l.34   \include{intro}
+                       [1] (./propagators.tex
+! pdfTeX warning (ext4): destination with the same identifier (name{page.2}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \penalty 
+l.1 \part
+         {Propagators} [2]
+! pdfTeX warning (ext4): destination with the same identifier (name{page.3}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \penalty 
+l.1 \part{Propagators}
+                       [3] [4] (/usr/share/texmf/tex/latex/psnfss/ot1pzc.fd)
+[5] [6]
+Chapter 2.
+
+LaTeX Warning: Citation `maxwell_treatise' on page 7 undefined on input line 38
+.
+
+
+LaTeX Warning: Citation `maxwell_mathematical' on page 7 undefined on input lin
+e 38.
+
+[7] [8]
+Chapter 3.
+</home/lollo/pics/sephiroth.jpg, id=302, 969.6225pt x 1447.4075pt>
+<use /home/lollo/pics/sephiroth.jpg> [9 </home/lollo/pics/sephiroth.jpg>]
+[10]
+Chapter 4.
+) [11] (./mode_finders.tex [12] [13] [14]
+Overfull \hbox (14.83669pt too wide) in paragraph at lines 4--9
+/pagk8t/eigen-mode de-com-po-si-tion: the elec-tro-mag-netic prop-a-ga-tion is 
+ex-pressed
+[15] [16]
+Chapter 5.
+[17] [18]
+Chapter 6.
+(./pwe.tex
+Overfull \hbox (0.10867pt too wide) in paragraph at lines 10--12
+[]/pagk8t/johnson block it-er-a-tive, john-son per-tur-ba-tion -> faster con-ve
+r-gence 
+
+Overfull \hbox (4.89151pt too wide) in paragraph at lines 14--16
+[]/pagk8t/meade ac-cu-rate, lalanne ef-fec-tive, vil-leneuve pho-tonic -> im-pr
+ove-
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `\@ifnextchar' on input line 21.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `subscript' on input line 21.
+
+[19] [20]
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `\@ifnextchar' on input line 110.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `subscript' on input line 110.
+
+(/usr/share/texmf/tex/latex/psnfss/omspag.fd)
+(/usr/share/texmf/tex/latex/base/t1cmtt.fd) [21]
+Overfull \hbox (1.09488pt too wide) in paragraph at lines 169--171
+[]/pagk8t/We'll de-scribe here the Plane Wave Ex-pan-sion (/ectt1000/PWE/pagk8t
+/) tech-nique, which
+
+Overfull \hbox (8.20349pt too wide) in paragraph at lines 172--176
+[]/ectt1000/PWE /pagk8t/is a fully vec-to-rial, 3D al-go-rithm to de-ter-mine t
+he definite-frequency
+[22] [23] [24] [25])) [26] (./experiments.tex [27] [28] [29] [30]
+Chapter 7.
+[31] [32]
+Chapter 8.
+[33] [34]
+Chapter 9.
+) [35] (./main.bbl [36]
+Underfull \hbox (badness 2846) in paragraph at lines 9--13
+[]/pagk8t/S. G. John-son and J. D. Joannopou-los.  Block-iterative
+
+Underfull \hbox (badness 2744) in paragraph at lines 9--13
+/pagk8t/frequency-domain meth-ods for Max-well's equa-tions in a
+) [37] [38] (./main.lof) [39] [40] (./main.lot) (./main.ind [41] [42])
+(./main.aux (./titlepage.aux) (./acknoledgments.aux) (./intro.aux)
+(./propagators.aux) (./mode_finders.aux) (./experiments.aux))
+
+LaTeX Warning: There were undefined references.
+
+ )
+(see the transcript file for additional information)
+! pdfTeX warning (dest): name{UNDEFINED} has been referenced but does not exist
+, replaced by a fixed one
+
+</usr/share/texmf/fonts/type1/bluesky/euler/euex10.pfb></usr/share/texmf/fonts/
+type1/bluesky/euler/eusm7.pfb>{/usr/share/texmf/dvips/tetex/aae443f0.enc}</usr/
+share/texmf/fonts/type1/bluesky/cm/cmmi8.pfb></usr/share/texmf/fonts/type1/blue
+sky/euler/eufm7.pfb></usr/share/texmf/fonts/type1/bluesky/euler/eurm7.pfb></usr
+/share/texmf/fonts/type1/bluesky/cm/cmmi7.pfb> </var/cache/fonts/pk/ljfour/jkna
+ppen/ec/ectt1000.600pk></usr/share/texmf/fonts/type1/bluesky/euler/eurm5.pfb>{/
+usr/share/texmf/dvips/tetex/bbad153f.enc}</usr/share/texmf/fonts/type1/bluesky/
+cm/cmsy7.pfb></usr/share/texmf/fonts/type1/bluesky/euler/eufm7.pfb></usr/share/
+texmf/fonts/type1/bluesky/cm/cmsy5.pfb>{/usr/share/texmf/dvips/psnfss/8r.enc}</
+usr/share/texmf/fonts/type1/urw/zapfchan/uzcmi8a.pfb></usr/share/texmf/fonts/ty
+pe1/bluesky/euler/eusm10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmex10.pf
+b></usr/share/texmf/fonts/type1/bluesky/symbols/msbm10.pfb></usr/share/texmf/fo
+nts/type1/bluesky/euler/eurm7.pfb></usr/share/texmf/fonts/type1/bluesky/euler/e
+ufm10.pfb></usr/share/texmf/fonts/type1/bluesky/euler/eurm10.pfb></usr/share/te
+xmf/fonts/type1/bluesky/cm/cmmi10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/
+cmsy10.pfb></usr/share/texmf/fonts/type1/bluesky/euler/euex10.pfb> </var/cache/
+fonts/pk/modeless/arphic/gkai00mp/gkai13.600pk> </var/cache/fonts/pk/modeless/a
+rphic/gkai00mp/gkai01.600pk> </var/cache/fonts/pk/modeless/arphic/gkai00mp/gkai
+07.600pk> </var/cache/fonts/pk/modeless/arphic/gkai00mp/gkai09.600pk> </var/cac
+he/fonts/pk/modeless/arphic/gkai00mp/gkai12.600pk> </var/cache/fonts/pk/modeles
+s/arphic/gkai00mp/gkai08.600pk></usr/share/texmf/fonts/type1/urw/avantgar/uagko
+8a.pfb></usr/share/texmf/fonts/type1/urw/avantgar/uagd8a.pfb></usr/share/texmf/
+fonts/type1/urw/avantgar/uagk8a.pfb>
+Output written on main.pdf (46 pages, 503180 bytes).
+Transcript written on main.log.

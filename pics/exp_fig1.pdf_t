@@ -1,0 +1,37 @@
+\begin{picture}(0,0)%
+\includegraphics{pics/exp_fig1.pdf}%
+\end{picture}%
+\setlength{\unitlength}{4144sp}%
+%
+\begingroup\makeatletter\ifx\SetFigFont\undefined%
+\gdef\SetFigFont#1#2#3#4#5{%
+  \reset@font\fontsize{#1}{#2pt}%
+  \fontfamily{#3}\fontseries{#4}\fontshape{#5}%
+  \selectfont}%
+\fi\endgroup%
+\begin{picture}(16675,3891)(439,-3694)
+\put(4501,-1411){\makebox(0,0)[b]{\smash{{\SetFigFont{29}{34.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,1}Polarization}%
+}}}}
+\put(4501,-1861){\makebox(0,0)[b]{\smash{{\SetFigFont{29}{34.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,1}Splitter}%
+}}}}
+\put(1351,-1186){\makebox(0,0)[b]{\smash{{\SetFigFont{29}{34.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,1}Fiber IN}%
+}}}}
+\put(15976,-1186){\makebox(0,0)[b]{\smash{{\SetFigFont{29}{34.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,1}Fiber OUT}%
+}}}}
+\put(13051,-1411){\makebox(0,0)[b]{\smash{{\SetFigFont{29}{34.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,1}Polarization}%
+}}}}
+\put(13051,-1861){\makebox(0,0)[b]{\smash{{\SetFigFont{29}{34.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,1}Combiner}%
+}}}}
+%   
+\put(7478,-2086){\makebox(0,0)[b]{\smash{{\SetFigFont{29}{34.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{1,0,0}$90\degrees$ Rot.}%
+}}}}
+\put(7433,-1186){\makebox(0,0)[b]{\smash{{\SetFigFont{29}{34.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,1}$F(\omega)$}%
+}}}}
+%   
+\put(9953,-1186){\makebox(0,0)[b]{\smash{{\SetFigFont{29}{34.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{1,0,0}$90\degrees$ Rot.}%
+}}}}
+\put(9893,-2086){\makebox(0,0)[b]{\smash{{\SetFigFont{29}{34.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,1}$F(\omega)$}%
+}}}}
+\put(8776,-3211){\makebox(0,0)[b]{\smash{{\SetFigFont{29}{34.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}Integrated Optical Chip}%
+}}}}
+\end{picture}%

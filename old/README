@@ -1,0 +1,67 @@
+Intro
+TD vs FD, orthogonal grids vs unstructured
+non-orthogonal FDTD (order-N): assimilabile a baricentric FETD =>
+griglia duale e primale non orthogonali => operatore di proiezione
+semplificato perche' la griglia e' strutturata.
+anisotropie delle griglie -> Taflove
+
+2D
+voronoi, Poincare' (baricentric), baricentric (star): benchmarks,
+stability, matrix properties dispersive materials: nim
+careful set di epsilon (interpolandolo propriamente - interpolazione
+cambia a seconda della polarizzazione TE/TM! come nell'MPB) in una
+griglia strutturata porta l'accuratezza ad essere simile a quella di
+una griglia non strutturata.
+
+3D
+simple waveguide w/ and w/o materials
+photonic crystal -> TODO
+
+algorithms solvers (direct, iterative)
+iterative solvers: cgs (schwechuk), gmres, multigrid (?), all in PETSc
+	  mostrare gli andamenti dei residui per i vari metodi (exp,
+	  lineare, polinomiale, ... e giustificarlo teoricamente) e anche
+	  l'evoluzione della soluzione mentre converge (esiste una
+	  funzione petsc per questo). per i metodi
+	  che non convergono, mostrare in che zone il residuo e'
+	  massimo (pml, high epsilon, pec, ...)
+plottare la matrice (petsc): normale e riordinata (matlab reodering?)
+"andamenti dei residui" vs "velocita' di convergenza" -> vedi
+~/tutorial/iterative_solvers/mgtut.pdf p. 27 (Briggs) (dalla
+convergence rate, ricavo rho e verifico che e' lambda_max/lambda_min)
+Krylov methods hanno bisogno di n it. dove n = dim (matrix). a meno
+che non uso un precond (benzi_survey)
+ordering in factoring...	    
+spectrum and eigenvalues of the matrix
+
+appendix
+maxwell 'geometric approach...'
+notation
+bossavit (libro giallo)
+meshing problems
+coding tips
+
+frase intro in chinese?
+nella tesi di dottorato di bienstman
+(http://photonics.intec.ugent.be/download/phd_104.pdf) c'e' la
+descrizione di CAMFR: cosi' dovrei descrivere anche fefd. e il band
+solver?
+
+---
+
+michele dice di mettere tutti i metodi che ho fatto:
+propagatori 2D/3D:
+	FDTD
+	FDFD
+	FETD
+	FEFD
+band diagrams 2D/3D:
+	PWE (plane wave expansion)
+	order-N
+mode solver:
+	stern
+	lusse
+esempi:
+	guide a cristallo fotonico
+	perdite di cristalli in 3D
+	rotatore di polarizzazione

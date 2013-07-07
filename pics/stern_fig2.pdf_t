@@ -1,0 +1,47 @@
+\begin{picture}(0,0)%
+\includegraphics{pics/stern_fig2.pdf}%
+\end{picture}%
+\setlength{\unitlength}{4144sp}%
+%
+\begingroup\makeatletter\ifx\SetFigFont\undefined%
+\gdef\SetFigFont#1#2#3#4#5{%
+  \reset@font\fontsize{#1}{#2pt}%
+  \fontfamily{#3}\fontseries{#4}\fontshape{#5}%
+  \selectfont}%
+\fi\endgroup%
+\begin{picture}(5678,4599)(-8140,-148)
+\put(-5174,2234){\makebox(0,0)[b]{\smash{{\SetFigFont{14}{16.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}$(x_r,y_s)$}%
+}}}}
+\put(-6974,2234){\makebox(0,0)[b]{\smash{{\SetFigFont{14}{16.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}$(x_{r-1},y_s)$}%
+}}}}
+\put(-5174,884){\makebox(0,0)[b]{\smash{{\SetFigFont{14}{16.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}$(x_r,y_{s-1})$}%
+}}}}
+\put(-5174,2594){\makebox(0,0)[b]{\smash{{\SetFigFont{29}{34.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,1}$P$}%
+}}}}
+\put(-5174,1919){\makebox(0,0)[b]{\smash{{\SetFigFont{14}{16.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}$n_P$}%
+}}}}
+\put(-6974,2594){\makebox(0,0)[b]{\smash{{\SetFigFont{29}{34.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,1}$W$}%
+}}}}
+\put(-6974,1919){\makebox(0,0)[b]{\smash{{\SetFigFont{14}{16.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}$n_W$}%
+}}}}
+\put(-5174,1244){\makebox(0,0)[b]{\smash{{\SetFigFont{29}{34.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,1}$S$}%
+}}}}
+\put(-5174,3944){\makebox(0,0)[b]{\smash{{\SetFigFont{29}{34.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,1}$N$}%
+}}}}
+\put(-5174,3269){\makebox(0,0)[b]{\smash{{\SetFigFont{14}{16.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}$n_N$}%
+}}}}
+\put(-5174,3584){\makebox(0,0)[b]{\smash{{\SetFigFont{14}{16.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}$(x_r,y_{s+1})$}%
+}}}}
+\put(-5174,569){\makebox(0,0)[b]{\smash{{\SetFigFont{14}{16.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}$n_S$}%
+}}}}
+\put(-8099,1064){\makebox(0,0)[rb]{\smash{{\SetFigFont{14}{16.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}$\deltay$}%
+}}}}
+\put(-6974,-61){\makebox(0,0)[b]{\smash{{\SetFigFont{14}{16.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}$\deltax$}%
+}}}}
+\put(-3329,2594){\makebox(0,0)[b]{\smash{{\SetFigFont{29}{34.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,1}$E$}%
+}}}}
+\put(-3329,1919){\makebox(0,0)[b]{\smash{{\SetFigFont{14}{16.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}$n_E$}%
+}}}}
+\put(-3329,2234){\makebox(0,0)[b]{\smash{{\SetFigFont{14}{16.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}$(x_{r+1},y_s)$}%
+}}}}
+\end{picture}%

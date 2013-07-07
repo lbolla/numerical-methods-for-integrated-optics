@@ -1,0 +1,57 @@
+\part{Propagators} \label{par:propagators} \index{Propagators|(}
+
+\section*{What are the ``Propagators''?}
+
+Electromagnetic phenomena are fully described by Maxwell
+equations. As any differential equations, they can be
+mathematically solved if initial conditions and boundary conditions
+are defined. We call ``propagators'' the techniques to solve Maxwell
+equations, both in the time- and frequency-domain, once a domain, with
+some boundaries, and some sources have been defined.
+
+\input discretization_schemes
+
+\input material_equations
+
+\input time_domain
+
+\input frequency_domain
+
+\chapter*{Conclusions}
+
+The present algorithm represents a novel method to discretize and
+solve Maxwell equations. It shares some similarities with the
+\emph{Finite Integration Technique} and the \emph{Finite Element}
+method \cite{bossavit_yee}, but it's original in its integral approach
+to describe and discretize the problem.
+
+Simulations have shown that it is an effective way to solve
+electromagnetic problems, both in the time- and
+frequency-domain. Benchmarks presented in section
+\ref{sec:validation_01} and followings show a good accuracy of the
+results, if compared with commercial software.
+
+On the other hand, the Author is convinced that the present method is
+very effective and superior to other simpler algorithms like \FDTD or
+\FEM only in two-dimensional simulation of frequency-domain problems. In the
+time-domain, the advantage of having an unstructured grid, which seems
+to be the only clear advantage over a conventional \FDTD algorithm, does
+not pay the increased complexity of the algorithm, which directly
+effects the possibility of an efficient implementation on a
+computer. For three-dimensional frequency-domain problems, memory requirements are
+still too stringent to be applied for very complex problems. Other
+techniques must be used, that makes more assumptions on the problems
+in order to simplify it. This is the case, for example, of the
+\emph{Multiple Scattering}\index{Multiple Scattering method}
+method \cite{tayeb_rigorous}, which, making the hypothesis of perfectly
+circular scatterers, reduces the problem to an expansion over a
+efficient basis functions set and translate it into an eigenvalue
+problem, or the \emph{Eigenmode Expansion}\index{Eigenmode Expansion} technique, used in FIMMPROP
+\cite{fimmprop}.
+
+A two-dimensional frequency-domain implementation of the algorithm,
+implemented by the Author, is commercially available from Photon
+Design\index{Photon Design} \cite{photond} \index{Photon Design}.
+
+\index{Propagators|)}
+

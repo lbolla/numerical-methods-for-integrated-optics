@@ -1,0 +1,52 @@
+\begin{theindex}
+A
+  \item Adiabaticity \dotfill\ \hyperpage{131}
+
+  \indexspace
+B
+  \item Beat length \dotfill\ \hyperpage{132}
+  \item Birefringent waveguide \dotfill\ 
+		\see{Waveguide birefringent}{170}
+
+  \indexspace
+E
+  \item Effective index \dotfill\ \see{Index effective}{170}
+
+  \indexspace
+H
+  \item HIC devices \dotfill\ \hyperpage{129--142}
+
+  \indexspace
+I
+  \item Index
+    \subitem effective \dotfill\ \hyperpage{131}
+  \item Iterative methods \dotfill\ \hyperpage{63}
+    \subitem non-stationary \dotfill\ \hyperpage{64}
+    \subitem stationary \dotfill\ \hyperpage{63}
+
+  \indexspace
+M
+  \item Mode
+    \subitem coupling \dotfill\ \hyperpage{131}
+    \subitem solvers \dotfill\ \hyperpage{89--125}
+  \item Mode Solvers \dotfill\ \hyperpage{89}
+  \item Mode-evolution \dotfill\ \hyperpage{131}
+
+  \indexspace
+P
+  \item Phase matching \dotfill\ \hyperpage{132}
+  \item Photon Design \dotfill\ \hyperpage{77}, \hyperpage{85}
+  \item Polarization
+    \subitem dependence \dotfill\ \hyperpage{129}
+    \subitem diversity \dotfill\ \fig{129}, \hyperpage{129}, 
+		\hyperpage{131}
+    \subitem hybrid \dotfill\ \hyperpage{132}
+    \subitem rotator \dotfill\ \hyperpage{131--142}
+  \item Propagators \dotfill\ \hyperpage{7--85}
+
+  \indexspace
+W
+  \item Waveguide
+    \subitem birefringent \dotfill\ \hyperpage{131}
+
+\end{theindex}

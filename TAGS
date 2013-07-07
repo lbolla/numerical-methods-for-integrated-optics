@@ -1,0 +1,758 @@
+
+abstract.tex,0
+
+acknoledgments.tex,30
+\chapter*{Acknoledgments}1,1
+
+appendix.tex,2189
+\appendix1,1
+\part{Appendices}3,12
+\chapter{Notation and Nomeclature}5,31
+  \label{tab:notation_vector}33,953
+  \label{tab:notation_matrix}61,1808
+  \label{tab:notation_mathematical}81,2373
+  \label{tab:notation_geometrical}103,2987
+\chapter{Maxwell House} \label{app:maxwell_house}106,3033
+  \label{fig:maxwell_house}113,3225
+\cite{bossavit_computational}, tries to represent graphically the117,3307
+notation used is the same as in \cite{bossavit_computational}.120,3537
+                      & $e = -\partial_t a - \Grad{\psi}$ & $h = -\partial_t f - \Grad{\phi}$ \\130,3822
+  Faraday Equation    & $\partial_t b + \Rot{e} = -k$ & $-\partial_t d + \Rot{h} = j$ \\132,3971
+  Amp\`ere Law        & $-\partial_t d + \Rot{h} = j$ & $\partial_t b + \Rot{e} = -k$ \\133,4061
+  Charge Conservation & $\Div{j} + \partial_t q = 0$ & $\Div{k} + \partial_t r = 0$ \\134,4159
+  Lorenz Gauge        & $\Div{a} + 1/c^2 \partial_t \psi = 0$ & $\Div{f} + 1/c^2 \partial_t \phi = 0$ \\135,4252
+\label{tab:maxwell_house}140,4405
+\chapter{Barycentric Coordinates} \label{app:barycentric}143,4444
+\cite{mathworld,coxeter_barycentric}.151,4872
+  \label{fig:barycentric_coordinates}158,5081
+\label{tab:barycentric_coordinates}198,6531
+\section{Interpolation of a Nodal Function}205,6763
+  \label{fig:barycentric_coordinates_interpolation}230,7856
+theory \cite{bossavit_edge}.246,8555
+\section{Interpolation of an Edge Function}248,8578
+  \label{fig:edge_function_interpolation}287,10635
+\cite{bossavit_edge}, \cite{lee_whitney}, \cite{webb_edge},311,11697
+\cite{bossavit_how}, \cite{lee_time_domain}, \cite{sun_construction},312,11757
+\cite{webb_hierarchal}, \cite{bossavit_yee}313,11827
+\chapter{Geometrical Interpretation of the Courant Factor} \label{app:courant}315,11872
+Consider the one-dimensional wave equation \cite{numerical_recipies}:317,11995
+  \partial_t^2 u = v^2 \partial_x^2 u .319,12042
+  \label{fig:space_time_cone}339,12810
+From the figure \ref{fig:space_time_cone}, all the events in the space-time342,12868
+%% \chapter{Eigenvalues and Eigenvectors} \label{app:eigvals}355,13514
+%% \begin{theorem}[for Hermitian Matrices] \label{teo:hermitian}361,13821
+
+definitions.tex,434
+\def \pd {\partial}65,2067
+\newcommand{\figref}[1]{Figure \ref{#1}}149,4568
+\newcommand{\tabref}[1]{Table \ref{#1}}150,4608
+\newcommand{\parref}[1]{Part \ref{#1}}151,4647
+\newcommand{\charef}[1]{Chapter \ref{#1}}152,4689
+\newcommand{\secref}[1]{Section \ref{#1}}153,4731
+\newcommand{\appref}[1]{Appendix \ref{#1}}154,4774
+\newcommand{\defref}[1]{Definition \ref{#1}}155,4819
+\newcommand{\diaref}[1]{Diagram \ref{#1}}156,4861
+
+discretization_schemes.tex,7499
+\chapter{Discretization Schemes} \label{cha:discretization_schemes}1,1
+\section{Introduction}3,70
+set \cite{bolla_piers}.10,428
+equations described in \cite{maxwell_treatise}, others on their13,538
+integral formulation \cite{tonti_formulazione}. The former is14,600
+\cite{lao_tzu}.27,1388
+\cite{yee_numerical}, \FDTD for short, for example, is due to the52,2426
+\cite{cangellaris_analysis}. The main effects are:55,2613
+In \cite{cangellaris_analysis} are reported some solutions to treat72,3232
+\section{Mesh}77,3485
+\subsection{Definition and Properties} \label{sec:mesh:def}79,3501
+\begin{definition}[Simplex] \label{def:simplex}84,3705
+  \cite{teixeira_geometric}.93,4124
+\begin{definition}[Simplicial Complex] \label{def:simplicial_complex}111,5107
+\cite{trevisan_geometric,rienen_frequency}.132,5908
+\subsection{Orientation} \label{sec:mesh:orientation}134,5953
+The are two ways to orient geometrical elements \cite{tonti_formulazione}.154,7077
+    \label{fig:internal_orientation}198,9489
+    \label{fig:external_orientation}237,11566
+instants or internally oriented intervals \cite{tonti_formulazione}.249,12152
+instability \cite{tonti_formulazione}. This is due to the fact that275,13745
+    \subfigure[Non-Delaunay primal mesh.]{\resizebox{!}{5cm}{\label{fig:tonti_thermal:bad}\input{pics/tonti_thermal_bad.pdf_t}}}284,14177
+  \label{fig:tonti_thermal}292,14619
+two-dimensional meshing software \cite{meshing_software} can be used299,14960
+  \label{fig:extruded_mesh}314,15626
+\subsection{Dual Mesh} \label{sec:dual_mesh}317,15666
+called \emph{primal} cell complex \cite{tonti_formulazione}. Some331,16349
+  \begin{equation} \label{dia:dual_mesh_symmetry}344,16892
+stability \cite{cavendish_complementary}. Their dual complexes are372,18115
+\subsection{Matricial Representation} \label{sec:mesh:matricial}391,19147
+can be described by incidence matrices \cite{trevisan_geometric}:406,19945
+  \label{fig:adiacency_e_n}426,20609
+With respect to figure \ref{fig:adiacency_e_n}, the $k$-row of the matrix429,20672
+  \label{fig:adiacency_f_e}456,21920
+With respect to figure \ref{fig:adiacency_f_e}, the $l$-row of the459,21983
+  \label{fig:adiacency_v_f}484,23252
+Finally, from figure \ref{fig:adiacency_v_f}, the $m$-row of matrix487,23313
+\section{Geometry and Physics} \label{sec:geometry_and_physics}527,25258
+two big families of discretization schemes \cite{bolla_piers}:531,25491
+Again, we can distinguish \cite{bolla_piers}:550,26449
+\begin{equation} \label{eqn:maxwell_integral} \begin{cases}568,27290
+    \int_{\partial \Surface{S}}{\DotProd{\E}{\d \Vector{l}}} =569,27343
+    -\partial_t \iint_{\Surface{S}}{\DotProd{\B}{\Versor{n}} \d S} \\570,27401
+    \int_{\partial \DualSurface{S}}{\DotProd{\H}{\d \Vector{\Dual{l}}}} =571,27476
+    \partial_t \iint_{\DualSurface{S}}{\DotProd{\D}{\Versor{\Dual{n}}} \d \Dual{S}} \\572,27544
+where, $\partial \Surface{S}$ denotes the boundary of a surface574,27663
+  \cite{bossavit_computational};597,28791
+\begin{equation} \label{eqn:dof} \begin{aligned}618,29822
+are at least three good answers \cite{teixeira_geometric}:644,31588
+\begin{equation} \label{dia:relations}665,32466
+\cite{taflove_computational}, in the \emph{Yee681,33163
+implementation}\cite{yee_numerical}. The same algorithm, but682,33225
+\cite{lavrinenko_comprehensive}. In the frequency domain, where time685,33396
+element base \cite{jin_finite}, as a staggered scheme, or the688,33611
+scheme \cite{bossavit_yee}, as an unstaggered scheme.690,33737
+use, which is also the most elegant \cite{maxwell_mathematical}.695,34019
+\cite{mead_collective}.} and can lead to instabilities that are708,34785
+unstaggered scheme \cite{taflove_advances}: it is as if the711,34999
+\subsection{Matricial Representation}719,35442
+under another light \cite{trevisan_geometric}.725,35779
+\begin{equation} \label{dia:discrete_operators}750,37093
+for their discrete counterparts \cite{schuhmann_nonorthogonal}:762,37629
+\emph{duality relation} of the two curl-operators \ref{fig:duality_curl}:772,38087
+  \label{fig:duality_curl}784,38512
+\cite{trevisan_geometric}. In particular:812,39814
+  \Prod{\Transpose{\Matrix{R}}}{\Array{h}} & = \partial_t \Array{d} + \Array{j} && \text{Ampere's Law} \label{eqn:discrete_ampere} \\834,40719
+  \Prod{\Matrix{R}}{\Array{e}} & = -\partial_t \Array{b} + \Array{m} && \text{Faraday's Law} \label{eqn:discrete_faraday}835,40842
+  \Prod{\Matrix{D}}{\Array{b}} & = -\partial_t \Array{\rho}_m && \text{Magnetic Gauss' Law} \\837,41006
+  \Prod{\Transpose{\Matrix{G}}}{\Array{d}} & = -\partial_t \Array{\rho}_e && \text{Electric Gauss' Law}838,41113
+  \Array{h} & = \Prod{\Matrix{M}_\mu}{\Array{b}} && \text{Magnetic Constitutive Equation} \label{eqn:discrete_magnetic} \\840,41346
+  \Array{e} & = \Prod{\Matrix{M}_\epsilon}{\Array{d}} && \text{Electric Constitutive Equation} \label{eqn:discrete_electric}841,41474
+  \Prod{\Transpose{\Matrix{G}}}{\Array{j}} & = -\partial_t \Array{\rho}_e && \text{Electric Charge Conservation} \label{eqn:discrete_electric_charge} \\843,41605
+  \Prod{\Matrix{D}}{\Array{m}} & = -\partial_t \Array{\rho}_m && \text{Magnetic Charge Conservation} \label{eqn:discrete_magnetic_charge} 844,41746
+\section{Stability of Space Discretization}847,41862
+\cite{liu_fourier}. Dissipation causes the attenuation of wave852,42093
+\begin{equation} \label{eqn:fourier_maxwell_solution}871,43139
+\begin{equation} \label{eqn:fourier_maxwell}890,44047
+\cite{liu_fourier}, we will first investigate Cartesian925,45573
+\subsection{Cartesian Grids}931,45840
+  \label{fig:liu_fig1}950,46824
+\begin{equation} \label{eqn:fourier_maxwell_2d} \begin{cases}954,46948
+  \partial_t D_z & = \partial_x H_y - \partial_y H_x \\955,46995
+  \partial_t B_x & = - \partial_y E_z \\956,47051
+  \partial_t B_y & = \partial_x E_z957,47092
+  \begin{equation} \label{eqn:fourier_unstaggered} \begin{split}964,47243
+  \begin{equation} \label{eqn:fourier_collocated_staggered} \begin{split}975,47712
+  \begin{equation} \label{eqn:fourier_uncollocated_staggered} \begin{split}994,48535
+\begin{equation} \label{eqn:fourier_numerical_c}1024,50063
+\begin{equation} \label{eqn:fourier_numerical_c2}1044,51125
+  \label{fig:numerical_c}1064,51877
+  \label{fig:numerical_c_polar}1092,53356
+\subsection{Hexagonal Grids}1131,55021
+    \subfigure[Staggered.]{\label{fig:liu_fig4b}\resizebox{3.5cm}{!}{\input{pics/liu_fig4b.pdf_t}}}1158,56350
+  \label{fig:liu_fig4}1161,56510
+\begin{equation} \label{eqn:fourier_hexagonal_grid} \begin{split}1166,56664
+  \label{fig:numerical_c_polar_hex}1207,58311
+  \label{fig:numerical_c_hex}1216,58598
+%% \section{Structured}1253,60000
+%%   staircase approximation \cite{cangellaris_analysis}1260,60135
+%%   anisotropy of the medium ``grid'' \cite{liu_fourier}1262,60211
+%% \subsection{Orthogonal}1265,60251
+%% \subsection{Non-Orthogonal}1268,60338
+%% \section{Unstructured}1277,60631
+%% \cite{cangellaris_analysis}1279,60710
+%% \cite{gedney_parallel}.1293,61138
+%% \subsection{Delaunay-Vorono\"{i}} \label{sec:delaunay_voronoi}1298,61257
+%% \subsection{Poincar\'e}1303,61477
+%% \subsection{Barycentric}1306,61581
+%% \section{Structured vs. Unstructured aka Refractive Index Smoothing}1313,61722
+%% \section{Blah Blah}1316,61796
+%%   \cite[pag. 40]{bossavit_computational}: constituive laws are1322,61971
+%%   association of physical quantities \cite{maxwell_mathematical}: all1326,62191
+%% \OKKIO{From \cite{rienen_frequency}.}1352,63042
+
+finite_difference_method.tex,2835
+\chapter{Finite Difference Method}1,1
+\section{Introduction} \label{sec:fdm_intro}3,37
+  \label{fig:fdm_waveguide}14,460
+linear non-magnetic medium, read \cite{someda_electromagnetic}:18,599
+\begin{equation} \label{eqn:fdm_maxwell} \begin{cases}19,647
+\begin{equation} \label{eqn:fdm_helmholtz_h}27,956
+\begin{equation} \label{eqn:fdm_helmholtz_e}32,1130
+\begin{equation} \label{eqn:fdm_laplace}38,1368
+\cite{someda_electromagnetic}. Therefore, in Cartesian coordinates,51,1999
+\begin{equation} \label{eqn:fdm_laplace_cartesian} \begin{cases}54,2213
+\section{Semivectorial Mode Solver} \label{sec:semivectorial_mode_solver}91,4280
+the algorithm described in \cite{stern_semivectorial}.96,4593
+  \label{fig:stern_fig1}104,4858
+\begin{equation} \label{eqn:stern_maxwell} \begin{cases}132,6097
+\begin{equation} \label{eqn:stern_gauss} \begin{cases}137,6299
+\begin{equation} \label{eqn:stern_toward_helmholtz}144,6495
+\begin{equation} \label{eqn:stern_helmholtz}166,7396
+\begin{align} \label{eqn:stern_helmholtz_decoupled}175,7786
+  \label{fig:stern_fig2}204,9116
+  $\partial_n \E$, with $\Versor{n}$ versor normal to the boundary;211,9308
+  $\partial_n \H$, with $\Versor{n}$ versor normal to the boundary;214,9450
+\begin{equation} \label{eqn:stern_discretization} \begin{aligned}222,9757
+\begin{equation} \label{eqn:stern_eigenproblem}244,10923
+\section{Vectorial Mode Solver} \label{sec:vectorial_mode_solver}269,12115
+The algorithm chosen is the one presented in \cite{lusse_analysis},275,12410
+  \label{fig:lusse_fig2}291,13176
+$P$ to obtain a discretized form of $\partial_x^2 H_W$:305,13972
+  \pdx^2 H|_w & = \frac{2 H_W}{w^2} - \frac{2 H_P}{w^2} + \frac{2}{w} \pdx H|_w + \BigO{w^3}. \label{eqn:lusse_partial}309,14210
+\begin{equation} \label{eqn:lusse_helmholtz} \begin{aligned}320,14609
+\begin{align} \label{eqn:lusse_continuity_hz}338,15541
+\begin{align} \label{eqn:lusse_continuity_ez}342,15761
+  \ref{eqn:lusse_continuity_hz} becomes:351,16173
+  while, \ref{eqn:lusse_continuity_ez} becomes:355,16288
+  \ref{eqn:lusse_continuity_hz} and \ref{eqn:lusse_continuity_ez} become,361,16528
+\ref{eqn:lusse_helmholtz}.  Finally, two coupled equations in $H_x$380,17369
+$a_{ij,rs}$ can be found in \cite{lusse_analysis}.}, $i,j = x,y$, and410,18434
+\section{Examples and validation}417,18799
+mode solvers, consider the rib waveguide presented in \cite{lohmeyer_wmm}.420,18961
+  \caption{Rib waveguide profile, taken from \cite{lohmeyer_wmm}.}429,19270
+  \label{fig:rib}430,19294
+reported in \cite{lohmeyer_wmm}.440,19777
+  \label{tab:wmm1}456,20282
+  \label{fig:wmm1_stern}472,20915
+  \label{fig:wmm1_lusse}484,21430
+  \label{fig:plabs}506,22400
+the first TM modes \cite{plabs}: this is correctly predicted by the513,22721
+  \label{tab:plabs}532,23434
+  \label{fig:plabs_field}544,24044
+
+frequency_domain.tex,10987
+\chapter{Frequency-Domain}1,1
+\section{From Time- to Frequency-Domain}3,29
+\begin{equation} \label{eqn:maxwell_frequency_domain} \begin{cases}24,1026
+in \ref{sec:particular_material_equations}.37,1823
+\begin{equation} \label{eqn:helmholtz_discrete} \begin{cases}42,2059
+  \Matrix{P}_m \right)^{-1}}{\Matrix{R}_e}} \label{eqn:matrix_d} .73,3713
+  \end{cases} , \label{eqn:helmholtz_discrete_2}97,4737
+  \end{cases} , \label{eqn:helmholtz_discrete_3}115,5547
+\begin{equation} \label{eqn:eigval_td_1}136,6664
+resembles the formalism used in \cite{liu_fourier}:162,7676
+\begin{equation} \label{eqn:eigval_td_2}163,7713
+\begin{equation} \label{eqn:condition_lambda}175,8220
+  \label{fig:stability_td}208,9713
+\section{Check of the Stationary State}211,9752
+\section{Matricial Representation}266,12254
+\begin{equation} \label{eqn:eigval_fd_1}270,12381
+\begin{equation} \label{eqn:eigval_fd_2}289,13042
+\begin{equation} \label{eqn:eigval_fd_3}293,13229
+\begin{equation} \label{eqn:eigval_fd_4}300,13556
+\begin{equation*} \label{eqn:eigval_fd_5}321,14241
+\ref{fig:stability_fd}.329,14569
+  \label{fig:stability_fd}336,14772
+Compare the two figures in \ref{fig:stability_td_vs_fd}. One339,14838
+  \label{fig:stability_td_vs_fd}352,15394
+mesh becomes denser and denser. It can be shown \cite{bolla_piers}358,15692
+\cite{someda_electromagnetic}, which states the need of losses for the363,15977
+  PMLs, in the U-PML implementation \cite{taflove_computational}, adapted to unstructured377,16610
+\section{Solvers}381,16690
+\begin{equation} \label{eqn:linear_system}387,16908
+strategies to solve such problems \cite{numerical_recipies}.392,17083
+\subsection{Direct Methods}414,18264
+\cite{mathworld,wikipedia,numerical_recipies}. It consists in the422,18594
+\begin{equation} \label{eqn:linear_system_lu}431,19020
+  \Prod{\Matrix{L}}{\Array{y}} & = \Array{b} \label{eqn:linear_system_l}439,19358
+  \Prod{\Matrix{U}}{\Array{x}} & = \Array{y} \label{eqn:linear_system_u} .441,19463
+factorization: the Doolittle \cite{wikipedia} and the Crout463,20555
+\cite{numerical_recipies} algorithms. Leaving the details to the cited464,20586
+      LU decomposition} routines, ILU for short \cite{nag}: they488,21923
+decomposition is the UMFPACK set of routines \cite{umfpack}. It is495,22186
+\cite{amestoy_approximate} and it works for sparse unsymmetric matrices,497,22262
+\subsection{Iterative Methods}519,23545
+The term ``iterative methods''\index{Iterative methods} refers to a521,23607
+fundamental families of iterative methods \cite{barrett_templates}.524,23828
+\item[Stationary methods\index{Iterative methods!stationary}] Older,526,23898
+  \begin{equation} \label{eqn:stationary_methods}529,24040
+  \cite{barrett_templates}.540,24618
+\item[Non-stationary methods\index{Iterative methods!non-stationary}]546,24923
+  just a few, all belong to this family \cite{barrett_templates}.556,25618
+  systems. As very clearly explained in \cite{shewchuk_cg}, the568,26165
+  matrix \cite{numerical_recipies}.596,27575
+\subsection{Preconditioning}608,28147
+\begin{equation} \label{eqn:linear_system_preconditioned}617,28645
+symmetry of the coefficient matrix \cite{saad_iterative}.626,29083
+There are different possible preconditioners \cite{barrett_templates}:632,29335
+\item Divergenceless preconditioner \cite{hebermehl_improved}: this644,30023
+\subsection{Looking for the Best Methods}677,31306
+\subsubsection{Symmetry}686,31661
+one \cite{schuhmann_whitney,schuhmann_stability}:689,31761
+\begin{equation} \label{eqn:symmetry_system}702,32362
+  With this orthogonal dual grid, described in \ref{sec:voronoi}:717,33093
+  We can make the system \ref{eqn:symmetry_system} symmetric, by727,33487
+  orthogonal grids \cite{schuhmann_stability}.733,33819
+  \cite{schuhmann_stability}. In other words, there is coupling739,34091
+  \item Gedney's interpolation scheme \cite[page744,34352
+    \item for coordinate grids \cite{schuhmann_stability}:748,34524
+    \item for unstructured triangular grids \cite{schuhmann_whitney},753,34715
+    representation) \cite{bossavit_yee,schuhmann_whitney}: it gives758,34912
+  The interpolation schemes described in \ref{sec:poicare} and766,35361
+  \ref{sec:barycentric} both give non-symmetric matrices.767,35385
+\subsubsection{Indefiniteness}771,35465
+\cite{shewchuk_cg}, but they usually fail with indefinite matrices.778,35741
+    definite for stability \cite{codecasa_baricentric,schuhmann_whitney};796,36459
+\figref{fig:quadratic_forms} \cite{shewchuk_cg}. We can appreciate the836,38434
+  \label{fig:quadratic_forms}851,39404
+unstable \cite{benzi_survey}: other preconditioners, usually slower,862,39903
+\subsubsection{Hermitianity}865,39990
+\subsubsection{Some Results}880,40546
+  \label{tab:frequency_parameters}899,41172
+    other.]{\label{fig:eigvals:lambda}\includegraphics[height=6cm]{pics/eigvals_lambda}}    928,42546
+    clustered.]{\label{fig:eigvals:unstructured}\includegraphics[height=6cm]{pics/eigvals_unstructured}}    931,42777
+    real.]{\label{fig:eigvals:pml}\includegraphics[height=6cm]{pics/eigvals_pml}}933,42933
+  \label{fig:eigvals}938,43155
+  \cite{freund_qmr,freund_implementation,freund_iterative,kilmer_qmr},958,44103
+\section{Examples}969,44608
+\subsection{2-D}971,44628
+\cite{cangellaris_analysis}.977,44923
+the meshing software used to generate the mesh \cite{triangle}.996,46052
+\cite{petsc}. The stopping criterion is a value of the residual below1001,46270
+system matrix!) with the Eisenstat \cite{petsc} and the ILU1004,46513
+    green, on the right, a sensor to collect the output fields.]{\label{fig:2d_channel:mesh}\includegraphics[width=6cm]{pics/channel_mesh}}1016,47142
+    elements are non-zero.]{\label{fig:2d_channel:matrix}\includegraphics[width=6cm]{pics/channel_M}}1018,47298
+    SOR preconditioner \cite{petsc}.]{\label{fig:2d_channel:bcgs}\includegraphics[width=6cm]{pics/channel_convergence_bicgstab}}1022,47595
+    is much smoother than for the BiCGStab.]{\label{fig:2d_channel:gmres}\includegraphics[width=6cm]{pics/channel_convergence_gmres}}1025,47879
+  \label{fig:2d_channel}1028,48048
+using direct methods \cite{umfpack}. In this case, the performances of1032,48175
+\cite{kallistos}, to verify the best position for the scatterers and1047,49053
+has been carried out with FIMMWAVE \cite{fimmwave} and Kallistos1049,49228
+\cite{kallistos}.}. The simulations, even if two-dimensional, have1050,49258
+$\lambda = 1.55 \mu m$ \cite{ayre_experimental}.1055,49615
+  \label{fig:Yjunct}1067,50126
+\subsection{3-D} \label{sec:frequency_domain:3D}1070,50159
+\subsubsection{Metallic Waveguide}1074,50271
+  \label{fig:simple_waveguide_geom}1096,51257
+meshing software \cite{triangle} in each ``floor'', and this explains1106,51768
+    \subfigure[Example of a mesh layer in the extruded three-dimensional grid.]{\label{fig:simple_waveguide_mesh}\includegraphics[width=6cm]{pics/simple_waveguide_mesh}}1115,52222
+    \subfigure[System matrix.]{\label{fig:simple_waveguide_M}\includegraphics[width=6cm]{pics/simple_waveguide_M}}1116,52343
+    \subfigure[GMRES convergence.]{\label{fig:simple_waveguide_gmres}\includegraphics[width=6cm]{pics/simple_waveguide_convergence_gmres}}1117,52462
+    \subfigure[QMR with Jacobi preconditioner convergence.]{\label{fig:simple_waveguide_qmr}\includegraphics[width=6cm]{pics/simple_waveguide_convergence_qmr}}1118,52626
+    \subfigure[$\Real{E_z}$ in a $z$-constant section: theoretical and computed.]{\label{fig:simple_waveguide_section_z}\includegraphics[width=6cm]{pics/simple_waveguide_Ez_real_section_z}}1119,52808
+    mode source. Comparison is meaninful only outside the PMLs.]{\label{fig:simple_waveguide_section_xz}\includegraphics[width=6cm]{pics/simple_waveguide_Ez_section_xz}}1122,53124
+  \label{fig:simple_waveguide}1125,53321
+\begin{equation} \label{eqn:standard_deviation}1142,54194
+\subsubsection{Planar Photonic Crystal Channel}1147,54364
+    \subfigure[$\Abs{E_z}$ on a $z$-constant section.]{\label{fig:uniud_phc_coarse_field}\includegraphics[height=6cm]{pics/uniud_phc_coarse}}1170,55468
+    \subfigure[System matrix: it presents more than $8$ million non-zeros.]{\label{fig:uniud_phc_coarse_M}\includegraphics[height=6cm]{pics/uniud_phc_coarse_M}}1171,55631
+    \subfigure[QMR with Jacobi convergence.]{\label{fig:uniud_phc_coarse_residual}\includegraphics[height=6cm]{pics/uniud_phc_coarse_RESVEC}}1172,55761
+  \label{fig:uniud_phc_coarse}1175,55947
+\section{Validation of the method}1178,55992
+commercial software FIMMPROP \cite{fimmprop} by Photon1181,56125
+Design\index{Photon Design} \cite{photond}: the analysis is particular1182,56157
+\subsection{Free-space propagation} \label{sec:validation_01}1213,57641
+    \subfigure[Computational domain.]{\label{fig:validation_01_domain}\includegraphics[height=6cm]{pics/validation_01}}1246,59315
+    \subfigure[Convergence to the reference solution.]{\label{fig:validation_01_convergence}\includegraphics[height=6cm,width=6cm]{pics/validation_01_convergence}}1247,59452
+    right-hand sided output sensor, for different mesh grids.]{\label{fig:validation_01_field}\includegraphics[height=6cm,width=6cm]{pics/validation_01_field}}1249,59688
+  \label{fig:validation_01}1252,59838
+\subsection{Single scatterer} \label{sec:validation_02}1255,59880
+\ref{sec:validation_01}. The dielectric scatterer is a circle filled1260,60138
+    \subfigure[Computational domain.]{\label{fig:validation_02_domain}\includegraphics[height=6cm]{pics/validation_02}}1282,61252
+    \subfigure[FIMMPROP PMLs tuning.]{\label{fig:validation_02_fimmwave}\includegraphics[height=6cm,width=6cm]{pics/validation_02_fimmwave}}1283,61372
+    \subfigure[Convergence to the reference solution.]{\label{fig:validation_02_convergence}\includegraphics[height=6cm,width=6cm]{pics/validation_02_convergence}}1284,61530
+    right-hand sided output sensor, for different mesh grids.]{\label{fig:validation_02_field}\includegraphics[height=6cm,width=6cm]{pics/validation_02_field}}1286,61766
+  \label{fig:validation_02}1289,61910
+\subsection{Photonic Crystal Channel} \label{sec:validation_03}1292,61952
+scatterers as the one studied in \ref{sec:validation_02}, arranged in1296,62186
+    \subfigure[Computational domain.]{\label{fig:validation_03_domain}\includegraphics[height=6cm]{pics/validation_03}}1302,62435
+    \subfigure[Absolute value of the magnetic field at the output sensor.]{\label{fig:validation_03_field}\includegraphics[height=6cm,width=6cm]{pics/validation_03_field}}1303,62592
+    \subfigure[Phase of the magnetic field at the output sensor.]{\label{fig:validation_03_phase}\includegraphics[height=6cm,width=6cm]{pics/validation_03_phase}}1304,62755
+  \label{fig:validation_03}1307,62907
+%% \section{FDFD}1330,63536
+%% \subsection{Setting Up the Sources}1333,63563
+%% \section{FEFD}1336,63626
+%% \subsection{PML}1339,63705
+%% \subsection{Setting Up the Sources}1342,63767
+%% \subsection{Matrix Properties}1345,63830
+
+hic_devices.tex,659
+\part{HIC Devices} \label{par:hic_devices} \index{HIC devices|(}1,1
+\section*{What are the ``HIC Devices''?}3,67
+High Index Contrast (HIC)\index{HIC devices} dielectric waveguides are5,134
+with minimal radiative loss \cite{watts_integrated}. This goes in the11,548
+the will to reduce prices \cite{exp_pirelli}.14,743
+polarization dependent\index{Polarization!dependence}.20,1048
+a polarization diversity\index{Polarization!diversity} scheme25,1306
+\cite{madsen_optical}. Such an approach requires the input26,1344
+  \caption{Polarization diversity\index{Polarization!diversity|fig}37,1810
+  \label{fig:exp_fig1}45,2290
+\index{HIC devices|)}53,2455
+
+intro.tex,388
+    is established.}{Alain Bossavit in \cite[page 32]{bossavit_computational}}19,1051
+    fisica e problema matematico.}{Alain Bossavit in \cite[page67,3348
+  Nella Parte \ref{par:propagators}, \`e descritto un originale75,3638
+  Nella Parte \ref{par:mode_solvers}, sono discussi due algoritmi: uno80,3869
+  Infine, nella Parte \ref{par:hic_devices}, questi algoritmi saranno86,4192
+
+main0.tex,337
+  \addcontentsline{toc}{chapter}{\indexname} % add the index to the toc54,1257
+  \index{Birefringent waveguide|see{Waveguide birefringent}}55,1298
+  \index{Effective index|see{Index effective}}56,1359
+%% 11. usare \eqref, \figref e \tabref, MAI \ref!79,2224
+%% 15. multiple cite: \cite{schuhmann_whitney,schuhmann_stability}85,2450
+
+main1.tex,328
+  \partstyle{serifbig}48,1085
+  \chaptertitlestyle{serifbig}49,1108
+  \index{Birefringent waveguide|see{Waveguide birefringent}}70,1453
+  \index{Effective index|see{Index effective}}71,1514
+%% 11. usare \eqref, \figref e \tabref, MAI \ref!94,2379
+%% 15. multiple cite: \cite{schuhmann_whitney,schuhmann_stability}100,2605
+
+main.tex,328
+  \partstyle{serifbig}48,1085
+  \chaptertitlestyle{serifbig}49,1108
+  \index{Birefringent waveguide|see{Waveguide birefringent}}70,1453
+  \index{Effective index|see{Index effective}}71,1514
+%% 11. usare \eqref, \figref e \tabref, MAI \ref!94,2379
+%% 15. multiple cite: \cite{schuhmann_whitney,schuhmann_stability}100,2605
+
+material_equations.tex,2195
+\chapter{Material equations} \label{cha:material_equations}1,1
+\section{Introduction}3,62
+\cite{schuhmann_whitney,schuhmann_stability}.15,746
+\section{Vorono\"i Dual Mesh} \label{sec:voronoi}21,987
+proper meshes \cite{triangle}.39,1656
+\begin{equation} \label{eqn:voronoi_dof} \begin{aligned}42,1760
+  \label{fig:voronoi}63,2853
+\begin{equation} \label{eqn:voronoi_maxwell} \begin{cases}67,2928
+  \Set{B}_{\Surface{f}_i} = \left\{ j\ :\ \Line{e}_j \in \partial \Surface{f}_i \right\}77,3434
+where $\partial \Surface{f}$ denotes the boundary of the face $\Surface{f}$, and79,3489
+  \Set{B}_{\DualSurface{f}_i} = \left\{ j\ :\ \DualLine{e}_j \in \partial \DualSurface{f}_i \right\}83,3773
+\begin{equation} \label{eqn:voronoi_constitutive_magnetic}90,4070
+require a metric to be defined \cite{bossavit_computational}: they are98,4555
+\begin{equation} \label{eqn:voronoi_constitutive_electric}104,4808
+\section{Poincar\'e Dual Mesh} \label{sec:poicare}126,5863
+\cite{someda_electromagnetic}; the extension to the 3D case is144,6616
+  \label{fig:poincare}157,7240
+\begin{equation} \begin{aligned} \label{eqn:poincare_dof}161,7313
+This can be done in three steps \cite{taflove_advances}.191,8835
+  \begin{equation*} \label{eqn:poincare_first_step} \begin{cases}199,9213
+  \begin{equation} \label{eqn:poincare_constitutive_magnetic} \begin{split}229,10567
+  \begin{equation} \label{eqn:constitutive_poincare}258,12023
+\section{Barycentric Dual Mesh} \label{sec:barycentric}302,13923
+  \label{fig:barycentric}323,14640
+only a Delaunay one \cite{marrone_computational}.330,14973
+Closely following \cite{marrone_computational}, we have implemented the332,15022
+\section{Particular Material Equations} \label{sec:particular_material_equations}337,15233
+\subsection{Ohm Losses} \label{sec:ohm_losses}344,15559
+    \Prod{\Transpose{\Matrix{R}}}{\Array{h}} = \partial_t \Array{d} + \Array{j} + \Matrix{\Omega_{EN}} \Array{e} \\349,15820
+    \Prod{\Matrix{R}}{\Array{e}} = -\partial_t \Array{b} + \Array{m} - \Matrix{\Omega_{MN}} \Array{h}350,15925
+\subsection{PML} \label{sec:pml}403,18328
+\begin{equation} \label{eqn:maxwell_time_domain_pml} \left\{ \begin{aligned} 480,22033
+
+mode_solvers.tex,229
+\part{Mode Solvers} \label{par:mode_solvers} \index{Mode!solvers|(}1,1
+\section*{What are the ``Mode Solvers''?}3,70
+These algorithms are what we call ``Mode Solvers''\index{Mode!solvers}.17,865
+\index{Mode!solvers|)}31,1416
+
+plane_wave_expansion_technique.tex,8128
+\chapter{Plane Wave Expansion Technique}1,1
+\section{Introduction}3,43
+\section{Photonic Crystals} \label{sec:photonic_crystals}18,769
+\cite{yablonovitch_photonic}.24,1094
+described by the Bloch, or Floquet, theorem \cite{floquet_sur}:39,1852
+whichever of the points the array is viewed \cite{kittel_solid}. In52,2616
+    lines.]{\label{fig:lattices:1d}\resizebox{5cm}{!}{\input{pics/lattice_1d.pdf_t}}} \\69,3318
+    shown.]{\label{fig:lattices:2d}\resizebox{5cm}{!}{\input{pics/lattice_2d.pdf_t}}} \\72,3508
+    \subfigure[Three-dimensional cubic lattice.]{\label{fig:lattices:3d}\resizebox{5cm}{!}{\input{pics/lattice_3d.pdf_t}}}73,3634
+  \label{fig:lattices}76,3779
+  \label{fig:wigner}108,5250
+  \label{fig:honeycomb}126,6032
+\begin{equation} \label{eqn:pwe_reciprocal_long}134,6400
+\ref{eqn:pwe_reciprocal_long} can be rewritten factoring out140,6634
+\begin{equation} \label{eqn:pwe_reciprocal}142,6770
+\section{Plane Wave Expansion Algorithm} \label{sec:pwe}197,9292
+  the system \cite{chan_order_n}.206,9764
+  problem \cite{johnson_block,tayeb_rigorous};210,9998
+losses can be treated as well \cite{johnson_block}.262,12888
+\Rot{\frac{1}{\epsilon}\Rot{\H}} & = -\frac{1}{c^2} \dt^2 \H \label{eqn:pwe_helmholtz} \\269,13185
+\Div{\H} & = 0 \label{eqn:pwe_divergence}.270,13229
+\begin{equation} \label{eqn:pwe_bloch}277,13526
+Therefore, substituting \ref{eqn:pwe_bloch} in \ref{eqn:pwe_helmholtz}, we obtain:284,13807
+\begin{equation} \label{eqn:pwe_operator}285,13883
+\begin{equation} \label{eqn:pwe_expansion}309,14920
+Substituting \ref{eqn:pwe_expansion} in \ref{eqn:pwe_operator} we obtain an ordinary316,15163
+\begin{equation} \label{eqn:pwe_eigenproblem}318,15290
+\begin{equation} \label{eqn:pwe_expansion_pw} \begin{split}373,17730
+  \begin{equation} \label{eqn:pwe_fast_operator}418,20202
+\subsection{Improvements on the Algorithm}425,20533
+\subsubsection{Non-uniform grid}427,20577
+by looking with more attention at \ref{eqn:pwe_eigenproblem} and441,21332
+\ref{eqn:pwe_expansion_pw}.442,21363
+\subsubsection{Inversion symmetry}444,21392
+\subsubsection{Refractive index discontinuities}467,22515
+to the inverse dielectric function in \ref{eqn:pwe_fast_operator}471,22730
+leads to suboptimal convergence \cite{villeneuve_photonic}.472,22790
+\cite{taflove_computational} and, as the step function propagates, it492,23987
+  \label{fig:gibbs}504,24518
+The are two possible formulations \cite{villeneuve_photonic}.512,24810
+    \cite{mathworld} obtained from the Fourier transform of527,25579
+    Ho's method \cite{ho_existence}: $\Matrix{A}$ is the inverse533,25793
+  \cite{johnson_block}.575,28218
+\cite{lalanne_effective}. See \figref{fig:lalanne_fig1}, for an591,28927
+    \cite{lalanne_effective}).}600,29264
+  \label{fig:lalanne_fig1}601,29294
+\emph{super-Gaussian} functions \cite{villeneuve_photonic}, may become612,29769
+defined in \ref{eqn:pwe_operator}. While finding all the eigenvalues619,30151
+problem \ref{eqn:pwe_operator} so that the first eigenvalues are642,31651
+\omega_0 + \omega'$ and rewrite \ref{eqn:pwe_operator}:644,31807
+\begin{equation} \label{eqn:pwe_operator_target} \begin{aligned}645,31848
+Unluckly, the operator in \ref{eqn:pwe_operator_target} has a much655,32474
+smaller condition number that the one in \ref{eqn:pwe_operator},656,32556
+\section{Examples and Validation}660,32720
+  MPB \cite{mpb}, developed by Steven G. Johnson, based on the same667,32948
+  CrystalWave \cite{crystalwave}, developed by Photon Design \cite{photond},670,33064
+      Test 1 & 2-D & Triangular lattice of rods in air & $R/\Lambda = 0.2$, $\epsilon_{sub} = 1.0$, $\epsilon_{cyl} = 12.0$ & \cite{mpb} \\684,33667
+      Test 2 & 2-D & Square lattice of rods in air & $R/\Lambda = 0.2$, $\epsilon_{sub} = 1.0$, $\epsilon_{cyl} = 12.0$ & \cite{johnson_photonic} \\685,33803
+      Test 3 & 2-D & Triangular lattice of holes in dielectric (line defect) & $R/\Lambda = 0.35$, $\epsilon_{sub} = 10.24$, $\epsilon_{cyl} = 1.0$ & \cite{crystalwave} \\686,33980
+      Test 4 & 3-D & Triangular lattice (planar crystal waveguide) & & \cite{johnson_photonic} \\687,34073
+  \label{tab:validation_tests}692,34178
+\subsubsection{Test 1}704,34631
+taken from \cite{mpb}. The $k$-path studied is $\Gamma-M-K-\Gamma$, in717,35157
+zone \cite{kittel_solid}. One bandgap for the TE polarization is visible for a normalized719,35293
+  \label{tab:test_1}766,37119
+    \subfigure[Triangular lattice. In green, the fundamental cell.]{\label{fig:test_1:lattice}\resizebox{4cm}{!}{\input{pics/test01.pdf_t}}}775,37431
+    \subfigure[Reference results from \cite{mpb}.]{\label{fig:test_1:ref}\includegraphics[width=5cm]{pics/test01_ref}}776,37542
+    \subfigure[BandSolver's TE band diagram.]{\label{fig:test_1:TE}\includegraphics[width=5cm]{pics/test01_TE}}777,37669
+    \subfigure[BandSolver's TM band diagram.]{\label{fig:test_1:TM}\includegraphics[width=5cm]{pics/test01_TM}}778,37781
+    \subfigure[BandSolver's $\Real{H_z}$ of the Bloch mode at k-point $M$, first band]{\label{fig:test_1:real}\includegraphics[width=5cm]{pics/test01_field_real}}779,37934
+    \subfigure[BandSolver's $\Imag{H_z}$ of the Bloch mode at k-point $M$, first band]{\label{fig:test_1:imag}\includegraphics[width=5cm]{pics/test01_field_imag}}780,38097
+  \label{fig:test_1}783,38210
+\subsubsection{Test 2}786,38243
+taken from \cite{johnson_photonic}. The $k$-path studied is799,38714
+  \label{tab:test_2}849,40698
+    \subfigure[Square lattice. In green, the fundamental cell.]{\label{fig:test_2:lattice}\resizebox{4cm}{!}{\input{pics/test02.pdf_t}}}858,41006
+    \subfigure[Reference results from \cite{johnson_photonic}.]{\label{fig:test_2:ref}\includegraphics[width=5cm]{pics/test02_ref}}859,41117
+    \subfigure[BandSolver's TE band diagram.]{\label{fig:test_2:TE}\includegraphics[width=5cm]{pics/test02_TE}}860,41257
+    \subfigure[BandSolver's TM band diagram.]{\label{fig:test_2:TM}\includegraphics[width=5cm]{pics/test02_TM}}861,41369
+    \subfigure[BandSolver's $\Real{H_z}$ of the Bloch mode at k-point $X$, first band]{\label{fig:test_2:real}\includegraphics[width=5cm]{pics/test02_field_real}}862,41522
+    \subfigure[BandSolver's $\Imag{H_z}$ of the Bloch mode at k-point $X$, first band]{\label{fig:test_2:imag}\includegraphics[width=5cm]{pics/test02_field_imag}}863,41685
+  \label{fig:test_2}866,41798
+\subsubsection{Test 3}869,41831
+  \label{tab:test_3}900,43058
+    \subfigure[Reference results computed by CrystalWave.]{\label{fig:test_3:ref}\includegraphics[width=5cm]{pics/test04_ref}}925,44337
+    \subfigure[BandSolver's TE band diagram.]{\label{fig:test_3:TE}\includegraphics[width=5cm]{pics/test04_TE}}926,44451
+  \label{fig:test_3}929,44572
+    \subfigure[Line defect. In green, the super-cell.]{\label{fig:test_3_line:lattice}\resizebox{8cm}{!}{\input{pics/test04.pdf_t}}}954,45902
+    \subfigure[Reference results computed by CrystalWave.]{\label{fig:test_3_line:ref}\includegraphics[width=5cm]{pics/test04_line_ref}}955,46039
+    \subfigure[BandSolver's TE band diagram.]{\label{fig:test_3_line:TE}\includegraphics[width=5cm]{pics/test04_line_TE}}956,46163
+    \subfigure[BandSolver's Real $H_z$.]{\label{fig:test_3_line:real}\includegraphics[width=5cm]{pics/test04_line_field_real}}957,46280
+    \subfigure[BandSolver's Imag $H_z$.]{\label{fig:test_3_line:imag}\includegraphics[width=5cm]{pics/test04_line_field_imag}}958,46407
+  \label{fig:test_3_line}961,46543
+\subsubsection{Test 4}968,46748
+    \subfigure[Triangular lattice from \cite{johnson_photonic}.]{\label{fig:test_4:lattice}\includegraphics[width=5cm]{pics/test06}}\\978,47165
+    \subfigure[Reference results from \cite{johnson_photonic}.]{\label{fig:test_4:ref}\includegraphics[height=5cm,width=5.5cm]{pics/test06_ref}}979,47299
+    \subfigure[BandSolver's band diagram.]{\label{fig:test_4:bands}\includegraphics[height=5cm,width=6cm]{pics/test06_bands}}980,47449
+  \label{fig:test_4}983,47569
+  \label{tab:test_4}1010,48469
+  \label{fig:test_4_field}1029,49439
+A commercial implementation of BandSolver is available from Photon Design \cite{photond}.1033,49565
+
+polrot.tex,3523
+\chapter{Polarization Rotator} \label{cha:polrot} \index{Polarization!rotator|(}1,1
+\section{Introduction}3,83
+Building a polarization rotator\index{Polarization!rotator} is5,138
+diversity\index{Polarization!diversity} scheme. While several concepts7,245
+for polarization splitters are available (\cite{kiyat_compact},8,349
+\cite{taillaert_compact}, \cite{wu_planar}), available polarization9,371
+\item[Adiabaticity]\index{Adiabaticity}, or13,569
+  mode-evolution\index{Mode!evolution} principle: an input14,610
+  birefringent waveguide\index{Waveguide!birefringent}, in which the15,677
+  effective index\index{Index!effective} of one polarization is16,739
+  idea: see \cite{watts_integrated} for a successful adiabatic35,2016
+\item[Mode coupling]\index{Mode!coupling}: an input mode, with a given40,2325
+  support modes with hybrid polarization\index{Polarization!hybrid}42,2486
+  (the beat length\index{Beat length}), polarization is rotated as45,2670
+  modes must be phase matched\index{Phase matching}, the hybrid modes47,2816
+  designs: see \cite{huang_realization}, \cite{tzolov_passive}, \cite{lui_polarization},51,3071
+  \cite{kotlyar_compact}, \cite{correia_genetic},52,3147
+  \cite{elrefaei_slanted}, for example. The main advantage over53,3197
+  \cite{kotlyar_compact} a $1.6 \mu m$ long polarization rotator is55,3324
+such as Solc filters \cite{solc_birefringent}, and the same principle68,4105
+  \label{fig:polrot_modes}92,5279
+with one straight and one slanted sidewall \cite{elrefaei_slanted}96,5432
+\cite{elrefaei_optimized}. The resulting device is hundreds of microns97,5456
+Inspired from \cite{cai_ultra}, the effect of a slanting edge103,5761
+presented in \cite{kotlyar_compact} and110,6148
+\cite{bolla_funfox_losanna}. After a short description of the wafer,111,6175
+\section{Description of the Wafer}115,6366
+  \label{fig:polrot_experimental_device}129,6968
+operation in a single mode (as shown in \ref{sec:polrot_design}) was149,8013
+\section{Design} \label{sec:polrot_design}154,8207
+\ref{sec:vectorial_mode_solver}. All the other higher modes are166,8813
+  \label{fig:polrot_wafer}180,9401
+  \label{fig:polrot_ridge}191,9872
+  \label{tab:polrot_parameters}255,12151
+\begin{equation} \label{eqn:polrot_weight} \begin{split}283,13416
+    \subfigure[$P$-$W$ section at $A = 45\degrees$ constant.]{\label{fig:polrot_optimization:pw}\includegraphics[width=8cm]{pics/polrot_optimization_pw}}298,14096
+    \subfigure[$A$-$W$ section at $P = 650 nm$ constant.]{\label{fig:polrot_optimization:aw}\includegraphics[width=8cm]{pics/polrot_optimization_aw}}299,14246
+  \label{fig:polrot_optimization}305,14585
+  \label{fig:polrot_optimum}329,15453
+\section{Results}332,15494
+      \threeDFDTD]{\label{fig:polrot_figg:3}\includegraphics[width=8cm]{pics/polrot_fig3}}356,16672
+      light.]{\label{fig:polrot_figg:4}\includegraphics[width=8cm]{pics/polrot_fig4}}359,16841
+  \label{fig:polrot_figg}362,16996
+\cite{taillaert_compact}. Increasing the semiconductor width for fixed392,18564
+  \label{fig:polrot_optimalL_P}416,19883
+  \label{fig:polrot_holes}445,21430
+      field.]{\label{fig:polrot_FDTD:pol_coeff}\includegraphics[width=6cm]{pics/polrot_pol_coeff}}470,22718
+      region).]{\label{fig:polrot_FDTD:spectrum}\includegraphics[width=6cm]{pics/polrot_spectrum}}473,22934
+      polarization.]{\label{fig:polrot_FDTD:field}\includegraphics[width=8cm]{pics/polrot_field}}476,23146
+  \label{fig:polrot_FDTD}479,23273
+\index{Polarization!rotator|)}490,23771
+
+propagators.tex,507
+\part{Propagators} \label{par:propagators} \index{Propagators|(}1,1
+\section*{What are the ``Propagators''?}3,67
+\chapter*{Conclusions}20,585
+method \cite{bossavit_yee}, but it's original in its integral approach25,810
+\ref{sec:validation_01} and followings show a good accuracy of the31,1073
+method \cite{tayeb_rigorous}, which, making the hypothesis of perfectly45,1991
+\cite{fimmprop}.49,2257
+Design\index{Photon Design} \cite{photond} \index{Photon Design}.53,2414
+\index{Propagators|)}55,2475
+
+time_domain.tex,3469
+\chapter{Time-Domain} \label{cha:time_domain}1,1
+\section{Leapfrog Timestepping} \label{sec:leapfrog}17,816
+In \cite{taflove_computational} a precise description of the leapfrog19,873
+our unstructured grid is not different \cite{bolla_piers}.21,1047
+  \label{fig:timeline}39,1722
+associate the partial derivative $\partial_t \B$ to the same primal44,1925
+\section{Sources}61,2525
+algorithm, we have implemented two \cite{bolla_piers}.67,2779
+  \cite{someda_electromagnetic} helps us. It reads that the83,3694
+    \label{fig:sources}113,5107
+depend on the particular domain \cite{taflove_computational}, we have135,6162
+  \label{fig:pml_tuning}147,6725
+computed by FIMMWAVE \cite{fimmwave}: the optimal PMLs151,6856
+\section{Matricial Representation}169,7713
+the time domain \cite{trevisan_geometric}.172,7836
+\begin{equation} \label{eqn:maxwell_time_domain} \begin{cases} 179,8144
+\begin{equation} \label{eqn:maxwell_time_domain_reduced} \begin{cases}212,9922
+\begin{equation} \label{eqn:discrete_helmholtz}226,10691
+  = -\partial_t^2 \Array{e} .228,10840
+are real and positive \cite{liu_fourier}. As we'll show later, a234,11103
+definite \cite{schuhmann_whitney,schuhmann_stability}. This condition237,11276
+\section{Stability of Time Discretization} \label{sec:stability_time}242,11483
+Following \cite{liu_fourier}, we can study the stability and accuracy244,11564
+The equation \ref{eqn:fourier_maxwell} can be diagonalized, projecting249,11823
+\begin{equation} \label{eqn:fourier_maxwell_eigen}251,11940
+with a leapfrog timestepping, \ref{eqn:fourier_maxwell_eigen} becomes:261,12309
+\ref{eqn:fourier_maxwell} becomes:272,12821
+\cite{taflove_computational}), they require the solution of a linear287,13476
+    \begin{equation} \label{eqn:lf1}311,14809
+    \begin{equation} \label{eqn:lf2}317,15041
+    \begin{equation} \label{eqn:rk3} \begin{split}328,15451
+    \begin{equation} \label{eqn:rk4} \begin{split}338,15843
+\begin{equation} \label{eqn:sigma}374,17326
+\begin{equation} \label{eqn:leapfrog_staggered_stability}393,18322
+  \label{fig:liu_fourier_myfig}433,20375
+\cite{yee_numerical}. It is the choice for our algorithm.451,21273
+\section{Dispersive and Negative Index Material Example} \label{sec:nim}453,21332
+light into a Negative Index Material \cite{bolla_energy}.457,21579
+\cite{veselago_electrodynamics} predicted that lossless materials with461,21715
+fixed range of frequencies have been suggested \cite{pendry_extremely}483,22938
+\cite{pendry_negative} and manufactured in the microwave484,22962
+regime \cite{smith_composite}, or just simulated at optical485,23026
+\cite{foteinopoulou_refraction}. In all the cases, the negative487,23130
+power of the lens \cite{born_principles}.502,24074
+  \label{fig:nim_lens}514,24587
+\cite{jackson_classical}. Besides, even if only monofrequency sources520,24817
+\cite{taflove_computational} of Drude media.529,25337
+totally reflected \cite{bolla_energy}. The spatial spreading of536,25745
+optical multiplexer/demultiplexer \cite{wu_superprism}.538,25894
+%% \section{FDTD}\label{sec:fdtd}551,25931
+%% \subsection{Setting Up the Sources}555,26075
+%% \subsection{parallelization with OPENMP \cite{openmp}}558,26138
+%% \section{Order-N}560,26197
+%% \section{FETD}564,26330
+%% stability condition \cite{marrone_computational}567,26437
+%% \subsection{PML}581,26881
+%% \subsection{Setting Up the Sources}584,26951
+%% \section{Benchmarks -- 7 Problems}587,27014
+
+titlepage.tex,0
+
+biblio.bib,0
+
+PhdThesis.cls,3042
+\def\chaptermark##1{%132,4976
+\def\sectionmark##1{%140,5120
+\def\chaptermark##1{%155,5518
+\def\sectionmark##1{%163,5662
+\def\chaptermark##1{%178,6054
+\def\sectionmark##1{%186,6187
+\def\chaptermark##1{\phd@chaptermark{\MakeUppercase{##1}}}%197,6481
+\def\sectionmark##1{\phd@sectionmark{\MakeUppercase{##1}}}}198,6541
+\def\chaptermark##1{\phd@chaptermark{##1}}%202,6773
+\def\sectionmark##1{\phd@sectionmark{##1}}}203,6817
+\def\chaptermark##1{%211,7141
+\def\sectionmark##1{%219,7274
+\def\chaptermark##1{%234,7646
+\def\sectionmark##1{%242,7779
+\def\chaptermark##1{%253,8045
+\def\sectionmark##1{%261,8172
+\def\chaptermark##1{%276,8562
+\def\sectionmark##1{%284,8690
+\newcommand{\chaptertitlestyle}[1]{%296,8919
+\newcommand{\partstyle}[1]{%375,11109
+\refstepcounter{part}%390,11523
+\refstepcounter{part}%424,12151
+\chapter*{\prefacename465,12894
+\chaptermark{\prefacename}\sectionmark{\prefacename}}%466,12917
+\chapter*{\prefacetwoname495,13579
+\chaptermark{\prefacetwoname}\sectionmark{\prefacetwoname}}%496,13605
+\chapter*{\introductionname527,14337
+\chaptermark{\introductionname}\sectionmark{\introductionname}}%528,14365
+\chapter*{\conclusionsname558,15121
+\chaptermark{\conclusionsname}\sectionmark{\conclusionsname}}%559,15148
+\newcommand*{\referee}[1]{\gdef\@phd@referee{#1}}599,16197
+\newcommand\chapterappendix{\par661,18125
+{\chapter*{\abstractname667,18339
+\chaptermark{\abstractname}\sectionmark{\abstractname}}%668,18363
+{\chapter*{\acknowledgmentsname672,18538
+\chaptermark{\acknowledgmentsname}\sectionmark{\acknowledgmentsname}}%673,18569
+{\chapter*{\summaryname700,19128
+\chaptermark{\summaryname}\sectionmark{\summaryname}}%701,19151
+{\normalfont\small\hrulefill\chapterabstractname\hrulefill%\bigskip705,19351
+\providecommand*{\chapterabstractname}{~\abstractname~}710,19529
+\def\indexname{Index}%728,20073
+\def\refereename{Referee}%732,20193
+\def\indexname{Indice Analitico}%742,20491
+\def\refereename{Controrelatore}%745,20592
+\def\indexname{\'Indice alfab\'etico}%754,20846
+\def\refereename{Revisor}%757,20952
+\def\indexname{Index}%766,21200
+\def\refereename{Rapporteur}%769,21289
+\chapter*{\contentsname776,21523
+\chaptermark{\contentsname}\sectionmark{\contentsname}}%777,21547
+\chapter*{\listfigurename783,21847
+\chaptermark{\listfigurename}\sectionmark{\listfigurename}}%784,21873
+\chapter*{\listtablename790,22174
+\chaptermark{\listtablename}\sectionmark{\listtablename}}%791,22199
+{\chapter*{\bibname797,22486
+\chaptermark{\bibname}\sectionmark{\bibname}}%798,22505
+{\settowidth\labelwidth{\@biblabel{#1}}%803,22703
+\leftmargin\labelwidth804,22743
+\advance\leftmargin\labelsep805,22774
+\twocolumn[\vskip 7mm\@makeschapterhead{\indexname}]%824,23264
+\chaptermark{\indexname}\sectionmark{\indexname}%825,23278
+\typeout{\indexname.}%826,23337
+\addcontentsline{toc}{chapter}{\protect\numberline{}\indexname}827,23403
+\renewcommand\appendix{\par833,23577
+  \gdef\@chapapp{\appendixname}%836,23663
+\refstepcounter{chapter}854,24121
+\chaptermark{#1}%864,24347
+
+PhdThesis.cfg,0
+
+theorems.cfg,0
+
+UdinePhdThesis.cfg,0
+
+UdinePhdThesisCR.cfg,0
+
+UdinePhdThesisCR.sdf,0

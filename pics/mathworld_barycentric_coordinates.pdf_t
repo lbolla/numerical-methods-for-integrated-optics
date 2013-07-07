@@ -1,0 +1,45 @@
+\begin{picture}(0,0)%
+\includegraphics{pics/mathworld_barycentric_coordinates.pdf}%
+\end{picture}%
+\setlength{\unitlength}{4144sp}%
+%
+\begingroup\makeatletter\ifx\SetFigFont\undefined%
+\gdef\SetFigFont#1#2#3#4#5{%
+  \reset@font\fontsize{#1}{#2pt}%
+  \fontfamily{#3}\fontseries{#4}\fontshape{#5}%
+  \selectfont}%
+\fi\endgroup%
+\begin{picture}(9152,3927)(1500,-4657)
+\put(4501,-961){\makebox(0,0)[b]{\smash{{\SetFigFont{14}{16.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}$A_1$}%
+}}}}
+\put(4051,-4561){\makebox(0,0)[b]{\smash{{\SetFigFont{14}{16.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}$Q$}%
+}}}}
+\put(4276,-3436){\makebox(0,0)[lb]{\smash{{\SetFigFont{14}{16.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}$P$}%
+}}}}
+\put(4501,-4561){\makebox(0,0)[lb]{\smash{{\SetFigFont{14}{16.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{1,0,0}$t_3$}%
+}}}}
+\put(2476,-4561){\makebox(0,0)[lb]{\smash{{\SetFigFont{14}{16.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{1,0,0}$t_2$}%
+}}}}
+\put(4051,-3886){\makebox(0,0)[rb]{\smash{{\SetFigFont{14}{16.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{1,0,0}$t_1$}%
+}}}}
+\put(4276,-2536){\makebox(0,0)[rb]{\smash{{\SetFigFont{14}{16.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{1,0,0}$t_2+t_3$}%
+}}}}
+\put(1576,-4561){\makebox(0,0)[b]{\smash{{\SetFigFont{14}{16.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}$A_2$}%
+}}}}
+\put(5401,-4561){\makebox(0,0)[b]{\smash{{\SetFigFont{14}{16.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}$A_3$}%
+}}}}
+\put(9676,-961){\makebox(0,0)[b]{\smash{{\SetFigFont{14}{16.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}$A_1$}%
+}}}}
+\put(9451,-3436){\makebox(0,0)[lb]{\smash{{\SetFigFont{14}{16.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}$P$}%
+}}}}
+\put(6751,-4561){\makebox(0,0)[b]{\smash{{\SetFigFont{14}{16.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}$A_2$}%
+}}}}
+\put(10576,-4561){\makebox(0,0)[b]{\smash{{\SetFigFont{14}{16.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}$A_3$}%
+}}}}
+\put(8551,-3211){\makebox(0,0)[b]{\smash{{\SetFigFont{14}{16.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,1}$t_3$}%
+}}}}
+\put(9001,-4111){\makebox(0,0)[b]{\smash{{\SetFigFont{14}{16.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,1}$t_1$}%
+}}}}
+\put(9811,-2941){\makebox(0,0)[b]{\smash{{\SetFigFont{14}{16.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,1}$t_2$}%
+}}}}
+\end{picture}%

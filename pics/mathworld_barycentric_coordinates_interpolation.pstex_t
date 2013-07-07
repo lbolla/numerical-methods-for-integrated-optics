@@ -1,0 +1,33 @@
+\begin{picture}(0,0)%
+\includegraphics{pics/mathworld_barycentric_coordinates_interpolation.pstex}%
+\end{picture}%
+\setlength{\unitlength}{4144sp}%
+%
+\begingroup\makeatletter\ifx\SetFigFont\undefined%
+\gdef\SetFigFont#1#2#3#4#5{%
+  \reset@font\fontsize{#1}{#2pt}%
+  \fontfamily{#3}\fontseries{#4}\fontshape{#5}%
+  \selectfont}%
+\fi\endgroup%
+\begin{picture}(5176,6087)(2400,-5197)
+\put(4501,-2761){\makebox(0,0)[b]{\smash{{\SetFigFont{14}{16.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}$f(P)$}%
+}}}}
+\put(3421,-691){\makebox(0,0)[rb]{\smash{{\SetFigFont{14}{16.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}$f(A_1)$}%
+}}}}
+\put(2431,-3211){\makebox(0,0)[rb]{\smash{{\SetFigFont{14}{16.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}$f(A_2)$}%
+}}}}
+\put(2521,-5101){\makebox(0,0)[b]{\smash{{\SetFigFont{14}{16.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}$A_2$}%
+}}}}
+\put(7021,-4651){\makebox(0,0)[b]{\smash{{\SetFigFont{14}{16.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}$A_3$}%
+}}}}
+\put(7111,-3931){\makebox(0,0)[lb]{\smash{{\SetFigFont{14}{16.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}$f(A_3)$}%
+}}}}
+\put(4501,-4471){\makebox(0,0)[b]{\smash{{\SetFigFont{14}{16.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}$P$}%
+}}}}
+\put(3511,-2041){\makebox(0,0)[lb]{\smash{{\SetFigFont{14}{16.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}$A_1$}%
+}}}}
+\put(7561,-1411){\makebox(0,0)[lb]{\smash{{\SetFigFont{14}{16.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}$A_4$}%
+}}}}
+\put(7471,659){\makebox(0,0)[lb]{\smash{{\SetFigFont{14}{16.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}$f(A_4)$}%
+}}}}
+\end{picture}%

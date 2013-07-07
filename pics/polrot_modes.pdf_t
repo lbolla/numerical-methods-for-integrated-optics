@@ -1,0 +1,25 @@
+\begin{picture}(0,0)%
+\includegraphics{pics/polrot_modes.pdf}%
+\end{picture}%
+\setlength{\unitlength}{4144sp}%
+%
+\begingroup\makeatletter\ifx\SetFigFont\undefined%
+\gdef\SetFigFont#1#2#3#4#5{%
+  \reset@font\fontsize{#1}{#2pt}%
+  \fontfamily{#3}\fontseries{#4}\fontshape{#5}%
+  \selectfont}%
+\fi\endgroup%
+\begin{picture}(5660,3717)(211,-2863)
+\put(1801,-961){\makebox(0,0)[lb]{\smash{{\SetFigFont{20}{24.0}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{1,0,0}A}%
+}}}}
+\put(5626,-961){\makebox(0,0)[lb]{\smash{{\SetFigFont{20}{24.0}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{1,0,0}B}%
+}}}}
+\put(4051,614){\makebox(0,0)[lb]{\smash{{\SetFigFont{20}{24.0}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,1}A+B}%
+}}}}
+\put(226,-2536){\makebox(0,0)[lb]{\smash{{\SetFigFont{20}{24.0}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,1}A-B}%
+}}}}
+\put(3376,-2086){\makebox(0,0)[b]{\smash{{\SetFigFont{20}{24.0}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,1}$45$}%
+}}}}
+\put(4276,-2086){\makebox(0,0)[b]{\smash{{\SetFigFont{20}{24.0}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,1}$45$}%
+}}}}
+\end{picture}%

@@ -1,0 +1,68 @@
+\def\CJKpreproc{bg5conv (CJK ver. 4.5.1)}\documentclass[a4paper]{book}
+\pagestyle{headings}
+
+\usepackage[T1]{fontenc}
+\usepackage{avantgar,euler,CJK}
+
+\usepackage{amsmath,amscd,amssymb}
+
+\usepackage{graphicx,makeidx}
+
+\usepackage[font={small,it},labelfont=bf,format=hang,singlelinecheck=false]{caption}
+\usepackage[
+  pdfauthor={Lorenzo Bolla},
+  pdftitle={Numerical Methods for Fun},
+  pdfcreator={pdflatex},
+  pdfsubject={PhD Thesis},
+  pdfkeywords={PhD,thesis}
+]{hyperref}
+
+\input{definitions.tex}
+
+%% \includeonly{last_bib}
+
+\makeindex
+\begin{document}
+
+  \include{titlepage}
+
+  \pagenumbering{roman}
+  \tableofcontents
+
+  \include{acknoledgments}  
+%%   \include{abstract}  % use the abstract only if documentclass{report}
+
+  \setcounter{chapter}{0}	% OKKIO: non sembra funzionare!
+  \setcounter{tocdepth}{2}
+  \pagenumbering{arabic}
+
+  \include{intro}
+  \include{propagators}
+  \include{mode_finders}
+  \include{experiments}
+  \include{appendix}
+  
+  \bibliographystyle{alpha}	% plain, unsrt, alpha, abbrv
+  \bibliography{biblio.bib}
+  \addcontentsline{toc}{chapter}{\bibname} % add the biblio to the toc
+  
+  \listoffigures
+  \addcontentsline{toc}{chapter}{\listfigurename} % add the lof to the toc
+  \listoftables
+  \addcontentsline{toc}{chapter}{\listtablename} % add the lot to the toc
+
+  \printindex
+  \addcontentsline{toc}{chapter}{\indexname} % add the index to the toc
+  
+\end{document}
+
+
+%% OKKIO
+%% 1. amsmath for formulas, accents, ...
+%% 2. no eqnarray
+%% 3. \eqref{} for references of equations
+%% 4. \figure_ref{} ???
+%% 5. figure caption (caption2 package): piu' piccoli!
+%% 6. () [] {} --> \left( \right), \bigl, \Bigl, ... (amsmath)
+%% 7. for listing see caption package manual pag.18
+%% 8. drawings: xfig, dia, gimp, sketch, pic, kig, ... ???

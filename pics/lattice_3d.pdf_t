@@ -1,0 +1,19 @@
+\begin{picture}(0,0)%
+\includegraphics{pics/lattice_3d.pdf}%
+\end{picture}%
+\setlength{\unitlength}{4144sp}%
+%
+\begingroup\makeatletter\ifx\SetFigFont\undefined%
+\gdef\SetFigFont#1#2#3#4#5{%
+  \reset@font\fontsize{#1}{#2pt}%
+  \fontfamily{#3}\fontseries{#4}\fontshape{#5}%
+  \selectfont}%
+\fi\endgroup%
+\begin{picture}(3143,2680)(-3258,-1507)
+\put(-2879,-1096){\makebox(0,0)[lb]{\smash{{\SetFigFont{14}{16.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{1,0,0}$R_2$}%
+}}}}
+\put(-2834,-1411){\makebox(0,0)[b]{\smash{{\SetFigFont{14}{16.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{1,0,0}$R_1$}%
+}}}}
+\put(-3194,-961){\makebox(0,0)[rb]{\smash{{\SetFigFont{14}{16.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{1,0,0}$R_3$}%
+}}}}
+\end{picture}%

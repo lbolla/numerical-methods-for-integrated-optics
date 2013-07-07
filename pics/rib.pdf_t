@@ -1,0 +1,25 @@
+\begin{picture}(0,0)%
+\includegraphics{pics/rib.pdf}%
+\end{picture}%
+\setlength{\unitlength}{4144sp}%
+%
+\begingroup\makeatletter\ifx\SetFigFont\undefined%
+\gdef\SetFigFont#1#2#3#4#5{%
+  \reset@font\fontsize{#1}{#2pt}%
+  \fontfamily{#3}\fontseries{#4}\fontshape{#5}%
+  \selectfont}%
+\fi\endgroup%
+\begin{picture}(5669,4994)(2229,-5708)
+\put(5041,-1771){\makebox(0,0)[b]{\smash{{\SetFigFont{29}{34.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{1,0,0}$w$}%
+}}}}
+\put(5041,-2761){\makebox(0,0)[b]{\smash{{\SetFigFont{29}{34.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,1}$n_f$}%
+}}}}
+\put(5041,-4561){\makebox(0,0)[b]{\smash{{\SetFigFont{29}{34.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,1}$n_s$}%
+}}}}
+\put(7021,-1411){\makebox(0,0)[b]{\smash{{\SetFigFont{29}{34.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,1}$n_c$}%
+}}}}
+\put(6841,-3391){\makebox(0,0)[lb]{\smash{{\SetFigFont{29}{34.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{1,0,0}$t$}%
+}}}}
+\put(3781,-2671){\makebox(0,0)[rb]{\smash{{\SetFigFont{29}{34.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{1,0,0}$h$}%
+}}}}
+\end{picture}%

@@ -1,0 +1,159 @@
+%% packages	
+\usepackage{bbm,latexsym,afterpage,amsmath,amsfonts}
+\usepackage[mathcal]{euscript}
+\DeclareMathAlphabet{\mathpzc}{OT1}{pzc}{m}{it}
+\DeclareMathOperator{\Area}{Area}
+\DeclareMathOperator{\diag}{diag}
+\DeclareMathOperator{\Toeplitz}{Toeplitz}
+
+\def \Flush {\afterpage{\clearpage}}
+
+%% generic vector
+\newcommand{\Vector}[1]{\overrightarrow{#1}}
+%%\newcommand{\Vector}[1]{\vec{#1}}
+%%\newcommand{\Vector}[1]{\overline{#1}}
+
+%% vector in time domain
+\newcommand{\VectorT}[1]{\widetilde{\Vector{#1}}}
+%%\newcommand{\VectorT}[1]{\tilde{\Vector{#1}}}
+%%\newcommand{\VectorT}[1]{\underrightarrow{#1}}
+
+\newcommand{\Versor}[1]{\widehat{#1}}
+\newcommand{\Array}[1]{\mathbf{#1}}
+\newcommand{\Matrix}[1]{\mathbf{#1}}
+\newcommand{\Tensor}[1]{\underline{#1}}
+\newcommand{\Operator}[2]{\mathbf{#1}\left[#2\right]}
+\newcommand{\Set}[1]{\mathcal{#1}}
+\def \NaturalSet {\mathbb{N}}
+\def \AllNaturalSet {\mathbb{Z}}
+\def \RationalSet {\mathbb{Q}}
+\def \RealSet {\mathbb{R}}
+\def \ImagSet {\mathbb{I}}
+\def \ComplexSet {\mathbb{C}}
+\def \EmptySet {\left\{ \right\}}
+\def \eqdef {\triangleq}
+
+%% mathematical functions
+\newcommand{\Conj}[1]{{{#1}^*}}
+\newcommand{\Abs}[1]{{\left\lvert#1\right\rvert}}
+\newcommand{\Det}[1]{{\left\lvert#1\right\rvert}}
+\newcommand{\Arg}[1]{\angle#1}
+\newcommand{\Norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\NormOne}[1]{{\Norm{#1}}_1}
+\newcommand{\NormTwo}[1]{{\Norm{#1}}_2}
+\newcommand{\NormInf}[1]{{\Norm{#1}}_\infty}
+\newcommand{\Prod}[2]{{#1\,#2}} % for matrix product
+\newcommand{\DotProd}[2]{{#1 \cdot #2}}
+\newcommand{\CrossProd}[2]{{#1 \times #2}}
+\newcommand{\Real}[1]{{\mathbb{R}\left[#1\right]}}
+\newcommand{\Imag}[1]{{\mathbb{I}\left[#1\right]}}
+\newcommand{\Transpose}[1]{{#1}^T}
+\newcommand{\Hermitian}[1]{{#1}^*}
+\newcommand{\Fourier}[1]{\mathcal{F}\left[#1\right]}
+\newcommand{\BigO}[1]{\mathcal{O}\left[#1\right]}
+
+\newcommand{\Disc}[3]{{\ }^{#3}{#1}^{#2}}
+
+\newcommand{\Map}[1]{\stackrel{#1}{\longmapsto}}
+
+%% differential operators
+\def \d {d}
+\def \dt {\d_t}
+\def \dx {\d_x}
+\def \dy {\d_y}
+\def \dz {\d_z}
+\def \pd {\partial}
+\def \pdt {\pd_t}
+\def \pdx {\pd_x}
+\def \pdy {\pd_y}
+\def \pdz {\pd_z}
+\def \GradOperator {\nabla}
+\newcommand{\Grad}[1]{{\GradOperator #1}}
+\newcommand{\Rot}[1]{\CrossProd{\GradOperator}{#1}}
+\newcommand{\Div}[1]{\DotProd{\GradOperator}{#1}}
+\newcommand{\Lap}[1]{{\GradOperator^2 #1}}
+\newcommand{\Lapt}[1]{{\GradOperator^2_T #1}}
+%%\newcommand{\Lap}[1]{{\Delta #1}}
+\newcommand{\Bra}[1]{\langle\left.{#1}\right|}
+\newcommand{\Ket}[1]{\left|{#1}\right.\rangle}
+\newcommand{\BraKet}[2]{\langle{#1}|{#2}\rangle}
+\newcommand{\Evaluate}[2]{#1\lvert_{#2}}
+
+%% geometrical elements
+\newcommand{\Instant}[1]{\mathpzc{#1}}
+\newcommand{\Interval}[1]{\mathpzc{#1}}
+\newcommand{\Point}[1]{\mathpzc{#1}}
+\newcommand{\Line}[1]{\mathpzc{#1}}
+\newcommand{\Surface}[1]{\mathpzc{#1}}
+\newcommand{\Volume}[1]{\mathpzc{#1}}
+\newcommand{\Dual}[1]{\widetilde{#1}}
+\newcommand{\DualInstant}[1]{\Dual{\mathpzc{#1}}}
+\newcommand{\DualInterval}[1]{\Dual{\mathpzc{#1}}}
+\newcommand{\DualPoint}[1]{\Dual{\Point{#1}}}
+\newcommand{\DualLine}[1]{\Dual{\Line{#1}}}
+\newcommand{\DualSurface}[1]{\Dual{\Surface{#1}}}
+\newcommand{\DualVolume}[1]{\Dual{\Volume{#1}}}
+\newcommand{\ExtOrient}[1]{\Dual{#1}}
+\newcommand{\Measure}[1]{\Abs{#1}}
+
+\def \nn {n_{\Point{n}}}
+\def \ne {n_{\Line{e}}}
+\def \nf {n_{\Surface{f}}}
+\def \nv {n_{\Volume{v}}}
+\def \ndn {n_{\DualPoint{n}}}
+\def \nde {n_{\DualLine{e}}}
+\def \ndf {n_{\DualSurface{f}}}
+\def \ndv {n_{\DualVolume{v}}}
+
+%% special text
+\newcommand{\Code}[1]{\texttt{#1}}
+\newcommand{\Cite}[2]{\begin{flushright}\emph{#1}\\#2\end{flushright}}
+\newcommand{\Sign}[2]{\vspace{1cm}\begin{flushright}#1\\#2\end{flushright}}
+\newcommand{\OKKIO}[1]{\textbf{OKKIO: #1}}
+\def \FDTD {\Code{FDTD} }
+\def \FEM {\Code{FEM} }
+\def \threeDFDTD {\Code{3D-FDTD} }
+\def \PWE {\Code{PWE} }
+\def \DFT {\Code{DFT} }
+\def \FFT {\Code{FFT} }
+\def \IFFT {\Code{IFFT} }
+
+%% constants
+%%\def \CVD {\begin{flushright}$\Box$\end{flushright}}
+\def \CVD {$\square$}
+\def \E {\Vector{E}}
+\def \D {\Vector{D}}
+\def \B {\Vector{B}}
+\def \H {\Vector{H}}
+\def \J {\Vector{J}}
+\def \M {\Vector{M}}
+\def \k {\Vector{k}}
+\def \r {\Vector{r}}
+\def \eps {\varepsilon}
+\def \deltat {\Delta t}
+\def \deltax {\Delta x}
+\def \deltay {\Delta y}
+\def \deltaz {\Delta z}
+
+\def \Anything {\bullet}
+\def \degrees {^\circ}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{proof}{Proof}
+\newtheorem{definition}{Definition}
+
+%% for the index 
+\newcommand{\tab}[1]{{\it #1}}
+\newcommand{\fig}[1]{{\bf #1}}
+
+\newcommand{\figref}[1]{Figure \ref{#1}}
+\newcommand{\tabref}[1]{Table \ref{#1}}
+\newcommand{\parref}[1]{Part \ref{#1}}
+\newcommand{\charef}[1]{Chapter \ref{#1}}
+\newcommand{\secref}[1]{Section \ref{#1}}
+\newcommand{\appref}[1]{Appendix \ref{#1}}
+\newcommand{\defref}[1]{Definition \ref{#1}}
+\newcommand{\diaref}[1]{Diagram \ref{#1}}
+
+%% hyphenation 
+\hyphenation{Max-well eigen-space smoo-th-ly}

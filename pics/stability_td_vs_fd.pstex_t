@@ -1,0 +1,33 @@
+\begin{picture}(0,0)%
+\includegraphics{pics/stability_td_vs_fd.pstex}%
+\end{picture}%
+\setlength{\unitlength}{4144sp}%
+%
+\begingroup\makeatletter\ifx\SetFigFont\undefined%
+\gdef\SetFigFont#1#2#3#4#5{%
+  \reset@font\fontsize{#1}{#2pt}%
+  \fontfamily{#3}\fontseries{#4}\fontshape{#5}%
+  \selectfont}%
+\fi\endgroup%
+\begin{picture}(12084,5424)(664,-5698)
+\put(12511,-3211){\makebox(0,0)[lb]{\smash{{\SetFigFont{14}{16.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}$\RealSet$}%
+}}}}
+\put(10171,-511){\makebox(0,0)[lb]{\smash{{\SetFigFont{14}{16.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}$\ImagSet$}%
+}}}}
+\put(8371,-2491){\makebox(0,0)[lb]{\smash{{\SetFigFont{14}{16.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,1}$\deltat \rightarrow 0$}%
+}}}}
+\put(5851,-3211){\makebox(0,0)[lb]{\smash{{\SetFigFont{14}{16.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}$\RealSet$}%
+}}}}
+\put(5041,-3211){\makebox(0,0)[lb]{\smash{{\SetFigFont{14}{16.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}$1$}%
+}}}}
+\put(3511,-511){\makebox(0,0)[lb]{\smash{{\SetFigFont{14}{16.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}$\ImagSet$}%
+}}}}
+\put(1576,-2536){\rotatebox{60.0}{\makebox(0,0)[lb]{\smash{{\SetFigFont{14}{16.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}$\deltat = \deltat_{Courant}$}%
+}}}}}
+\put(4771,-961){\makebox(0,0)[lb]{\smash{{\SetFigFont{14}{16.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,1}$\deltat \rightarrow 0$}%
+}}}}
+\put(6751,-4111){\makebox(0,0)[b]{\smash{{\SetFigFont{29}{34.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{1,0,0}$e^{-z}$}%
+}}}}
+\put(6751,-2086){\makebox(0,0)[b]{\smash{{\SetFigFont{29}{34.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{1,0,0}$-\log w$}%
+}}}}
+\end{picture}%

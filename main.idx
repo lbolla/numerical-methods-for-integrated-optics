@@ -1,0 +1,171 @@
+\indexentry{Propagators|(hyperpage}{3}
+\indexentry{Discretization schemes|(hyperpage}{5}
+\indexentry{Finite Element method|hyperpage}{5}
+\indexentry{Finite Difference Time Domain method|hyperpage}{6}
+\indexentry{Mesh|(hyperpage}{6}
+\indexentry{Simplicial complex|hyperpage}{6}
+\indexentry{Barycentric!coordinates|hyperpage}{6}
+\indexentry{Orientation|hyperpage}{6}
+\indexentry{Simplicial complex|hyperpage}{7}
+\indexentry{Orientation|(hyperpage}{7}
+\indexentry{Delaunay|hyperpage}{9}
+\indexentry{Instability|hyperpage}{9}
+\indexentry{Orientation|)hyperpage}{11}
+\indexentry{Delaunay|hyperpage}{13}
+\indexentry{Vorono\"i|hyperpage}{13}
+\indexentry{Poincar\'e|hyperpage}{13}
+\indexentry{Mesh|)hyperpage}{16}
+\indexentry{Finite Difference Time Domain method|hyperpage}{18}
+\indexentry{Finite Element method|hyperpage}{18}
+\indexentry{Stability!space discretization|(hyperpage}{22}
+\indexentry{Fourier!method|hyperpage}{22}
+\indexentry{Cartesian grid|hyperpage}{23}
+\indexentry{Hexagonal grid|hyperpage}{23}
+\indexentry{Cartesian grid|(hyperpage}{23}
+\indexentry{Cartesian grid|)hyperpage}{27}
+\indexentry{Hexagonal grid|(hyperpage}{27}
+\indexentry{Hexagonal grid|)hyperpage}{29}
+\indexentry{Stability!space discretization|)hyperpage}{29}
+\indexentry{Discretization schemes|)hyperpage}{29}
+\indexentry{Vorono\"i|hyperpage}{31}
+\indexentry{Poincar\'e|hyperpage}{31}
+\indexentry{Barycentric!dual mesh|hyperpage}{31}
+\indexentry{Vorono\"i|(hyperpage}{31}
+\indexentry{Delaunay|hyperpage}{31}
+\indexentry{Vorono\"i|)hyperpage}{33}
+\indexentry{Poincar\'e|(hyperpage}{33}
+\indexentry{Poincar\'e|)hyperpage}{36}
+\indexentry{Barycentric!dual mesh|(hyperpage}{36}
+\indexentry{Barycentric!dual mesh|)hyperpage}{37}
+\indexentry{Leapfrog timestepping|hyperpage}{41}
+\indexentry{Leapfrog timestepping|(hyperpage}{41}
+\indexentry{Cartesian grid|hyperpage}{41}
+\indexentry{Leapfrog timestepping|)hyperpage}{42}
+\indexentry{Leapfrog timestepping|hyperpage}{44}
+\indexentry{Stability!time discretization|(hyperpage}{45}
+\indexentry{Leapfrog timestepping|hyperpage}{45}
+\indexentry{Leapfrog timestepping|hyperpage}{46}
+\indexentry{Runge-Kutta method|hyperpage}{46}
+\indexentry{Leapfrog timestepping!unstaggered|hyperpage}{47}
+\indexentry{Leapfrog timestepping!staggered|hyperpage}{47}
+\indexentry{Leapfrog timestepping!staggered|fig}{48}
+\indexentry{Cartesian grid|hyperpage}{48}
+\indexentry{Yee scheme|hyperpage}{48}
+\indexentry{Stability!time discretization|)hyperpage}{48}
+\indexentry{Negative index material|(hyperpage}{49}
+\indexentry{Negative index material|)hyperpage}{50}
+\indexentry{Stability!region!time-domain|fig}{54}
+\indexentry{State variables method|hyperpage}{56}
+\indexentry{Stability!region!frequency-domain|fig}{57}
+\indexentry{Methods!direct|(hyperpage}{58}
+\indexentry{UMFPACK|hyperpage}{60}
+\indexentry{Methods!direct|)hyperpage}{60}
+\indexentry{Methods!iterative|(hyperpage}{60}
+\indexentry{Methods!iterative|hyperpage}{60}
+\indexentry{Methods!iterative!stationary|hyperpage}{60}
+\indexentry{Methods!iterative!non-stationary|hyperpage}{60}
+\indexentry{Methods!iterative!CG|hyperpage}{60}
+\indexentry{Methods!iterative!CGS|hyperpage}{60}
+\indexentry{Methods!iterative!BiCG|hyperpage}{60}
+\indexentry{Methods!iterative!BiCGStab|hyperpage}{60}
+\indexentry{Methods!iterative!CGNE|hyperpage}{60}
+\indexentry{Methods!iterative!MINRES|hyperpage}{61}
+\indexentry{Methods!iterative!SYMMLQ|hyperpage}{61}
+\indexentry{Methods!iterative!GMRES|hyperpage}{61}
+\indexentry{Methods!iterative!QMR|hyperpage}{61}
+\indexentry{Methods!iterative|)hyperpage}{61}
+\indexentry{Preconditioning|(hyperpage}{62}
+\indexentry{Preconditioning|)hyperpage}{62}
+\indexentry{Vorono\"i|hyperpage}{63}
+\indexentry{Poincar\'e|hyperpage}{63}
+\indexentry{Methods!iterative!Conjugate Gradient|hyperpage}{64}
+\indexentry{Barycentric!dual mesh|hyperpage}{64}
+\indexentry{Preconditioning!ILU|hyperpage}{65}
+\indexentry{Hermitian matrix|hyperpage}{65}
+\indexentry{Methods!iterative!QMR|hyperpage}{67}
+\indexentry{Preconditioning!Jacobi|hyperpage}{67}
+\indexentry{Preconditioning!Jacobi|hyperpage}{67}
+\indexentry{Vorono\"i|hyperpage}{69}
+\indexentry{PETSc|hyperpage}{69}
+\indexentry{Effective!index!method|hyperpage}{69}
+\indexentry{Photon Design|hyperpage}{74}
+\indexentry{Eigenmode Expansion|hyperpage}{74}
+\indexentry{Multiple Scattering method|hyperpage}{81}
+\indexentry{Eigenmode Expansion|hyperpage}{81}
+\indexentry{Photon Design|hyperpage}{81}
+\indexentry{Photon Design|hyperpage}{81}
+\indexentry{Propagators|)hyperpage}{81}
+\indexentry{Mode!solvers|(hyperpage}{85}
+\indexentry{Mode!solvers|hyperpage}{85}
+\indexentry{Finite Difference Method|(hyperpage}{87}
+\indexentry{Finite Difference Method|hyperpage}{87}
+\indexentry{Mode!solver!vectorial|hyperpage}{88}
+\indexentry{Mode!solver!semivectorial|(hyperpage}{89}
+\indexentry{Mode!solver!semivectorial|)hyperpage}{92}
+\indexentry{Mode!solver!vectorial|(hyperpage}{92}
+\indexentry{Effective!index|hyperpage}{92}
+\indexentry{Mode!solver!semivectorial|)hyperpage}{94}
+\indexentry{Effective!index|fig}{95}
+\indexentry{Effective!index|fig}{98}
+\indexentry{Finite Difference Method|)hyperpage}{98}
+\indexentry{Plane Wave Expansion|(hyperpage}{101}
+\indexentry{Plane Wave Expansion|hyperpage}{101}
+\indexentry{Vorono\"i|(hyperpage}{102}
+\indexentry{Fourier!transform|hyperpage}{106}
+\indexentry{Eigenmode Expansion|hyperpage}{106}
+\indexentry{Transfer Matrix method|hyperpage}{106}
+\indexentry{Fourier!transform|hyperpage}{106}
+\indexentry{Plane Wave Expansion|hyperpage}{107}
+\indexentry{Fourier!transform!discrete|hyperpage}{109}
+\indexentry{Fourier!transform!fast|hyperpage}{109}
+\indexentry{Fourier!series|hyperpage}{110}
+\indexentry{Fourier!series|fig}{111}
+\indexentry{Toeplitz|hyperpage}{111}
+\indexentry{Effective!medium|hyperpage}{112}
+\indexentry{Plane Wave Expansion|)hyperpage}{125}
+\indexentry{Mode!solvers|)hyperpage}{125}
+\indexentry{HIC devices|(hyperpage}{129}
+\indexentry{HIC devices|hyperpage}{129}
+\indexentry{Polarization!dependence|hyperpage}{129}
+\indexentry{Polarization!diversity|hyperpage}{129}
+\indexentry{Polarization!diversity|fig}{129}
+\indexentry{Polarization!rotator|(hyperpage}{131}
+\indexentry{Polarization!rotator|hyperpage}{131}
+\indexentry{Polarization!diversity|hyperpage}{131}
+\indexentry{Adiabaticity|hyperpage}{131}
+\indexentry{Mode!evolution|hyperpage}{131}
+\indexentry{Waveguide!birefringent|hyperpage}{131}
+\indexentry{Effective!index|hyperpage}{131}
+\indexentry{Mode!coupling|hyperpage}{131}
+\indexentry{Polarization!hybrid|hyperpage}{131}
+\indexentry{Beat length|hyperpage}{132}
+\indexentry{Phase matching|hyperpage}{132}
+\indexentry{Effective!index|hyperpage}{132}
+\indexentry{Effective!index|hyperpage}{138}
+\indexentry{Beat length|hyperpage}{138}
+\indexentry{Effective!width|hyperpage}{138}
+\indexentry{Effective!index|hyperpage}{142}
+\indexentry{Beat length|hyperpage}{142}
+\indexentry{Effective!width|hyperpage}{142}
+\indexentry{Beat length|fig}{142}
+\indexentry{Polarization!rotator|)hyperpage}{143}
+\indexentry{HIC devices|)hyperpage}{143}
+\indexentry{Hermitian matrix|hyperpage}{150}
+\indexentry{Fourier!transform|tab}{150}
+\indexentry{Orientation!external|hyperpage}{150}
+\indexentry{Maxwell House|(hyperpage}{151}
+\indexentry{Maxwell House|)hyperpage}{151}
+\indexentry{Barycentric!coordinates|(hyperpage}{153}
+\indexentry{Finite Element method|hyperpage}{154}
+\indexentry{Finite Element method|hyperpage}{157}
+\indexentry{Barycentric!coordinates|)hyperpage}{157}
+\indexentry{Courant factor|(hyperpage}{159}
+\indexentry{Courant stability|hyperpage}{159}
+\indexentry{Courant factor|)hyperpage}{159}
+\indexentry{Birefringent waveguide|see{Waveguide birefringent}}{173}
+\indexentry{Conjugate Gradient method|see{Methods iterative Conjugate Gradient}}{173}
+\indexentry{Direct methods|see{Methods direct}}{173}
+\indexentry{FDTD|see{Finite Difference Time Domain method}}{173}
+\indexentry{Index!effective|see{Effective index}}{173}
+\indexentry{Iterative methods|see{Methods iterative}}{173}
+\indexentry{PWE|see{Plane Wave Expansion}}{173}

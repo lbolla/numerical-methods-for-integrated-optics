@@ -1,0 +1,21 @@
+\begin{picture}(0,0)%
+\includegraphics{pics/lattice_2d.pdf}%
+\end{picture}%
+\setlength{\unitlength}{4144sp}%
+%
+\begingroup\makeatletter\ifx\SetFigFont\undefined%
+\gdef\SetFigFont#1#2#3#4#5{%
+  \reset@font\fontsize{#1}{#2pt}%
+  \fontfamily{#3}\fontseries{#4}\fontshape{#5}%
+  \selectfont}%
+\fi\endgroup%
+\begin{picture}(3540,2270)(-3074,-1057)
+\put(-1574,-961){\makebox(0,0)[b]{\smash{{\SetFigFont{14}{16.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}$\Lambda_x$}%
+}}}}
+\put(451,-61){\makebox(0,0)[lb]{\smash{{\SetFigFont{14}{16.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}$\Lambda_y$}%
+}}}}
+\put(-2924,-61){\makebox(0,0)[rb]{\smash{{\SetFigFont{14}{16.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{1,0,0}$R_2$}%
+}}}}
+\put(-2474,-511){\makebox(0,0)[b]{\smash{{\SetFigFont{14}{16.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{1,0,0}$R_1$}%
+}}}}
+\end{picture}%

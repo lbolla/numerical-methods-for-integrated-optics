@@ -1,0 +1,113 @@
+%% \documentclass[a4paper]{PhdThesis}
+\documentclass[a4paper,american,UdinePhdThesisCR]{PhdThesis}
+
+%% \usepackage[T1]{fontenc}
+\usepackage{qpalatin,babel,euler,CJK}
+\usepackage{amsmath,amscd,amssymb}
+\usepackage{graphicx,color,makeidx,subfigure}
+\usepackage[font={small,it},labelfont=bf,format=hang,singlelinecheck=false]{caption}
+\usepackage[
+  pdfauthor={Lorenzo Bolla},
+  pdftitle={Numerical Methods for Integrated Optics},
+  pdfcreator={pdflatex},
+  pdfsubject={Numerical methods for Integrated Optics},
+  pdfkeywords={Numerical methods,integrated optics,polarization,FDTD}
+]{hyperref}
+
+\input{definitions.tex}
+
+%% \includeonly{intro,propagators}
+
+\author{Lorenzo Bolla}
+\email{lbolla@gmail.com}
+\supervisor{Professor Michele Midrio}
+\phdnumber{XVIII Ciclo}
+\title{Numerical Methods for Integrated Optics}
+\date{January 31, 2006}
+\def\datename{Anno Accademico\\2005/2006}
+
+\makeindex
+
+\begin{document}
+
+  \pagestyle{empty}
+  \maketitlepage
+  
+%%   \begin{dedication}
+%%     Here the dedication
+%%   \end{dedication}
+%%   \begin{abstract}
+%%     Here the abstract
+%%   \end{abstract}
+%%   \begin{acknowledgments}
+%%     Here the acknowledgments
+%%   \end{acknowledgments}
+  
+  \frontmatter
+  
+  \partstyle{serifbig}
+  \chaptertitlestyle{serifbig}
+  \pagestyle{serif}
+  \tableofcontents
+    
+  \include{intro}
+
+  \mainmatter
+  
+  \include{propagators}
+  \include{mode_solvers}
+  \include{hic_devices}
+  \include{appendix}
+  
+  \backmatter
+  
+  \listoffigures
+  \listoftables
+  
+  \bibliographystyle{alpha}	% plain, unsrt, alpha, abbrv
+  \bibliography{biblio}
+  
+  \index{Birefringent waveguide|see{Waveguide birefringent}}
+  \index{Conjugate Gradient method|see{Methods iterative Conjugate Gradient}}
+  \index{Direct methods|see{Methods direct}}
+  \index{FDTD|see{Finite Difference Time Domain method}}
+  \index{Index!effective|see{Effective index}}
+  \index{Iterative methods|see{Methods iterative}}
+  \index{PWE|see{Plane Wave Expansion}}
+  \printindex
+
+\end{document}
+
+
+%% OKKIO
+%% 1. amsmath for formulas, accents, ...
+%% 2. no eqnarray
+%% 3. \eqref{} for references of equations
+%% 4. \figure_ref{} ???
+%% 5. figure caption (caption2 package): piu' piccoli!
+%% 6. () [] {} --> \left( \right), \bigl, \Bigl, ... (amsmath)
+%% 7. for listing see caption package manual pag.18
+%% 8. drawings:  xfig -specialtext -latexfonts -startlatexFont default &
+%%    export in pstex_t o pdf_t -> poi usa
+%%    \resizebox{}{}{\input{...}} -> vedere
+%%    /usr/share/doc/xfig/LATEX.and.XFIG.gz
+%%    tgif -> converts anything to pdf and eps
+%%    sodipodi -> reads svg files
+%% 9. estensione figure: latex+pdf or latex+ps (x il vectorial) + png (x il
+%%    raster)
+%% 10. triangular mesh == simplicial cell complex (see texeira)
+%% 11. usare \eqref, \figref e \tabref, MAI \ref!
+%% 12. lasciare linea bianca dopo ciascuna formula, se inizia una
+%%     nuova frase
+%% 13. mettere la virgola dopo le formule, se la frase continua, se no
+%%     il punto
+%% 14. ispell everything!
+%% 15. multiple cite: \cite{schuhmann_whitney,schuhmann_stability}
+%% 16. glossary: from tutorial/latex/PhDThesis.pdf
+%% 17. use \subfigure
+%% 18. accordance --> agreement
+%% 19. Glossary: FDTD, HIC
+%% 20. Tao Te Ching: inizio->compassion(68), fine->retire(9),
+%%     limitation (71)
+%% 21. fontenc??
+%% 22. UniudPhdThesis style

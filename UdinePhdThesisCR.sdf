@@ -1,0 +1,56 @@
+%%
+%% This is file `UdinePhdThesisCR.sdf',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% PhdThesis.dtx  (with options: `sdf,Udine,Phd,CR')
+%% 
+%% Copyright (C) 1995-2004 Marco Comini <comini@dimi.uniud.it>.
+%% 
+%% This class is the Phd Thesis format of the Computer Science Deartment of
+%% the Pisa and Udine Universities -- Italy.
+%% 
+%% This class is distributed in the hope that it will be useful, but WITHOUT
+%% ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+%% FITNESS FOR A PARTICULAR PURPOSE.
+%% 
+%% Direct use of code from this class in another class which is either sold
+%% for profit, or not made freely available, is explicitly forbidden by the
+%% author.
+%% 
+\typeout{Class PhdThesis: UdinePhdThesisCR.sdf 2004/01/15.}
+%%% Defines page shape
+\ifcase\@ptsize% mods for 10 pt
+\setlength\textheight{44\baselineskip}
+\or% mods for 11 pt
+\ClassWarningNoLine{PhdThesis}
+{You should use 10pt option instead of 11pt}
+\textheight 39\baselineskip
+\or% mods for 12 pt
+\ClassWarningNoLine{PhdThesis}
+{You should use 10pt option instead of 12pt}
+\setlength\textheight{36\baselineskip}
+\fi
+\advance\textheight by \topskip
+\setlength\headsep{8mm}
+\setlength\topmargin{22mm}
+\setlength\evensidemargin{14.5mm}
+\setlength\oddsidemargin{14.5mm}
+\setlength\textwidth{130mm}
+%%% Provides strings required by maketitlepage (and patched maketitle)
+\def\@phd@address{%
+Dipartimento di Ingegneria Elettrica, Gestionale e Meccanica\\
+Universit\`a degli Studi di Udine\\
+Via delle Scienze, 206\\
+33100 Udine\\
+Italia
+}
+\gdef\@phd@university{%
+Universit\`a degli Studi di Udine\\[0.5em]
+Dipartimento di Ingegneria Elettrica, Gestionale e Meccanica\\[0.5em]
+Dottorato di Ricerca in Ingegneria Industriale e dell'Informazione%
+}
+\endinput
+%%
+%% End of file `UdinePhdThesisCR.sdf'.

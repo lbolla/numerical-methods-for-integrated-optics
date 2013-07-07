@@ -1,0 +1,29 @@
+\begin{picture}(0,0)%
+\includegraphics{simple_waveguide.pstex}%
+\end{picture}%
+\setlength{\unitlength}{4144sp}%
+%
+\begingroup\makeatletter\ifx\SetFigFont\undefined%
+\gdef\SetFigFont#1#2#3#4#5{%
+  \reset@font\fontsize{#1}{#2pt}%
+  \fontfamily{#3}\fontseries{#4}\fontshape{#5}%
+  \selectfont}%
+\fi\endgroup%
+\begin{picture}(10152,8051)(1561,-8765)
+\put(8326,-1636){\makebox(0,0)[lb]{\smash{{\SetFigFont{29}{34.8}{\rmdefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}y}%
+}}}}
+\put(2296,-1096){\makebox(0,0)[lb]{\smash{{\SetFigFont{29}{34.8}{\rmdefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}z}%
+}}}}
+\put(11251,-8161){\makebox(0,0)[lb]{\smash{{\SetFigFont{29}{34.8}{\rmdefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}x}%
+}}}}
+\put(8326,-2536){\makebox(0,0)[lb]{\smash{{\SetFigFont{29}{34.8}{\rmdefault}{\mddefault}{\updefault}{\color[rgb]{0,1,0}PML}%
+}}}}
+\put(4276,-6586){\makebox(0,0)[lb]{\smash{{\SetFigFont{29}{34.8}{\rmdefault}{\mddefault}{\updefault}{\color[rgb]{0,1,0}PML}%
+}}}}
+\put(1576,-6361){\makebox(0,0)[rb]{\smash{{\SetFigFont{29}{34.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{1,0,0}$1\,\mu m$}%
+}}}}
+\put(4501,-8611){\makebox(0,0)[b]{\smash{{\SetFigFont{29}{34.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{1,0,0}$\sqrt{3}\,\mu m$}%
+}}}}
+\put(9901,-5911){\makebox(0,0)[lb]{\smash{{\SetFigFont{29}{34.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{1,0,0}$6\,\mu m$}%
+}}}}
+\end{picture}%

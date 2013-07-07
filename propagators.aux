@@ -1,0 +1,480 @@
+\relax 
+\@writefile{toc}{\contentsline {part}{I\hspace  {1em}Propagators}{1}{part.1}}
+\newlabel{par:propagators}{{I}{3}{\contentsname \chaptermark {\contentsname }\sectionmark {\contentsname }\relax }{part.1}{}}
+\citation{bolla_piers}
+\citation{maxwell_treatise}
+\citation{tonti_formulazione}
+\citation{lao_tzu}
+\citation{yee_numerical}
+\citation{cangellaris_analysis}
+\@writefile{toc}{\contentsline {chapter}{\numberline {1}Discretization Schemes}{5}{chapter.1}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{cha:discretization_schemes}{{1}{5}{Discretization Schemes\relax }{chapter.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {1.1}Introduction}{5}{section.1.1}}
+\citation{cangellaris_analysis}
+\citation{teixeira_geometric}
+\@writefile{toc}{\contentsline {section}{\numberline {1.2}Mesh}{6}{section.1.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2.1}Definition and Properties}{6}{subsection.1.2.1}}
+\newlabel{sec:mesh:def}{{1.2.1}{6}{Definition and Properties\relax }{subsection.1.2.1}{}}
+\newlabel{def:simplex}{{1}{6}{Definition and Properties\relax }{definition.1}{}}
+\citation{trevisan_geometric}
+\citation{rienen_frequency}
+\citation{tonti_formulazione}
+\newlabel{def:simplicial_complex}{{2}{7}{Definition and Properties\relax }{definition.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2.2}Orientation}{7}{subsection.1.2.2}}
+\newlabel{sec:mesh:orientation}{{1.2.2}{7}{Orientation\relax }{subsection.1.2.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1.1}{\ignorespaces Internal orientation.}}{8}{figure.1.1}}
+\newlabel{fig:internal_orientation}{{1.1}{8}{Orientation\relax }{figure.1.1}{}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Point}}}{8}{figure.1.1}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Line}}}{8}{figure.1.1}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {Face}}}{8}{figure.1.1}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(d)}{\ignorespaces {Volume}}}{8}{figure.1.1}}
+\citation{tonti_formulazione}
+\citation{tonti_formulazione}
+\@writefile{lof}{\contentsline {figure}{\numberline {1.2}{\ignorespaces External orientation.}}{10}{figure.1.2}}
+\newlabel{fig:external_orientation}{{1.2}{10}{Orientation\relax }{figure.1.2}{}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Point}}}{10}{figure.1.2}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Line}}}{10}{figure.1.2}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {Face}}}{10}{figure.1.2}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(d)}{\ignorespaces {Volume}}}{10}{figure.1.2}}
+\citation{meshing_software}
+\citation{tonti_formulazione}
+\newlabel{fig:tonti_thermal:bad}{{1.3(b)}{11}{Subfigure 1 1.3(b)\relax }{subfigure.1.3.2}{}}
+\newlabel{sub@fig:tonti_thermal:bad}{{(b)}{11}{Subfigure 1 1.3(b)\relax }{subfigure.1.3.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1.3}{\ignorespaces The simplicial complex choice affects the stability of the algorithm. If a thermal field is defined on the triangles $t_1$ and $t_2$ and the temperatures measured at points $C_1$ and $C_2$ are $T_1 > T_2$, a thermal flux from the colder cell to the warmer will be simulated in the right-hand side mesh: this is non-physical.}}{11}{figure.1.3}}
+\newlabel{fig:tonti_thermal}{{1.3}{11}{Orientation\relax }{figure.1.3}{}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Delaunay primal mesh.}}}{11}{figure.1.3}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Non-Delaunay primal mesh.}}}{11}{figure.1.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2.3}Dual Mesh}{11}{subsection.1.2.3}}
+\newlabel{sec:dual_mesh}{{1.2.3}{11}{Dual Mesh\relax }{subsection.1.2.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1.4}{\ignorespaces Two-dimensional extruded mesh. Two-dimensional meshes are the ``floors'' of a three-dimensional stack. Distance between two-dimensional meshes has been exaggerated, for the sake of clarity.}}{12}{figure.1.4}}
+\newlabel{fig:extruded_mesh}{{1.4}{12}{Orientation\relax }{figure.1.4}{}}
+\newlabel{dia:dual_mesh_symmetry}{{1.1}{12}{Dual Mesh\relax }{equation.1.1}{}}
+\citation{cavendish_complementary}
+\citation{trevisan_geometric}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2.4}Matricial Representation}{13}{subsection.1.2.4}}
+\newlabel{sec:mesh:matricial}{{1.2.4}{13}{Matricial Representation\relax }{subsection.1.2.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1.5}{\ignorespaces Adjacency edges-nodes. Orientation of edges is shown by the arrow sign, while orientation of nodes is conventionally chosen to be positive for sinks and negative for sources.}}{14}{figure.1.5}}
+\newlabel{fig:adiacency_e_n}{{1.5}{14}{Matricial Representation\relax }{figure.1.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1.6}{\ignorespaces Adjacency faces-edges. Orientation of edges is shown by the arrow sign, while faces are internally oriented by the curved arrow. In the picture, the orientation of the edge $i$ agrees with the orientation of the face $l$, while edges $j$ and $k$ have opposite orientations.}}{14}{figure.1.6}}
+\newlabel{fig:adiacency_f_e}{{1.6}{14}{Matricial Representation\relax }{figure.1.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1.7}{\ignorespaces Adjacency volumes-faces. Internal orientation of faces is shown the curved arrow. The volume is conventionally oriented from inside to outside. In the picture, the orientation of the face $i$ agrees with the orientation of the volume $m$, while the other faces disagree.}}{15}{figure.1.7}}
+\newlabel{fig:adiacency_v_f}{{1.7}{15}{Matricial Representation\relax }{figure.1.7}{}}
+\citation{bolla_piers}
+\citation{bolla_piers}
+\@writefile{toc}{\contentsline {section}{\numberline {1.3}Geometry and Physics}{16}{section.1.3}}
+\newlabel{sec:geometry_and_physics}{{1.3}{16}{Geometry and Physics\relax }{section.1.3}{}}
+\newlabel{eqn:maxwell_integral}{{1.2}{16}{Geometry and Physics\relax }{equation.1.2}{}}
+\citation{bossavit_computational}
+\newlabel{eqn:dof}{{1.3}{17}{Geometry and Physics\relax }{equation.1.3}{}}
+\citation{teixeira_geometric}
+\citation{taflove_computational}
+\citation{yee_numerical}
+\citation{lavrinenko_comprehensive}
+\citation{jin_finite}
+\citation{bossavit_yee}
+\citation{maxwell_mathematical}
+\newlabel{dia:relations}{{1.4}{18}{Geometry and Physics\relax }{equation.1.4}{}}
+\citation{mead_collective}
+\citation{taflove_advances}
+\citation{trevisan_geometric}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.3.1}Matricial Representation}{19}{subsection.1.3.1}}
+\citation{schuhmann_nonorthogonal}
+\newlabel{dia:discrete_operators}{{1.5}{20}{Matricial Representation\relax }{equation.1.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1.8}{\ignorespaces Duality relation of the curl operators: the matrix of the discrete curl operator on the primal mesh is the transpose of the matrix of the discrete curl operator of the dual mesh.}}{20}{figure.1.8}}
+\newlabel{fig:duality_curl}{{1.8}{20}{Matricial Representation\relax }{figure.1.8}{}}
+\citation{trevisan_geometric}
+\citation{liu_fourier}
+\newlabel{eqn:discrete_ampere}{{1.6}{21}{Matricial Representation\relax }{equation.1.6}{}}
+\newlabel{eqn:discrete_faraday}{{1.7}{21}{Matricial Representation\relax }{equation.1.7}{}}
+\newlabel{eqn:discrete_magnetic}{{1.10}{21}{Matricial Representation\relax }{equation.1.10}{}}
+\newlabel{eqn:discrete_electric}{{1.11}{21}{Matricial Representation\relax }{equation.1.11}{}}
+\newlabel{eqn:discrete_electric_charge}{{1.12}{21}{Matricial Representation\relax }{equation.1.12}{}}
+\newlabel{eqn:discrete_magnetic_charge}{{1.13}{21}{Matricial Representation\relax }{equation.1.13}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {1.4}Stability of Space Discretization}{22}{section.1.4}}
+\newlabel{eqn:fourier_maxwell_solution}{{1.14}{22}{Stability of Space Discretization\relax }{equation.1.14}{}}
+\newlabel{eqn:fourier_maxwell}{{1.15}{22}{Stability of Space Discretization\relax }{equation.1.15}{}}
+\citation{liu_fourier}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.4.1}Cartesian Grids}{23}{subsection.1.4.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1.9}{\ignorespaces Placement of unknowns on two-dimensional Cartesian grids.}}{23}{figure.1.9}}
+\newlabel{fig:liu_fig1}{{1.9}{23}{Cartesian Grids\relax }{figure.1.9}{}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Unstaggered.}}}{23}{figure.1.9}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Collocated staggered.}}}{23}{figure.1.9}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {Uncollocated staggered.}}}{23}{figure.1.9}}
+\newlabel{eqn:fourier_maxwell_2d}{{1.16}{24}{Cartesian Grids\relax }{equation.1.16}{}}
+\newlabel{eqn:fourier_unstaggered}{{1.17}{24}{Cartesian Grids\relax }{equation.1.17}{}}
+\newlabel{eqn:fourier_collocated_staggered}{{1.18}{24}{Cartesian Grids\relax }{equation.1.18}{}}
+\newlabel{eqn:fourier_uncollocated_staggered}{{1.19}{24}{Cartesian Grids\relax }{equation.1.19}{}}
+\newlabel{eqn:fourier_numerical_c}{{1.20}{25}{Cartesian Grids\relax }{equation.1.20}{}}
+\newlabel{eqn:fourier_numerical_c2}{{1.21}{25}{Cartesian Grids\relax }{equation.1.21}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1.10}{\ignorespaces Comparison of the normalized numerical phase speeds for Cartesian grids.}}{26}{figure.1.10}}
+\newlabel{fig:numerical_c}{{1.10}{26}{Cartesian Grids\relax }{figure.1.10}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1.11}{\ignorespaces Polar diagrams of the normalized numerical phase speed for Cartesian grids and $N = 2, 4, 8, 16$.}}{26}{figure.1.11}}
+\newlabel{fig:numerical_c_polar}{{1.11}{26}{Cartesian Grids\relax }{figure.1.11}{}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Unstaggered}}}{26}{figure.1.11}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Collocated staggered}}}{26}{figure.1.11}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {Uncollocated staggered}}}{26}{figure.1.11}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.4.2}Hexagonal Grids}{27}{subsection.1.4.2}}
+\newlabel{fig:liu_fig4b}{{1.12(b)}{28}{Subfigure 1 1.12(b)\relax }{subfigure.1.12.2}{}}
+\newlabel{sub@fig:liu_fig4b}{{(b)}{28}{Subfigure 1 1.12(b)\relax }{subfigure.1.12.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1.12}{\ignorespaces Placement of unknowns on two-dimensional hexagonal grids.}}{28}{figure.1.12}}
+\newlabel{fig:liu_fig4}{{1.12}{28}{Hexagonal Grids\relax }{figure.1.12}{}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Unstaggered.}}}{28}{figure.1.12}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Staggered.}}}{28}{figure.1.12}}
+\newlabel{eqn:fourier_hexagonal_grid}{{1.22}{28}{Hexagonal Grids\relax }{equation.1.22}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1.13}{\ignorespaces Polar diagram of the normalized numerical phase speed for hexagonal grids.}}{29}{figure.1.13}}
+\newlabel{fig:numerical_c_polar_hex}{{1.13}{29}{Hexagonal Grids\relax }{figure.1.13}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1.14}{\ignorespaces Comparison of the normalized numerical phase speed for uncollocated staggered grids: Cartesian and hexagonal.}}{30}{figure.1.14}}
+\newlabel{fig:numerical_c_hex}{{1.14}{30}{Hexagonal Grids\relax }{figure.1.14}{}}
+\citation{schuhmann_whitney}
+\citation{schuhmann_stability}
+\citation{triangle}
+\@writefile{toc}{\contentsline {chapter}{\numberline {2}Material equations}{31}{chapter.2}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{cha:material_equations}{{2}{31}{Material equations\relax }{chapter.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.1}Introduction}{31}{section.2.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.2}Vorono\"i Dual Mesh}{31}{section.2.2}}
+\newlabel{sec:voronoi}{{2.2}{31}{Vorono\"i Dual Mesh\relax }{section.2.2}{}}
+\newlabel{eqn:voronoi_dof}{{2.1}{32}{Vorono\"i Dual Mesh\relax }{equation.2.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces Vorono\"i dual mesh.}}{32}{figure.2.1}}
+\newlabel{fig:voronoi}{{2.1}{32}{Vorono\"i Dual Mesh\relax }{figure.2.1}{}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {The dual edge $\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\textstyle \@mathpzc{e}$}\mathaccent "0365{\@mathpzc{e}}_i$ is orthogonal to the primal face $\@mathpzc{f}_i$.}}}{32}{figure.2.1}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {The edge $\@mathpzc{e}_i$ is orthogonal to the dual face $\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\textstyle \@mathpzc{f}$}\mathaccent "0365{\@mathpzc{f}}_i$}}}{32}{figure.2.1}}
+\newlabel{eqn:voronoi_maxwell}{{2.2}{32}{Vorono\"i Dual Mesh\relax }{equation.2.2}{}}
+\citation{bossavit_computational}
+\newlabel{eqn:voronoi_constitutive_magnetic}{{2.3}{33}{Vorono\"i Dual Mesh\relax }{equation.2.3}{}}
+\newlabel{eqn:voronoi_constitutive_electric}{{2.4}{33}{Vorono\"i Dual Mesh\relax }{equation.2.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.3}Poincar\'e Dual Mesh}{33}{section.2.3}}
+\newlabel{sec:poicare}{{2.3}{33}{Poincar\'e Dual Mesh\relax }{section.2.3}{}}
+\citation{someda_electromagnetic}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces Poincar\'e dual mesh: primal (dual) edges are not orthogonal to dual (primal) faces. In red, identified with $j$, are the primal faces (actually edges in the two-dimensional mesh) sharing a common vertical primal edge (actually a point) with the primal face (actually an edge) $i$.}}{34}{figure.2.2}}
+\newlabel{fig:poincare}{{2.2}{34}{Poincar\'e Dual Mesh\relax }{figure.2.2}{}}
+\newlabel{eqn:poincare_dof}{{2.5}{34}{Poincar\'e Dual Mesh\relax }{equation.2.5}{}}
+\citation{taflove_advances}
+\newlabel{eqn:poincare_first_step}{{1}{35}{Poincar\'e Dual Mesh\relax }{Item.8}{}}
+\newlabel{eqn:poincare_constitutive_magnetic}{{2.6}{35}{Poincar\'e Dual Mesh\relax }{Item.11}{}}
+\citation{marrone_computational}
+\newlabel{eqn:constitutive_poincare}{{2.7}{36}{Poincar\'e Dual Mesh\relax }{Item.12}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.4}Barycentric Dual Mesh}{36}{section.2.4}}
+\newlabel{sec:barycentric}{{2.4}{36}{Barycentric Dual Mesh\relax }{section.2.4}{}}
+\citation{marrone_computational}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces Barycentric dual mesh: dual edges are piece-lines to connect barycenters of adjacent primal cells.}}{37}{figure.2.3}}
+\newlabel{fig:barycentric}{{2.3}{37}{Barycentric Dual Mesh\relax }{figure.2.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.5}Particular Material Equations}{37}{section.2.5}}
+\newlabel{sec:particular_material_equations}{{2.5}{37}{Particular Material Equations\relax }{section.2.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.1}Ohm Losses}{37}{subsection.2.5.1}}
+\newlabel{sec:ohm_losses}{{2.5.1}{37}{Ohm Losses\relax }{subsection.2.5.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.2}PML}{38}{subsection.2.5.2}}
+\newlabel{sec:pml}{{2.5.2}{38}{PML\relax }{subsection.2.5.2}{}}
+\newlabel{eqn:maxwell_time_domain_pml}{{2.8}{40}{PML\relax }{equation.2.8}{}}
+\citation{taflove_computational}
+\citation{bolla_piers}
+\@writefile{toc}{\contentsline {chapter}{\numberline {3}Time-Domain}{41}{chapter.3}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{cha:time_domain}{{3}{41}{Time-Domain\relax }{chapter.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}Leapfrog Timestepping}{41}{section.3.1}}
+\newlabel{sec:leapfrog}{{3.1}{41}{Leapfrog Timestepping\relax }{section.3.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces Discretization of time: dual instants (in blue) are the midpoints of primal intervals.}}{41}{figure.3.1}}
+\newlabel{fig:timeline}{{3.1}{41}{Leapfrog Timestepping\relax }{figure.3.1}{}}
+\citation{bolla_piers}
+\citation{someda_electromagnetic}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}Sources}{42}{section.3.2}}
+\citation{taflove_computational}
+\citation{fimmwave}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces Electric sources are associated to the dual surfaces, magnetic sources to the primal surfaces. If the electromagnetic field distribution is known on the blue line, we can use the \emph  {Equivalence Theorem} to build equivalent sources: at limit, we can think of the line (in two dimensions) over which the equivalent sources are defined as an infinitesimally thin surface.}}{43}{figure.3.2}}
+\newlabel{fig:sources}{{3.2}{43}{Sources\relax }{figure.3.2}{}}
+\citation{trevisan_geometric}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces PMLs tuning by field sources: if finely tuned, PMLs give no reflections to the input and output facets of the waveguide.}}{44}{figure.3.3}}
+\newlabel{fig:pml_tuning}{{3.3}{44}{Sources\relax }{figure.3.3}{}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Waveguide.}}}{44}{figure.3.3}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Badly tuned PMLs.}}}{44}{figure.3.3}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {Finely tuned PMLs.}}}{44}{figure.3.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}Matricial Representation}{44}{section.3.3}}
+\newlabel{eqn:maxwell_time_domain}{{3.1}{44}{Matricial Representation\relax }{equation.3.1}{}}
+\citation{liu_fourier}
+\citation{schuhmann_whitney}
+\citation{schuhmann_stability}
+\citation{liu_fourier}
+\citation{taflove_computational}
+\newlabel{eqn:maxwell_time_domain_reduced}{{3.2}{45}{Matricial Representation\relax }{equation.3.2}{}}
+\newlabel{eqn:discrete_helmholtz}{{3.3}{45}{Matricial Representation\relax }{equation.3.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.4}Stability of Time Discretization}{45}{section.3.4}}
+\newlabel{sec:stability_time}{{3.4}{45}{Stability of Time Discretization\relax }{section.3.4}{}}
+\newlabel{eqn:fourier_maxwell_eigen}{{3.4}{45}{Stability of Time Discretization\relax }{equation.3.4}{}}
+\newlabel{eqn:lf1}{{3.5}{46}{Stability of Time Discretization\relax }{Item.14}{}}
+\newlabel{eqn:lf2}{{3.6}{46}{Stability of Time Discretization\relax }{Item.16}{}}
+\newlabel{eqn:rk3}{{3.7}{46}{Stability of Time Discretization\relax }{Item.18}{}}
+\newlabel{eqn:rk4}{{3.8}{46}{Stability of Time Discretization\relax }{Item.20}{}}
+\newlabel{eqn:sigma}{{3.9}{47}{Stability of Time Discretization\relax }{equation.3.9}{}}
+\newlabel{eqn:leapfrog_staggered_stability}{{3.10}{47}{Stability of Time Discretization\relax }{equation.3.10}{}}
+\citation{yee_numerical}
+\citation{bolla_energy}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces The staggered leapfrog timestepping is conditionally stable. The stability condition ${\left \delimiter 72786700 \sigma \right \delimiter 89563916 } < 1$ can be geometrically interpreted noting that ${\ }^{n+1}{f}^{} = \sigma {\ }^{n}{f}^{}$: if ${\left \delimiter 72786700 \sigma \right \delimiter 89563916 } > 1$ than the vectors $f$ will diverge from the origin indefinitely. The condition ${\left \delimiter 72786700 \sigma \right \delimiter 89563916 } = 1$ is the limit: a simple numerical error (due to the finite precision arithmetics of a computer) can induce instability. In red is the vector $\Delta t{\ }^{n+1/2}{f'}^{}$, as computed from the leapfrog timestepping.}}{48}{figure.3.4}}
+\newlabel{fig:liu_fourier_myfig}{{3.4}{48}{Stability of Time Discretization\relax }{figure.3.4}{}}
+\citation{veselago_electrodynamics}
+\citation{pendry_extremely}
+\citation{pendry_negative}
+\citation{smith_composite}
+\citation{foteinopoulou_refraction}
+\citation{born_principles}
+\citation{jackson_classical}
+\citation{taflove_computational}
+\@writefile{toc}{\contentsline {section}{\numberline {3.5}Dispersive and Negative Index Material Example}{49}{section.3.5}}
+\newlabel{sec:nim}{{3.5}{49}{Dispersive and Negative Index Material Example\relax }{section.3.5}{}}
+\citation{bolla_energy}
+\citation{wu_superprism}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces Negative refraction and perfect lens effect. The lower half plane is a PIM and the upper half plane is a NIM, with the same absolute value of the refractive index. Perfect self focusing is achieved. ``S'' stands for ``Source'', ``I'' for ``Image''. We can see some power reflected by the interface, at a frequency for which PIM and NIM are not matched.}}{50}{figure.3.5}}
+\newlabel{fig:nim_lens}{{3.5}{50}{Dispersive and Negative Index Material Example\relax }{figure.3.5}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Frequency-Domain}{51}{chapter.4}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}From Time- to Frequency-Domain}{51}{section.4.1}}
+\newlabel{eqn:maxwell_frequency_domain}{{4.1}{51}{From Time- to Frequency-Domain\relax }{equation.4.1}{}}
+\newlabel{eqn:helmholtz_discrete}{{4.2}{51}{From Time- to Frequency-Domain\relax }{equation.4.2}{}}
+\newlabel{eqn:matrix_d}{{4.3}{52}{From Time- to Frequency-Domain\relax }{equation.4.3}{}}
+\newlabel{eqn:helmholtz_discrete_2}{{4.4}{52}{From Time- to Frequency-Domain\relax }{equation.4.4}{}}
+\newlabel{eqn:helmholtz_discrete_3}{{4.5}{52}{From Time- to Frequency-Domain\relax }{equation.4.5}{}}
+\citation{liu_fourier}
+\newlabel{eqn:eigval_td_1}{{4.6}{53}{From Time- to Frequency-Domain\relax }{equation.4.6}{}}
+\newlabel{eqn:eigval_td_2}{{4.7}{53}{From Time- to Frequency-Domain\relax }{equation.4.7}{}}
+\newlabel{eqn:condition_lambda}{{4.8}{53}{From Time- to Frequency-Domain\relax }{equation.4.8}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces Region of stability of the time-domain algorithm as $\Delta t$ changes. Note that each circle passes through the point $(1,0)$.}}{54}{figure.4.1}}
+\newlabel{fig:stability_td}{{4.1}{54}{From Time- to Frequency-Domain\relax }{figure.4.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}Check of the Stationary State}{55}{section.4.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.3}Matricial Representation}{55}{section.4.3}}
+\newlabel{eqn:eigval_fd_1}{{4.9}{55}{Matricial Representation\relax }{equation.4.9}{}}
+\citation{bolla_piers}
+\citation{someda_electromagnetic}
+\newlabel{eqn:eigval_fd_2}{{4.10}{56}{Matricial Representation\relax }{equation.4.10}{}}
+\newlabel{eqn:eigval_fd_3}{{4.11}{56}{Matricial Representation\relax }{equation.4.11}{}}
+\newlabel{eqn:eigval_fd_4}{{4.12}{56}{Matricial Representation\relax }{equation.4.12}{}}
+\newlabel{eqn:eigval_fd_5}{{4.3}{56}{Matricial Representation\relax }{equation.4.12}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces Region of stability of the frequency-domain algorithm.}}{57}{figure.4.2}}
+\newlabel{fig:stability_fd}{{4.2}{57}{Matricial Representation\relax }{figure.4.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces Map from time- to frequency-domain.}}{57}{figure.4.3}}
+\newlabel{fig:stability_td_vs_fd}{{4.3}{57}{Matricial Representation\relax }{figure.4.3}{}}
+\citation{taflove_computational}
+\citation{numerical_recipies}
+\citation{mathworld}
+\citation{wikipedia}
+\citation{numerical_recipies}
+\@writefile{toc}{\contentsline {section}{\numberline {4.4}Solvers}{58}{section.4.4}}
+\newlabel{eqn:linear_system}{{4.13}{58}{Solvers\relax }{equation.4.13}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.1}Direct Methods}{58}{subsection.4.4.1}}
+\citation{wikipedia}
+\citation{numerical_recipies}
+\citation{nag}
+\citation{umfpack}
+\citation{amestoy_approximate}
+\newlabel{eqn:linear_system_lu}{{4.14}{59}{Direct Methods\relax }{equation.4.14}{}}
+\newlabel{eqn:linear_system_l}{{4.15}{59}{Direct Methods\relax }{equation.4.15}{}}
+\newlabel{eqn:linear_system_u}{{4.16}{59}{Direct Methods\relax }{equation.4.16}{}}
+\citation{barrett_templates}
+\citation{barrett_templates}
+\citation{barrett_templates}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.2}Iterative Methods}{60}{subsection.4.4.2}}
+\newlabel{eqn:stationary_methods}{{4.17}{60}{Iterative Methods\relax }{equation.4.17}{}}
+\citation{shewchuk_cg}
+\citation{numerical_recipies}
+\citation{saad_iterative}
+\citation{barrett_templates}
+\citation{hebermehl_improved}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.3}Preconditioning}{62}{subsection.4.4.3}}
+\newlabel{eqn:linear_system_preconditioned}{{4.18}{62}{Preconditioning\relax }{equation.4.18}{}}
+\citation{schuhmann_whitney}
+\citation{schuhmann_stability}
+\citation{schuhmann_stability}
+\citation{schuhmann_stability}
+\citation{taflove_computational}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.4}Looking for the Best Methods}{63}{subsection.4.4.4}}
+\@writefile{toc}{\contentsline {subsubsection}{Symmetry}{63}{section*.5}}
+\newlabel{eqn:symmetry_system}{{4.21}{63}{Symmetry\relax }{equation.4.21}{}}
+\citation{schuhmann_stability}
+\citation{schuhmann_whitney}
+\citation{bossavit_yee}
+\citation{schuhmann_whitney}
+\citation{shewchuk_cg}
+\citation{codecasa_baricentric}
+\citation{schuhmann_whitney}
+\@writefile{toc}{\contentsline {subsubsection}{Indefiniteness}{64}{section*.6}}
+\citation{shewchuk_cg}
+\citation{benzi_survey}
+\@writefile{toc}{\contentsline {subsubsection}{Hermitianity}{65}{section*.7}}
+\@writefile{toc}{\contentsline {subsubsection}{Some Results}{65}{section*.8}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces Quadratic forms for a simple $2 \times 2$ linear system.}}{66}{figure.4.4}}
+\newlabel{fig:quadratic_forms}{{4.4}{66}{Indefiniteness\relax }{figure.4.4}{}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Positive definite quadratic form $A$.}}}{66}{figure.4.4}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Positive definite quadratic form $w^2I$.}}}{66}{figure.4.4}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {Indefinite quadratic form $A - w^2I$.}}}{66}{figure.4.4}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(d)}{\ignorespaces {From positive definite to indefinite changing $w$.}}}{66}{figure.4.4}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.1}{\ignorespaces Parameters used to test different direct and iterative solvers.}}{66}{table.4.1}}
+\newlabel{tab:frequency_parameters}{{4.1}{66}{Some Results\relax }{table.4.1}{}}
+\citation{freund_qmr}
+\citation{freund_implementation}
+\citation{freund_iterative}
+\citation{kilmer_qmr}
+\citation{cangellaris_analysis}
+\@writefile{toc}{\contentsline {section}{\numberline {4.5}Examples}{67}{section.4.5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5.1}2-D}{67}{subsection.4.5.1}}
+\newlabel{fig:eigvals:lambda}{{4.5(a)}{68}{Subfigure 4 4.5(a)\relax }{subfigure.4.5.1}{}}
+\newlabel{sub@fig:eigvals:lambda}{{(a)}{68}{Subfigure 4 4.5(a)\relax }{subfigure.4.5.1}{}}
+\newlabel{fig:eigvals:unstructured}{{4.5(b)}{68}{Subfigure 4 4.5(b)\relax }{subfigure.4.5.2}{}}
+\newlabel{sub@fig:eigvals:unstructured}{{(b)}{68}{Subfigure 4 4.5(b)\relax }{subfigure.4.5.2}{}}
+\newlabel{fig:eigvals:pml}{{4.5(c)}{68}{Subfigure 4 4.5(c)\relax }{subfigure.4.5.3}{}}
+\newlabel{sub@fig:eigvals:pml}{{(c)}{68}{Subfigure 4 4.5(c)\relax }{subfigure.4.5.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces Eigenvalues of the system matrix, for different possible parameters, listed in Table \ref  {tab:frequency_parameters}.}}{68}{figure.4.5}}
+\newlabel{fig:eigvals}{{4.5}{68}{Some Results\relax }{figure.4.5}{}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Larger $\lambda $ means lower frequency and a simpler problem to solve: the eigenvalues are closer to each other.}}}{68}{figure.4.5}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Structured and unstructured grids give approximately the same eigenvalues, but for unstructured grid they are more clustered.}}}{68}{figure.4.5}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {Without PMLs all the eigenvalues are real.}}}{68}{figure.4.5}}
+\citation{triangle}
+\citation{petsc}
+\citation{petsc}
+\citation{petsc}
+\citation{petsc}
+\citation{umfpack}
+\citation{kallistos}
+\citation{fimmwave}
+\citation{kallistos}
+\citation{ayre_experimental}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5.2}3-D}{69}{subsection.4.5.2}}
+\newlabel{sec:frequency_domain:3D}{{4.5.2}{69}{3-D\relax }{subsection.4.5.2}{}}
+\newlabel{fig:2d_channel:mesh}{{4.6(a)}{70}{Subfigure 4 4.6(a)\relax }{subfigure.4.6.1}{}}
+\newlabel{sub@fig:2d_channel:mesh}{{(a)}{70}{Subfigure 4 4.6(a)\relax }{subfigure.4.6.1}{}}
+\newlabel{fig:2d_channel:matrix}{{4.6(b)}{70}{Subfigure 4 4.6(b)\relax }{subfigure.4.6.2}{}}
+\newlabel{sub@fig:2d_channel:matrix}{{(b)}{70}{Subfigure 4 4.6(b)\relax }{subfigure.4.6.2}{}}
+\newlabel{fig:2d_channel:bcgs}{{4.6(c)}{70}{Subfigure 4 4.6(c)\relax }{subfigure.4.6.3}{}}
+\newlabel{sub@fig:2d_channel:bcgs}{{(c)}{70}{Subfigure 4 4.6(c)\relax }{subfigure.4.6.3}{}}
+\newlabel{fig:2d_channel:gmres}{{4.6(d)}{70}{Subfigure 4 4.6(d)\relax }{subfigure.4.6.4}{}}
+\newlabel{sub@fig:2d_channel:gmres}{{(d)}{70}{Subfigure 4 4.6(d)\relax }{subfigure.4.6.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.6}{\ignorespaces Two-dimensional example: photonic crystal channel.}}{70}{figure.4.6}}
+\newlabel{fig:2d_channel}{{4.6}{70}{2-D\relax }{figure.4.6}{}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Primary mesh. In black are the circular scatterers, in blue, on the left, a plane wave source at a fixed $\lambda $ and in green, on the right, a sensor to collect the output fields.}}}{70}{figure.4.6}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {System matrix. Only $0.1398\%$ of the elements are non-zero.}}}{70}{figure.4.6}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {Convergence of the BiCGStab algorithm to the exact solution for different preconditioners. The best result is achieved with the Eisenstat preconditioner, a particular type of SOR preconditioner \cite {petsc}.}}}{70}{figure.4.6}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(d)}{\ignorespaces {Convergence of the GMRES algorithm to the exact solution for different preconditioners. Note that the convergence is much smoother than for the BiCGStab.}}}{70}{figure.4.6}}
+\citation{triangle}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.7}{\ignorespaces Two-dimensional example: a photonic crystal Y-junction.}}{71}{figure.4.7}}
+\newlabel{fig:Yjunct}{{4.7}{71}{2-D\relax }{figure.4.7}{}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Optimized position of the scatterers. The lattice period is $\Lambda = 430 nm$ and the radius of the scatterers is $R = 0.30 \Lambda $.}}}{71}{figure.4.7}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Power in the device. Note the ``steering'' effect of the holes in the Y-junction bends.}}}{71}{figure.4.7}}
+\@writefile{toc}{\contentsline {subsubsection}{Metallic Waveguide}{71}{section*.9}}
+\citation{fimmprop}
+\citation{photond}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.8}{\ignorespaces Three-dimensional example: geometry of a metallic waveguide.}}{72}{figure.4.8}}
+\newlabel{fig:simple_waveguide_geom}{{4.8}{72}{Metallic Waveguide\relax }{figure.4.8}{}}
+\newlabel{eqn:standard_deviation}{{4.22}{72}{Metallic Waveguide\relax }{equation.4.22}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Planar Photonic Crystal Channel}{72}{section*.10}}
+\newlabel{fig:simple_waveguide_mesh}{{4.9(a)}{73}{Subfigure 4 4.9(a)\relax }{subfigure.4.9.1}{}}
+\newlabel{sub@fig:simple_waveguide_mesh}{{(a)}{73}{Subfigure 4 4.9(a)\relax }{subfigure.4.9.1}{}}
+\newlabel{fig:simple_waveguide_M}{{4.9(b)}{73}{Subfigure 4 4.9(b)\relax }{subfigure.4.9.2}{}}
+\newlabel{sub@fig:simple_waveguide_M}{{(b)}{73}{Subfigure 4 4.9(b)\relax }{subfigure.4.9.2}{}}
+\newlabel{fig:simple_waveguide_gmres}{{4.9(c)}{73}{Subfigure 4 4.9(c)\relax }{subfigure.4.9.3}{}}
+\newlabel{sub@fig:simple_waveguide_gmres}{{(c)}{73}{Subfigure 4 4.9(c)\relax }{subfigure.4.9.3}{}}
+\newlabel{fig:simple_waveguide_qmr}{{4.9(d)}{73}{Subfigure 4 4.9(d)\relax }{subfigure.4.9.4}{}}
+\newlabel{sub@fig:simple_waveguide_qmr}{{(d)}{73}{Subfigure 4 4.9(d)\relax }{subfigure.4.9.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.9}{\ignorespaces Three-dimensional example: the metallic waveguide.}}{73}{figure.4.9}}
+\newlabel{fig:simple_waveguide}{{4.9}{73}{Metallic Waveguide\relax }{figure.4.9}{}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Example of a mesh layer in the extruded three-dimensional grid.}}}{73}{figure.4.9}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {System matrix.}}}{73}{figure.4.9}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {GMRES convergence.}}}{73}{figure.4.9}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(d)}{\ignorespaces {QMR with Jacobi preconditioner convergence.}}}{73}{figure.4.9}}
+\newlabel{fig:simple_waveguide_section_z}{{4.10(a)}{74}{Subfigure 4 4.10(a)\relax }{subfigure.4.10.1}{}}
+\newlabel{sub@fig:simple_waveguide_section_z}{{(a)}{74}{Subfigure 4 4.10(a)\relax }{subfigure.4.10.1}{}}
+\newlabel{fig:simple_waveguide_section_xz}{{4.10(b)}{74}{Subfigure 4 4.10(b)\relax }{subfigure.4.10.2}{}}
+\newlabel{sub@fig:simple_waveguide_section_xz}{{(b)}{74}{Subfigure 4 4.10(b)\relax }{subfigure.4.10.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.10}{\ignorespaces Three-dimensional example: resulting fields for the metallic waveguide.}}{74}{figure.4.10}}
+\newlabel{fig:simple_waveguide_section}{{4.10}{74}{Metallic Waveguide\relax }{figure.4.10}{}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {${\@mathbb{R}\left [E_z\right ]}$ in a $z$-constant section: theoretical and computed.}}}{74}{figure.4.10}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {${\@mathbb{R}\left [E_z\right ]}$ in a $xz$-constant section: theoretical and computed. Black lines shows the PMLs; the red line, the $TE_{1,0}$ mode source. Comparison is meaninful only outside the PMLs.}}}{74}{figure.4.10}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.6}Validation of the method}{74}{section.4.6}}
+\newlabel{fig:uniud_phc_coarse_M}{{4.11(a)}{75}{Subfigure 4 4.11(a)\relax }{subfigure.4.11.1}{}}
+\newlabel{sub@fig:uniud_phc_coarse_M}{{(a)}{75}{Subfigure 4 4.11(a)\relax }{subfigure.4.11.1}{}}
+\newlabel{fig:uniud_phc_coarse_residual}{{4.11(b)}{75}{Subfigure 4 4.11(b)\relax }{subfigure.4.11.2}{}}
+\newlabel{sub@fig:uniud_phc_coarse_residual}{{(b)}{75}{Subfigure 4 4.11(b)\relax }{subfigure.4.11.2}{}}
+\newlabel{fig:uniud_phc_coarse_field}{{4.11(c)}{75}{Subfigure 4 4.11(c)\relax }{subfigure.4.11.3}{}}
+\newlabel{sub@fig:uniud_phc_coarse_field}{{(c)}{75}{Subfigure 4 4.11(c)\relax }{subfigure.4.11.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.11}{\ignorespaces Three-dimensional example: planar photonic crystal channel.}}{75}{figure.4.11}}
+\newlabel{fig:uniud_phc_coarse}{{4.11}{75}{Planar Photonic Crystal Channel\relax }{figure.4.11}{}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {System matrix: it presents more than $8$ million non-zeros.}}}{75}{figure.4.11}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {QMR with Jacobi convergence.}}}{75}{figure.4.11}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {${\left \delimiter 72786700 E_z\right \delimiter 89563916 }$ on a $z$-constant section.}}}{75}{figure.4.11}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.6.1}Free-space propagation}{76}{subsection.4.6.1}}
+\newlabel{sec:validation_01}{{4.6.1}{76}{Free-space propagation\relax }{subsection.4.6.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.6.2}Single scatterer}{76}{subsection.4.6.2}}
+\newlabel{sec:validation_02}{{4.6.2}{76}{Single scatterer\relax }{subsection.4.6.2}{}}
+\newlabel{fig:validation_01_domain}{{4.12(a)}{77}{Subfigure 4 4.12(a)\relax }{subfigure.4.12.1}{}}
+\newlabel{sub@fig:validation_01_domain}{{(a)}{77}{Subfigure 4 4.12(a)\relax }{subfigure.4.12.1}{}}
+\newlabel{fig:validation_01_convergence}{{4.12(b)}{77}{Subfigure 4 4.12(b)\relax }{subfigure.4.12.2}{}}
+\newlabel{sub@fig:validation_01_convergence}{{(b)}{77}{Subfigure 4 4.12(b)\relax }{subfigure.4.12.2}{}}
+\newlabel{fig:validation_01_field}{{4.12(c)}{77}{Subfigure 4 4.12(c)\relax }{subfigure.4.12.3}{}}
+\newlabel{sub@fig:validation_01_field}{{(c)}{77}{Subfigure 4 4.12(c)\relax }{subfigure.4.12.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.12}{\ignorespaces Free-space propagation.}}{77}{figure.4.12}}
+\newlabel{fig:validation_01}{{4.12}{77}{Free-space propagation\relax }{figure.4.12}{}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Computational domain.}}}{77}{figure.4.12}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Convergence to the reference solution.}}}{77}{figure.4.12}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {Absolute value of the magnetic field on the most right-hand sided output sensor, for different mesh grids.}}}{77}{figure.4.12}}
+\newlabel{fig:validation_02_domain}{{4.13(a)}{78}{Subfigure 4 4.13(a)\relax }{subfigure.4.13.1}{}}
+\newlabel{sub@fig:validation_02_domain}{{(a)}{78}{Subfigure 4 4.13(a)\relax }{subfigure.4.13.1}{}}
+\newlabel{fig:validation_02_fimmwave}{{4.13(b)}{78}{Subfigure 4 4.13(b)\relax }{subfigure.4.13.2}{}}
+\newlabel{sub@fig:validation_02_fimmwave}{{(b)}{78}{Subfigure 4 4.13(b)\relax }{subfigure.4.13.2}{}}
+\newlabel{fig:validation_02_convergence}{{4.13(c)}{78}{Subfigure 4 4.13(c)\relax }{subfigure.4.13.3}{}}
+\newlabel{sub@fig:validation_02_convergence}{{(c)}{78}{Subfigure 4 4.13(c)\relax }{subfigure.4.13.3}{}}
+\newlabel{fig:validation_02_field}{{4.13(d)}{78}{Subfigure 4 4.13(d)\relax }{subfigure.4.13.4}{}}
+\newlabel{sub@fig:validation_02_field}{{(d)}{78}{Subfigure 4 4.13(d)\relax }{subfigure.4.13.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.13}{\ignorespaces Single scatterer.}}{78}{figure.4.13}}
+\newlabel{fig:validation_02}{{4.13}{78}{Single scatterer\relax }{figure.4.13}{}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Computational domain.}}}{78}{figure.4.13}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {FIMMPROP PMLs tuning.}}}{78}{figure.4.13}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {Convergence to the reference solution.}}}{78}{figure.4.13}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(d)}{\ignorespaces {Absolute value of the magnetic field on the most right-hand sided output sensor, for different mesh grids.}}}{78}{figure.4.13}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.6.3}Photonic Crystal Channel}{79}{subsection.4.6.3}}
+\newlabel{sec:validation_03}{{4.6.3}{79}{Photonic Crystal Channel\relax }{subsection.4.6.3}{}}
+\newlabel{fig:validation_03_domain}{{4.14(a)}{80}{Subfigure 4 4.14(a)\relax }{subfigure.4.14.1}{}}
+\newlabel{sub@fig:validation_03_domain}{{(a)}{80}{Subfigure 4 4.14(a)\relax }{subfigure.4.14.1}{}}
+\newlabel{fig:validation_03_field}{{4.14(b)}{80}{Subfigure 4 4.14(b)\relax }{subfigure.4.14.2}{}}
+\newlabel{sub@fig:validation_03_field}{{(b)}{80}{Subfigure 4 4.14(b)\relax }{subfigure.4.14.2}{}}
+\newlabel{fig:validation_03_phase}{{4.14(c)}{80}{Subfigure 4 4.14(c)\relax }{subfigure.4.14.3}{}}
+\newlabel{sub@fig:validation_03_phase}{{(c)}{80}{Subfigure 4 4.14(c)\relax }{subfigure.4.14.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.14}{\ignorespaces Photonic crystal channel.}}{80}{figure.4.14}}
+\newlabel{fig:validation_03}{{4.14}{80}{Photonic Crystal Channel\relax }{figure.4.14}{}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Computational domain.}}}{80}{figure.4.14}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Absolute value of the magnetic field at the output sensor.}}}{80}{figure.4.14}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {Phase of the magnetic field at the output sensor.}}}{80}{figure.4.14}}
+\citation{bossavit_yee}
+\citation{tayeb_rigorous}
+\citation{fimmprop}
+\citation{photond}
+\@setckpt{propagators}{
+\setcounter{page}{82}
+\setcounter{equation}{22}
+\setcounter{enumi}{2}
+\setcounter{enumii}{3}
+\setcounter{enumiii}{0}
+\setcounter{enumiv}{0}
+\setcounter{footnote}{8}
+\setcounter{mpfootnote}{0}
+\setcounter{part}{1}
+\setcounter{chapter}{4}
+\setcounter{section}{6}
+\setcounter{subsection}{3}
+\setcounter{subsubsection}{0}
+\setcounter{paragraph}{0}
+\setcounter{subparagraph}{0}
+\setcounter{figure}{14}
+\setcounter{table}{1}
+\setcounter{parentequation}{0}
+\setcounter{subfigure}{0}
+\setcounter{lofdepth}{1}
+\setcounter{subtable}{0}
+\setcounter{lotdepth}{1}
+\setcounter{Item}{38}
+\setcounter{Hfootnote}{20}
+\setcounter{theorem}{0}
+\setcounter{proof}{0}
+\setcounter{definition}{2}
+\setcounter{section@level}{2}
+}

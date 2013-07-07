@@ -1,0 +1,72 @@
+\BOOKMARK [0][-]{chapter*.2}{Preface}{}
+\BOOKMARK [0][-]{chapter*.3}{Prefazione}{}
+\BOOKMARK [-1][-]{part.1}{I Propagators}{}
+\BOOKMARK [0][-]{chapter.1}{Discretization Schemes}{part.1}
+\BOOKMARK [1][-]{section.1.1}{Introduction}{chapter.1}
+\BOOKMARK [1][-]{section.1.2}{Mesh}{chapter.1}
+\BOOKMARK [2][-]{subsection.1.2.1}{Definition and Properties}{section.1.2}
+\BOOKMARK [2][-]{subsection.1.2.2}{Orientation}{section.1.2}
+\BOOKMARK [2][-]{subsection.1.2.3}{Dual Mesh}{section.1.2}
+\BOOKMARK [2][-]{subsection.1.2.4}{Matricial Representation}{section.1.2}
+\BOOKMARK [1][-]{section.1.3}{Geometry and Physics}{chapter.1}
+\BOOKMARK [2][-]{subsection.1.3.1}{Matricial Representation}{section.1.3}
+\BOOKMARK [1][-]{section.1.4}{Stability of Space Discretization}{chapter.1}
+\BOOKMARK [2][-]{subsection.1.4.1}{Cartesian Grids}{section.1.4}
+\BOOKMARK [2][-]{subsection.1.4.2}{Hexagonal Grids}{section.1.4}
+\BOOKMARK [0][-]{chapter.2}{Material equations}{part.1}
+\BOOKMARK [1][-]{section.2.1}{Introduction}{chapter.2}
+\BOOKMARK [1][-]{section.2.2}{Vorono\357 Dual Mesh}{chapter.2}
+\BOOKMARK [1][-]{section.2.3}{Poincar\351 Dual Mesh}{chapter.2}
+\BOOKMARK [1][-]{section.2.4}{Barycentric Dual Mesh}{chapter.2}
+\BOOKMARK [1][-]{section.2.5}{Particular Material Equations}{chapter.2}
+\BOOKMARK [2][-]{subsection.2.5.1}{Ohm Losses}{section.2.5}
+\BOOKMARK [2][-]{subsection.2.5.2}{PML}{section.2.5}
+\BOOKMARK [0][-]{chapter.3}{Time-Domain}{part.1}
+\BOOKMARK [1][-]{section.3.1}{Leapfrog Timestepping}{chapter.3}
+\BOOKMARK [1][-]{section.3.2}{Sources}{chapter.3}
+\BOOKMARK [1][-]{section.3.3}{Matricial Representation}{chapter.3}
+\BOOKMARK [1][-]{section.3.4}{Stability of Time Discretization}{chapter.3}
+\BOOKMARK [1][-]{section.3.5}{Dispersive and Negative Index Material Example}{chapter.3}
+\BOOKMARK [0][-]{chapter.4}{Frequency-Domain}{part.1}
+\BOOKMARK [1][-]{section.4.1}{From Time- to Frequency-Domain}{chapter.4}
+\BOOKMARK [1][-]{section.4.2}{Check of the Stationary State}{chapter.4}
+\BOOKMARK [1][-]{section.4.3}{Matricial Representation}{chapter.4}
+\BOOKMARK [1][-]{section.4.4}{Solvers}{chapter.4}
+\BOOKMARK [2][-]{subsection.4.4.1}{Direct Methods}{section.4.4}
+\BOOKMARK [2][-]{subsection.4.4.2}{Iterative Methods}{section.4.4}
+\BOOKMARK [2][-]{subsection.4.4.3}{Preconditioning}{section.4.4}
+\BOOKMARK [2][-]{subsection.4.4.4}{Looking for the Best Methods}{section.4.4}
+\BOOKMARK [1][-]{section.4.5}{Examples}{chapter.4}
+\BOOKMARK [2][-]{subsection.4.5.1}{2-D}{section.4.5}
+\BOOKMARK [2][-]{subsection.4.5.2}{3-D}{section.4.5}
+\BOOKMARK [1][-]{section.4.6}{Validation of the method}{chapter.4}
+\BOOKMARK [2][-]{subsection.4.6.1}{Free-space propagation}{section.4.6}
+\BOOKMARK [2][-]{subsection.4.6.2}{Single scatterer}{section.4.6}
+\BOOKMARK [2][-]{subsection.4.6.3}{Photonic Crystal Channel}{section.4.6}
+\BOOKMARK [-1][-]{part.2}{II Mode Solvers}{}
+\BOOKMARK [0][-]{chapter.5}{Finite Difference Method}{part.2}
+\BOOKMARK [1][-]{section.5.1}{Introduction}{chapter.5}
+\BOOKMARK [1][-]{section.5.2}{Semivectorial Mode Solver}{chapter.5}
+\BOOKMARK [1][-]{section.5.3}{Vectorial Mode Solver}{chapter.5}
+\BOOKMARK [1][-]{section.5.4}{Examples and validation}{chapter.5}
+\BOOKMARK [0][-]{chapter.6}{Plane Wave Expansion Technique}{part.2}
+\BOOKMARK [1][-]{section.6.1}{Introduction}{chapter.6}
+\BOOKMARK [1][-]{section.6.2}{Photonic Crystals}{chapter.6}
+\BOOKMARK [1][-]{section.6.3}{Plane Wave Expansion Algorithm}{chapter.6}
+\BOOKMARK [2][-]{subsection.6.3.1}{Improvements on the Algorithm}{section.6.3}
+\BOOKMARK [1][-]{section.6.4}{Examples and Validation}{chapter.6}
+\BOOKMARK [-1][-]{part.3}{III HIC Devices}{}
+\BOOKMARK [0][-]{chapter.7}{Polarization Rotator}{part.3}
+\BOOKMARK [1][-]{section.7.1}{Introduction}{chapter.7}
+\BOOKMARK [1][-]{section.7.2}{Description of the Wafer}{chapter.7}
+\BOOKMARK [1][-]{section.7.3}{Design}{chapter.7}
+\BOOKMARK [1][-]{section.7.4}{Results}{chapter.7}
+\BOOKMARK [-1][-]{part.4}{IV Appendices}{}
+\BOOKMARK [0][-]{appendix.A}{Notation and Nomeclature}{part.4}
+\BOOKMARK [0][-]{appendix.B}{Maxwell House}{part.4}
+\BOOKMARK [0][-]{appendix.C}{Barycentric Coordinates}{part.4}
+\BOOKMARK [1][-]{section.C.1}{Interpolation of a Nodal Function}{appendix.C}
+\BOOKMARK [1][-]{section.C.2}{Interpolation of an Edge Function}{appendix.C}
+\BOOKMARK [0][-]{appendix.D}{Geometrical Interpretation of the Courant Factor}{part.4}
+\BOOKMARK [0][-]{appendix*.23}{Bibliography}{part.4}
+\BOOKMARK [0][-]{appendix*.23}{Index}{part.4}

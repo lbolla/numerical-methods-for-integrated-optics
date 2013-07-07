@@ -1,0 +1,21 @@
+\begin{picture}(0,0)%
+\includegraphics{pics/liu_fig4b.pdf}%
+\end{picture}%
+\setlength{\unitlength}{4144sp}%
+%
+\begingroup\makeatletter\ifx\SetFigFont\undefined%
+\gdef\SetFigFont#1#2#3#4#5{%
+  \reset@font\fontsize{#1}{#2pt}%
+  \fontfamily{#3}\fontseries{#4}\fontshape{#5}%
+  \selectfont}%
+\fi\endgroup%
+\begin{picture}(4524,3940)(664,-4275)
+\put(3826,-3661){\makebox(0,0)[lb]{\smash{{\SetFigFont{29}{34.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}$B_1$}%
+}}}}
+\put(4276,-2311){\makebox(0,0)[lb]{\smash{{\SetFigFont{29}{34.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}$B_2$}%
+}}}}
+\put(3826,-1411){\makebox(0,0)[lb]{\smash{{\SetFigFont{29}{34.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}$B_3$}%
+}}}}
+\put(2926,-2761){\makebox(0,0)[b]{\smash{{\SetFigFont{29}{34.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}$D_z$}%
+}}}}
+\end{picture}%

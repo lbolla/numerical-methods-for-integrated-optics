@@ -1,0 +1,456 @@
+\appendix
+
+\part{Appendices}
+
+\chapter{Notation and Nomeclature}
+
+Throughout the text, a coherent notation has been
+employed. \tabref{tab:notation_vector}, \tabref{tab:notation_matrix},
+\tabref{tab:notation_mathematical}, \tabref{tab:notation_geometrical}
+show the notation used.
+
+\begin{table}[htbp]
+  \begin{center}
+    \begin{tabular}{ll}
+      \hline
+      Element & Example\\
+      \hline
+      Vector & $\Vector{v}$ \\
+      Vector in time-domain & $\VectorT{v}$ \\
+      Versor & $\Versor{v}$ \\
+      Norm & $\Norm{\Vector{v}}$ \\
+      Dot Product & $\DotProd{\Vector{x}}{\Vector{y}}$ \\
+      Cross Product & $\CrossProd{\Vector{x}}{\Vector{y}}$ \\
+      Gradient & $\Grad{\Anything}$ \\
+      Curl & $\Rot{\Anything}$ \\
+      Divergence & $\Div{\Anything}$ \\
+      Laplacian & $\Lap{\Anything}$ \\
+      Transverse Laplacian & $\Lapt{\Anything}$ \\
+      \hline
+    \end{tabular}
+  \end{center}
+  \caption{Notation for vector calculus.}
+  \label{tab:notation_vector}
+\end{table}
+
+\begin{table}[htbp]
+  \begin{center}
+    \begin{tabular}{ll}
+      \hline
+      Element & Example\\
+      \hline
+      Array & $\Array{x}$ \\
+      Matrix & $\Matrix{M}$ \\
+      Transpose Matrix & $\Transpose{\Matrix{A}}$ \\
+      Hermitian Matrix\index{Hermitian matrix} & $\Hermitian{\Matrix{A}}$ \\
+      Operator & $\Operator{A}{\Anything}$ \\
+      Fourier Transform\index{Fourier!transform|tab} & $\Fourier{f}$ \\
+      Tensor & $\Tensor{\epsilon}$ \\
+      Generic Set & $\Set{A},\Set{B},\dotsc$ \\
+      Empty Set & $\EmptySet$ \\
+      Positive Integers & $\NaturalSet$ \\
+      Integers & $\AllNaturalSet$ \\
+      Rationals & $\RationalSet$ \\
+      Reals & $\RealSet$ \\
+      Imaginary Numbers & $\ImagSet$ \\
+      Complex Numbers & $\ComplexSet$ \\
+      \hline
+    \end{tabular}
+  \end{center}
+  \caption{Notation for matricial calculus and sets.}
+  \label{tab:notation_matrix}
+\end{table}
+
+\begin{table}[htbp]
+  \begin{center}
+    \begin{tabular}{ll}
+      \hline
+      Element & Example\\
+      \hline
+      Conjugate & $\Conj{z}$ \\
+      Absolute Value & $\Abs{z}$ \\
+      Argument & $\Arg{z}$ \\
+      Real Part & $\Real{z}$ \\
+      Imaginary Part & $\Imag{z}$ \\
+      Discretization in space-time of a function $f$ & $\Disc{f}{i,j,k}{n}$ \\
+      Evaluation of a function $f$ & $\Evaluate{f}{x=x_0}$ \\
+      \hline
+    \end{tabular}
+  \end{center}
+  \caption{Notation for mixed mathematical functions.}
+  \label{tab:notation_mathematical}
+\end{table}
+
+\begin{table}[htbp]
+  \begin{center}
+    \begin{tabular}{ll}
+      \hline
+      Element & Example\\
+      \hline
+      Instant in time & $\Instant{t}$ \\
+      Interval in time & $\Interval{\tau}$ \\
+      Point and Node & $\Point{n}$ \\
+      Line and Edge & $\Line{e}$ \\
+      Face and Surface & $\Surface{f}$ \\
+      Volume and Cell & $\Volume{v}$ \\
+      Dual element & $\Dual{x}$ \\
+      External orientation\index{Orientation!external} & $\ExtOrient{x}$ \\
+      Measure & $\Measure{x}$ \\
+      \hline
+    \end{tabular}
+  \end{center}
+  \caption{Notation for geometrical elements.}
+  \label{tab:notation_geometrical}
+\end{table}
+
+\chapter{Maxwell House} \index{Maxwell House|(} \label{app:maxwell_house}
+
+\begin{figure}[htbp]
+  \begin{center}
+    \resizebox{10cm}{!}{\input{pics/maxwell_house.pdf_t}}
+  \end{center}
+  \caption{Maxwell's House}
+  \label{fig:maxwell_house}
+\end{figure}
+
+\figref{fig:maxwell_house}, inspired from
+\cite{bossavit_computational}, tries to represent graphically the
+symmetry of Maxwell equations. The nodes of the grid represent
+physical quantities, while edges are the relations between them. The
+notation used is the same as in \cite{bossavit_computational}.
+
+In \tabref{tab:maxwell_house}, the equations that can be read from the
+diagram are listed.
+
+\begin{table}[htbp]
+  \begin{center}
+  \begin{tabular}{*{3}{c}}
+  \hline
+  Vector Potentials   & $b = \Rot{a}$ & $d = -\Rot{f}$ \\
+                      & $e = -\partial_t a - \Grad{\psi}$ & $h = -\partial_t f - \Grad{\phi}$ \\
+  Gauss Law           & $\Div{d} = q$ & $\Div{b} = r$ \\
+  Faraday Equation    & $\partial_t b + \Rot{e} = -k$ & $-\partial_t d + \Rot{h} = j$ \\
+  Amp\`ere Law        & $-\partial_t d + \Rot{h} = j$ & $\partial_t b + \Rot{e} = -k$ \\
+  Charge Conservation & $\Div{j} + \partial_t q = 0$ & $\Div{k} + \partial_t r = 0$ \\
+  Lorenz Gauge        & $\Div{a} + 1/c^2 \partial_t \psi = 0$ & $\Div{f} + 1/c^2 \partial_t \phi = 0$ \\
+  \hline
+\end{tabular}
+\end{center}
+\caption{Equations from \figref{fig:maxwell_house}.}
+\label{tab:maxwell_house}
+\end{table}
+
+\index{Maxwell House|)} 
+
+\chapter{Barycentric Coordinates} \index{Barycentric!coordinates|(} \label{app:barycentric}
+
+Barycentric coordinates are triples of numbers $(t_1,t_2,t_3)$
+corresponding to masses placed at the vertices of a reference triangle
+$A_1A_2A_3$. These masses then determine a point $P$, which is the
+geometric centroid of the three masses and is identified with
+coordinates $(t_1,t_2,t_3)$. The vertices of the triangle are given by
+$(1,0,0)$, $(0,1,0)$ and $(0,0,1)$
+\cite{mathworld,coxeter_barycentric}.
+
+\begin{figure}[htbp]
+  \begin{center}
+    \resizebox{10cm}{!}{\input{pics/mathworld_barycentric_coordinates.pdf_t}}
+  \end{center}
+  \caption{Barycentric coordinates.}
+  \label{fig:barycentric_coordinates}
+\end{figure}
+
+To find the barycentric coordinates for an arbitrary point $P$, find
+$t_2$ and $t_3$ from the point $P$ at the intersection of the line
+$A_1P$ with the side $A_2A_3$, and then determine $t_1$ as the mass at
+$A_1$ that will balance a mass $t_2+t_3$ at $Q$, thus making $P$ the
+centroid (see \figref{fig:barycentric_coordinates},
+left). Furthermore, the areas of the \emph{oriented} triangles
+$A_1A_2P$, $A_1A_3P$ and $A_2A_3P$ are proportional to the barycentric
+coordinates $t_3$, $t_2$ and $t_1$ of $P$ (see
+\figref{fig:barycentric_coordinates}, right).
+
+Barycentric coordinates are homogeneous, so:
+\begin{equation*}
+(t_1,t_2,t_3) = (\mu t_1,\mu t_2,\mu t_3) ,
+\end{equation*}
+for $\mu \neq 0$ and normalized:
+\begin{equation*}
+t_1 + t_2 + t_3 = 1,
+\end{equation*}
+so that the coordinates give the areas of the oriented subtriangles
+normalized by the area of the original triangle. Therefore, they are
+also called \emph{areal coordinates}.
+
+Barycentric coordinates for a number of common centers are summarized
+in \tabref{tab:barycentric_coordinates}
+
+\begin{table}[htbp]
+\begin{center}
+\begin{tabular}{ll}
+\hline
+circumcenter & $(a^2 (b^2+c^2-a^2), b^2 (c^2+a^2-b^2), c^2 (a^2+b^2-c^2))$ \\
+incenter & $(a, b, c)$ \\
+center of mass & $(1, 1, 1)$ \\
+\hline
+\end{tabular}
+\end{center}
+\caption{Barycentric coordinates for some common centers. $a$, $b$ and
+$c$ are the side lenghts of the triangle.}
+\label{tab:barycentric_coordinates}
+\end{table}
+
+A point $P$ is internal to a triangle $T$ if all its three barycentric
+coordinates, with respect to $T$, are positive. If one of them if $0$,
+the point lies on the perimeter of $T$.
+
+\section{Interpolation of a Nodal Function}
+
+Given a function $f$ defined on the points $A_1$, $A_2$ and $A_3$ of
+the triangle $T$, called a \emph{nodal function}, we can linearly
+interpolate it on all the points internal to $T$, using the
+barycentric coordinates of $P = (t_1,t_2,t_3)$. In formulas:
+\begin{equation*}
+f(P) = t_1 f(A_1) + t_2 f(A_2) + t_3 f(A_3) .
+\end{equation*}
+
+This ensure that the function $f$ is continuous across two adjacent
+triangles and that its greatest value lies on one of the vertices of
+$T$. Geometrically, the value of $f$ in $P$ is the sampled value of
+the linearized version of $f$, a plane, which passes through the
+points $(x_{A_1},y_{A_1},f(A_1))$, $(x_{A_2},y_{A_2},f(A_2))$ and
+$(x_{A_3},y_{A_3},f(A_3))$ (see
+\figref{fig:barycentric_coordinates_interpolation}).
+
+\begin{figure}[htbp]
+  \begin{center}
+    \resizebox{6cm}{!}{\input{pics/mathworld_barycentric_coordinates_interpolation.pdf_t}}
+  \end{center}
+  \caption{Interpolation of a nodal function using barycentric
+    coordinates. Continuity of $f$ is ensured by the common edge
+    $A_1A_3$.}
+  \label{fig:barycentric_coordinates_interpolation}
+\end{figure}
+
+This also leads us to define a \emph{barycentric function} associated
+to the point $P$, $i$-th node of a given mesh $\Set{K}$, as the
+function $\lambda^i$, piecewise linear on the whole domain where $\Set{K}$
+is defined, equal to $1$ in $P$ and $0$ on all the other nodes of the
+mesh. So, the position $x$ of the point $P$ is:
+\begin{align*}
+x & = \sum_{i \in \left\{A_1,A_2,A_3\right\}} \lambda^i(x) x_i
+\intertext{and}
+1 & = \sum_{i \in \left\{A_1,A_2,A_3\right\}} \lambda^i(x)
+\end{align*}
+
+The $\lambda^i$s are nothing else than the \emph{hat functions}
+or \emph{Lagrange elements of polynomial degree 1}, of Finite
+Element\index{Finite Element method}
+theory \cite{bossavit_edge}.
+
+\section{Interpolation of an Edge Function}
+
+Let $f$ be a vectorial field, whose values are only known as line
+integrals over the edges of a given mesh $\Set{K}$. The values of $f$
+in each point inside the mesh can be computed following this
+procedure.
+
+Let $x_i x_j x_k$ be a triangle, and $x$, $y$ two points inside
+it. Using barycentric function defined above, we can write:
+\begin{align*}
+x & = \sum_n \lambda^n\left(x\right) x_n \\
+y & = \sum_m \lambda^m\left(y\right) x_m \\
+\end{align*}
+Let $xy$ be the oriented segment that goes from $y$ to $x$: $xy = y -
+x$. We can write:
+\begin{equation*} \begin{split}
+y - x & = y - \sum_n \lambda^n\left(x\right) x_n \\
+      & = \sum_n \lambda^n\left(x\right) \left(y - x_n\right) \\
+      & = \sum_n \lambda^n\left(x\right) \left(\sum_m \lambda^m\left(y\right) x_m - x_n\right) \\
+      & = \sum_n \lambda^n\left(x\right) \sum_m \lambda^m\left(y\right) \left(x_m - x_n\right) \\
+      & = \left[ \lambda^i\left(x\right)\lambda^j\left(x\right) - \lambda^j\left(x\right)\lambda^i\left(x\right) \right] \left(x_j - x_i\right) + \\
+  & \quad \left[ \lambda^j\left(x\right)\lambda^k\left(x\right) - \lambda^k\left(x\right)\lambda^j\left(x\right) \right] \left(x_k - x_j\right) + \\
+  & \quad \left[ \lambda^k\left(x\right)\lambda^i\left(x\right) - \lambda^i\left(x\right)\lambda^k\left(x\right) \right] \left(x_i - x_k\right) \\
+      & = c_{ij} \left(x_j - x_i\right) + c_{jk} \left(x_k - x_j\right) + c_{ki} \left(x_i - x_k\right) \\
+\end{split} \end{equation*}
+
+The coefficients $c_{ij}$ have also a geometrical interpretation (see
+\figref{fig:edge_function_interpolation}):
+\begin{align*}
+c_{ij} & = \frac{\Area\left(x,y,x_k\right)}{\Area\left(x_i,x_j,x_k\right)} \\
+c_{jk} & = \frac{\Area\left(x_i,x,y\right)}{\Area\left(x_i,x_j,x_k\right)} \\
+c_{ki} & = \frac{\Area\left(y,x_j,x\right)}{\Area\left(x_i,x_j,x_k\right)} \\
+\end{align*}
+
+\begin{figure}[htbp]
+  \begin{center}
+    \resizebox{6cm}{!}{\input{pics/edge_function_interpolation.pdf_t}}
+  \end{center}
+  \caption{Interpolation of an edge function.}
+  \label{fig:edge_function_interpolation}
+\end{figure}
+
+Note that the operator $\Area$ returns the \emph{oriented area} of a
+given triangle, according to the order of its vertices.
+
+Now, as for the barycentric coordinates, we can interpolate the value
+of an edge function $f$ on the edge $xy$, if we know its values over
+the edges $x_i x_j$, $x_j x_k$ and $x_k x_i$, by the following
+formula:
+\begin{equation*}
+f\left(xy\right) = c_{ij} f\left(x_i x_j\right) + c_{jk} f\left(x_j x_k\right) + c_{ki} f\left(x_k x_i\right)
+\end{equation*}
+
+If we finally want to know the value of the vector defined at a given
+point $x$, we can use this procedure to compute the value of its
+components parallel to the coordinate axes: just choose $y = x + (dx,0)$
+or $y = x + (0,dy)$ (in two dimensions) to find the components along $x$ and $y$
+and divide by $dx$ or $dy$, respectively. The choice of the values
+$dx$ and $dy$ depends on the particular precision wanted and
+available.
+
+This procedure closely resembles the definition of
+\emph{edge-elements} in Finite Element\index{Finite Element method} theory
+\cite{bossavit_edge}, \cite{lee_whitney}, \cite{webb_edge},
+\cite{bossavit_how}, \cite{lee_time_domain}, \cite{sun_construction},
+\cite{webb_hierarchal}, \cite{bossavit_yee}
+
+\index{Barycentric!coordinates|)} 
+
+\chapter{Geometrical Interpretation of the Courant Factor}
+\index{Courant factor|(} \label{app:courant}
+
+Consider the one-dimensional wave equation \cite{numerical_recipies}:
+\begin{equation*}
+  \partial_t^2 u = v^2 \partial_x^2 u .
+\end{equation*}
+
+Discretized with a central difference scheme both in time and in
+space, the resulting equation is conditionally stable, according to
+the \emph{Courant} stability\index{Courant stability} factor $S \leq 1$:
+\begin{equation*}
+  \frac{\Abs{v}\deltat}{\deltax} = S .
+\end{equation*}
+
+\begin{figure}[htbp]
+  \begin{center}
+    \resizebox{8cm}{!}{\input{pics/space_time_cone.pdf_t}}
+  \end{center}
+  \caption{Space-time cone of events in $(\Disc{x}{i}{},
+    \Disc{t}{}{n})$ for the discretized (in blue) and the real
+    (red) space. All the points in the blue cone affect the value of
+    the field in the red point, vertex of the cone. In this example, the
+    stability is assured because the discretized cone includes the
+    real one.}
+  \label{fig:space_time_cone}
+\end{figure}
+
+From the figure \ref{fig:space_time_cone}, all the events in the space-time
+cone (shown in blue) influence the value of $u$ at the point
+$\left(\Disc{x}{i}{},\Disc{t}{}{n}\right)$. The aperture of the cone
+is velocity of propagation of the events. The cone is called
+\emph{cone of events}.
+
+The discretization in the space-time leads to a stable algorithm only
+if the cone of events for the discretized space includes the cone of events
+for the real space. If not, we can qualitatively say that the
+discretized differential equation is not ``fast enough'' to bring the
+informations to the real physical equation: information is lost and
+instabilities arise.
+
+\index{Courant factor|)}
+
+%% \chapter{Eigenvalues and Eigenvectors} \label{app:eigvals}
+
+%% We collect here some observations on eigenvalues and eigenvectors,
+%% useful in the present text. They are by no means rigorous or
+%% complete: we leave this honour to specialized mathematical books.
+
+%% \begin{theorem}[for Hermitian Matrices] \label{teo:hermitian}
+%% If $\Matrix{A} = \Hermitian{\Matrix{A}}$ then every $\lambda$
+%% eigenvalue of $\Matrix{A}$ is real.
+%% \end{theorem}
+%% \begin{proof}
+%% Call $\lambda$ an eigenvalue of $\Matrix{A}$ and $\Array{v}$ its
+%%     eigenvector, then $\Prod{\Matrix{A}}{\Array{v}} = \lambda
+%%     \Array{v}$. $\BraKet{\Array{v}}{\Prod{\Matrix{A}}{\Array{v}}} =
+%%     \BraKet{\Array{v}}{\lambda \Array{v}} =
+%%     \Conj{\lambda}\BraKet{\Array{v}}{\Array{v}}$, but also
+%%     $\BraKet{\Array{v}}{\Prod{\Matrix{A}}{\Array{v}}} =
+%%     \BraKet{\Prod{\Hermitian{\Matrix{A}}}{\Array{v}}}{\Array{v}} =
+%%     \BraKet{\Prod{\Matrix{A}}{\Array{v}}}{\Array{v}} = \lambda
+%%     \BraKet{\Array{v}}{\Array{v}}$. Therefore, $\lambda =
+%%     \Conj{\lambda} \in \RealSet$. \CVD
+%% \end{proof}
+    
+%% \begin{theorem}[for Real Symmetric Matrices]
+%% f $A = \Transpose{A} \in \RealSet$ then every $\lambda$ eigenvalue of $A$ is real.
+%% \end{theorem}
+%% \begin{proof}
+%% Immediate, because if $A \in \RealSet$ then $A = \Transpose{A}$
+%% implies $A = \Hermitian{A}$. \autoref{teo:hermitian} finishes the
+%% proof. \CVD
+%% \end{proof}
+
+%%   \begin{theorem}[for Real non-Symmetric Matrices]
+%%     If $A \in \RealSet$ then every $\lambda_i$ eigenvalue of $A$ is real
+%%     or has a complex conjugate $\lambda_j = \Conj{\lambda_i}$.
+%%   \end{theorem}
+%%   \begin{proof}
+%%     The characteristic equation $\det[A - \lambda I] = 0$ has real
+%%     coefficients, therefore, for the Fundamental Theorem of Algebra,
+%%     it has only real or complex conjugate pairs of solutions. \CVD
+%%   \end{proof}
+
+%%   But, note that if $A = \Transpose{A} \in \ComplexSet$ then no restrictions are
+%%   applied to its eigenvalues: they can be all complex or all real or
+%%   some complex and some real.
+
+%%   Strangely enough, a complex symmetric matrix can have all real
+%%   eigenvalues. I'll build one.
+
+%%   Chose $n$ real numbers $\left\{\lambda_1, \ldots, \lambda_n\right\}$
+%%   and call $\Lambda = diag{\lambda_i}$. Then call $U$ a unitary
+%%   matrix, i.e. $\Hermitian{U} = U^{-1}$: $A = U^{-1} \Lambda U$ has the
+%%   same eigenvalues of $\Lambda$ ($U$ just represents a change of
+%%   basis and $A$ is hermitian, so this is the result of
+%%   \autoref{teo:hermitian}). Now, if I can find $U$ so that
+%%   $\Transpose{U} = U^{-1}$, then $A = U^{-1} \Lambda U$:
+%%   \begin{itemize}
+%%   \item
+%%     is complex symmetric, but not hermitian: $\Transpose{A} =
+%%     \Transpose{U} \Transpose{\Lambda} \Transpose{U^{-1}} = U^{-1}
+%%     \Lambda U = A$;
+%%   \item
+%%     has the same eigenvalues as $\Lambda$. In fact, just think that if
+%%     $U$ is unitary its columns are an orthonormal basis of dimension
+%%     $n$: the normalization being done using the $\Norm{x} =
+%%     \BraKet{x}{x} = \Conj{x} x$ norm. If I normalize the basis vectors
+%%     with the complex scalar $\DotProd{x}{x}$ instead of the real
+%%     scalar $\DotProd{\Conj{x}}{x}$, the $U$ becomes complex symmetric,
+%%     but not unitary, with the same eigenvalues.
+%%   \end{itemize}
+%%   I'll show how to find a particular $U$.
+%%   Let $U = \left( \begin{array}{cc} a & \imath b \\ \imath b & c
+%%   \end{array} \right)$, then a possible choice of $a$, $b$ and $c$
+%%   that makes $U * \Transpose{U} = I$ is $a = -c = 2$ and $b =
+%%   \sqrt{3}$.
+  
+%%   Let $\Lambda = diag{\lambda_i}$ with $\lambda_i \in \RealSet$.
+  
+%%   Now $A = \Transpose{U} \Lambda U$ is complex symmetric and its
+%%   eigenvalues are the same $\lambda_i$ of $\Lambda$ (test with
+%%   Matlab!).
+
+%%   From this $2 \times 2$ matrix I can build any dimension by adding
+%%   zeros everywhere, and ones on the diagonal:
+%%   $$
+%%   U = \left( \begin{array}{ccccc}
+%%     a        & \imath b & 0      & \cdots & 0 \\
+%%     \imath b & c        & 0      & \cdots & 0 \\
+%%     0        & 0        & 1      & \cdots & 0 \\
+%%     \vdots   & \vdots   & \vdots & \ddots & \vdots \\
+%%     0        & 0        & 0      & \cdots & 1
+%%   \end{array} \right)
+%%   $$
+

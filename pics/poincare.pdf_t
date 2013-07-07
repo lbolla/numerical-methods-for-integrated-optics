@@ -1,0 +1,31 @@
+\begin{picture}(0,0)%
+\includegraphics{pics/poincare.pdf}%
+\end{picture}%
+\setlength{\unitlength}{4144sp}%
+%
+\begingroup\makeatletter\ifx\SetFigFont\undefined%
+\gdef\SetFigFont#1#2#3#4#5{%
+  \reset@font\fontsize{#1}{#2pt}%
+  \fontfamily{#3}\fontseries{#4}\fontshape{#5}%
+  \selectfont}%
+\fi\endgroup%
+\begin{picture}(4392,5199)(1246,-5023)
+\put(3466,-1411){\makebox(0,0)[lb]{\smash{{\SetFigFont{29}{34.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}$\Versor{s}_i$}%
+}}}}
+\put(3601,-2581){\makebox(0,0)[lb]{\smash{{\SetFigFont{29}{34.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}$\Versor{n}_{s_i}$}%
+}}}}
+\put(2881,-1681){\makebox(0,0)[rb]{\smash{{\SetFigFont{29}{34.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,1}$\Versor{n}_{p_i}$}%
+}}}}
+\put(4006,-1996){\makebox(0,0)[lb]{\smash{{\SetFigFont{29}{34.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,1}$\Versor{p}_i$}%
+}}}}
+\put(2026,-2356){\makebox(0,0)[b]{\smash{{\SetFigFont{29}{34.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,1}$i$}%
+}}}}
+\put(1261,-4201){\makebox(0,0)[b]{\smash{{\SetFigFont{29}{34.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{1,0,0}$j$}%
+}}}}
+\put(3466,-4156){\makebox(0,0)[b]{\smash{{\SetFigFont{29}{34.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{1,0,0}$j$}%
+}}}}
+\put(4096,-421){\makebox(0,0)[b]{\smash{{\SetFigFont{29}{34.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{1,0,0}$j$}%
+}}}}
+\put(2386,-511){\makebox(0,0)[b]{\smash{{\SetFigFont{29}{34.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{1,0,0}$j$}%
+}}}}
+\end{picture}%

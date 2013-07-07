@@ -1,0 +1,31 @@
+\part{Mode Solvers} \label{par:mode_solvers} \index{Mode!solvers|(}
+
+\section*{What are the ``Mode Solvers''?}
+
+One of the most powerful approaches to study optical systems is the
+eigenmode decomposition: the electromagnetic propagation is ex\-press\-ed
+as a set of definite-frequency time-harmonic modes. In the absence of
+nonlinear effects, all the optical phenomena can be described as a
+super-imposition of these modes with an accuracy directly related to
+the number of modes used in the expansion and the completeness of the
+set of modes, seen as a basis functions set. All the possible
+algorithm formulations to find modes share a common characteristic:
+they reduce the problem to find the eigenvalues and eigenvectors of
+a given matrix, which represents the geometry and physics of the
+device under study.
+
+These algorithms are what we call ``Mode Solvers''\index{Mode!solvers}.
+
+In the next chapters, we will describe two particular algorithms: the
+first, suitable to study waveguides with an invariant cross section
+along the direction of propagation, based on the Finite Difference
+Method, the second, suitable to study periodic structures, also known
+as photonic crystal, based on the Plane Wave Expansion technique. They
+somehow complete themselves, covering the greatest majority of the
+common problems found in optical systems.
+
+\input finite_difference_method
+
+\input plane_wave_expansion_technique
+
+\index{Mode!solvers|)}

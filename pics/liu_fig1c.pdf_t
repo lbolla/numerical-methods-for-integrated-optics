@@ -1,0 +1,23 @@
+\begin{picture}(0,0)%
+\includegraphics{pics/liu_fig1c.pdf}%
+\end{picture}%
+\setlength{\unitlength}{4144sp}%
+%
+\begingroup\makeatletter\ifx\SetFigFont\undefined%
+\gdef\SetFigFont#1#2#3#4#5{%
+  \reset@font\fontsize{#1}{#2pt}%
+  \fontfamily{#3}\fontseries{#4}\fontshape{#5}%
+  \selectfont}%
+\fi\endgroup%
+\begin{picture}(5424,5424)(-3161,-5023)
+\put(-674,-2761){\makebox(0,0)[rb]{\smash{{\SetFigFont{29}{34.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}$D_z$}%
+}}}}
+\put(-224,-4336){\makebox(0,0)[lb]{\smash{{\SetFigFont{29}{34.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}$B_x$}%
+}}}}
+\put(1126,-2086){\makebox(0,0)[lb]{\smash{{\SetFigFont{29}{34.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}$B_y$}%
+}}}}
+\put(-224,-736){\makebox(0,0)[lb]{\smash{{\SetFigFont{29}{34.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}$B_x$}%
+}}}}
+\put(-2024,-2086){\makebox(0,0)[rb]{\smash{{\SetFigFont{29}{34.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}$B_y$}%
+}}}}
+\end{picture}%

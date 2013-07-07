@@ -1,0 +1,29 @@
+\begin{picture}(0,0)%
+\includegraphics{pics/maxwell_house.pdf}%
+\end{picture}%
+\setlength{\unitlength}{4144sp}%
+%
+\begingroup\makeatletter\ifx\SetFigFont\undefined%
+\gdef\SetFigFont#1#2#3#4#5{%
+  \reset@font\fontsize{#1}{#2pt}%
+  \fontfamily{#3}\fontseries{#4}\fontshape{#5}%
+  \selectfont}%
+\fi\endgroup%
+\begin{picture}(8410,7935)(1758,-8461)
+\put(8911,-7531){\makebox(0,0)[lb]{\smash{{\SetFigFont{20}{24.0}{\sfdefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}$\phi$}%
+}}}}
+\put(8776,-8161){\makebox(0,0)[lb]{\smash{{\SetFigFont{20}{24.0}{\sfdefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}$\partial_t$}%
+}}}}
+\put(6931,-5101){\makebox(0,0)[lb]{\smash{{\SetFigFont{20}{24.0}{\sfdefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}$\mu$}%
+}}}}
+\put(3151,-1186){\makebox(0,0)[rb]{\smash{{\SetFigFont{20}{24.0}{\sfdefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}$\partial_t$}%
+}}}}
+\put(3061,-1771){\makebox(0,0)[rb]{\smash{{\SetFigFont{20}{24.0}{\sfdefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}$-\psi$}%
+}}}}
+\put(5941,-5551){\makebox(0,0)[b]{\smash{{\SetFigFont{20}{24.0}{\sfdefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}$-\sigma^*$}%
+}}}}
+\put(5041,-4201){\makebox(0,0)[b]{\smash{{\SetFigFont{20}{24.0}{\sfdefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}$\epsilon$}%
+}}}}
+\put(5941,-3391){\makebox(0,0)[b]{\smash{{\SetFigFont{20}{24.0}{\sfdefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}$\sigma$}%
+}}}}
+\end{picture}%

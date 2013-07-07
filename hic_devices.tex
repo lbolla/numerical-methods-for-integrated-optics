@@ -1,0 +1,53 @@
+\part{HIC Devices} \label{par:hic_devices} \index{HIC devices|(}
+
+\section*{What are the ``HIC Devices''?}
+
+High Index Contrast (HIC)\index{HIC devices} dielectric waveguides are
+optical devices in which the refractive indices of core and cladding
+differ greatly, much more than in conventional optical fibers. HIC
+devices exhibit, for this reason, highly confined optical modes and
+allow for waveguides to be spaced closely together without inducing
+crosstalk and the propagating field to be guided around sharp bends
+with minimal radiative loss \cite{watts_integrated}. This goes in the
+same direction as the need of integration of more and more
+functionalities inside optical chips, their grown in complexity and
+the will to reduce prices \cite{exp_pirelli}.
+
+However, as the index contrast is increased, the differences between
+the lateral boundary conditions for TE and TM modes become more
+pronounced, causing critical design parameters, such as propagation
+constants, coupling coefficients and scattering losses to be
+polarization dependent\index{Polarization!dependence}.
+
+To allow polarization independent performance, a necessary feature for
+a standard single-mode-fiber-based communication link, the
+polarization sensitivity can be circumvented by the implementation of
+a polarization diversity\index{Polarization!diversity} scheme
+\cite{madsen_optical}. Such an approach requires the input
+polarization, from the optical fiber, to be split into two orthogonal
+components. Then, rotation of one of them allows one single
+polarization to be realized on chip, on two parallel paths of
+identical devices. A possible scheme is reported in
+\figref{fig:exp_fig1}.
+
+\begin{figure}[htbp]
+  \begin{center}
+    \resizebox{12cm}{!}{\input{pics/exp_fig1.pdf_t}}
+  \end{center}
+  \caption{Polarization diversity\index{Polarization!diversity|fig}
+    scheme. The function $F(\omega)$ performs some kind of operations
+    on a polarized input signal. The splitter and the rotator before
+    it ensure that the input polarization is the one the function was
+    designed to work with. A second rotator is needed in the
+    recombination stage. Note that the two rotation stages are split
+    on the two arms of the scheme, to make their side effects symmetric
+    (losses, crosstalk, etc.).}
+  \label{fig:exp_fig1}
+\end{figure}
+
+In the next chapter, the study of a polarization rotator (the block in
+red in \figref{fig:exp_fig1}) is reported.
+
+\input polrot
+
+\index{HIC devices|)}

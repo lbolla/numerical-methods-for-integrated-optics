@@ -1,0 +1,19 @@
+\begin{picture}(0,0)%
+\includegraphics{pics/liu_fourier_myfig.pdf}%
+\end{picture}%
+\setlength{\unitlength}{4144sp}%
+%
+\begingroup\makeatletter\ifx\SetFigFont\undefined%
+\gdef\SetFigFont#1#2#3#4#5{%
+  \reset@font\fontsize{#1}{#2pt}%
+  \fontfamily{#3}\fontseries{#4}\fontshape{#5}%
+  \selectfont}%
+\fi\endgroup%
+\begin{picture}(3624,3624)(-2936,-1423)
+\put(-1349,1829){\makebox(0,0)[rb]{\smash{{\SetFigFont{14}{16.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,1}$\Disc{f}{}{n+1}$}%
+}}}}
+\put( 91,1109){\makebox(0,0)[lb]{\smash{{\SetFigFont{14}{16.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,1}$\Disc{f}{}{n}$}%
+}}}}
+\put(-539,1739){\makebox(0,0)[lb]{\smash{{\SetFigFont{14}{16.8}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}$t_{n+1/2}$}%
+}}}}
+\end{picture}%
