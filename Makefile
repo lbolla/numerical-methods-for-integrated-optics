@@ -34,4 +34,4 @@ $(TARGET).ind: $(TARGET).idx
 clean:
 	-rm -f $(TARGET).aux $(TARGET).ilg $(TARGET).ind \
 	$(TARGET).lof $(TARGET).log $(TARGET).lot $(TARGET).toc \
-	$(TARGET).blg $(TARGET).bbl *.log
+	$(TARGET).blg $(TARGET).bbl *.log *.aux *.out
